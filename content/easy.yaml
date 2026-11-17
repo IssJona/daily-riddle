@@ -1,0 +1,1206 @@
+# EASY riddles. Order = day order. Never reorder; only append.
+# answer: optional list of accepted numbers (shows an answer box). tol: optional tolerance.
+
+- en:
+    title: Three switches
+    q: |
+      There are three light switches downstairs. One of them controls a light bulb in the attic; the other two do nothing. The attic door is closed, so you can't see the bulb from downstairs.
+
+      You can flip the switches as much as you like, but you may go up to the attic only once. How do you find out which switch controls the bulb?
+    hint: A light bulb gives off more than just light.
+    a: |
+      Turn switch 1 on and leave it on for about 10 minutes. Then turn it off, turn switch 2 on, and go upstairs.
+
+      • Bulb on → switch 2.
+      • Bulb off but warm → switch 1.
+      • Bulb off and cold → switch 3.
+  pt:
+    title: Três interruptores
+    q: |
+      No rés-do-chão há três interruptores. Um deles acende uma lâmpada no sótão; os outros dois não fazem nada. A porta do sótão está fechada, por isso não vês a lâmpada lá de baixo.
+
+      Podes mexer nos interruptores à vontade, mas só podes subir ao sótão uma vez. Como descobres qual é o interruptor da lâmpada?
+    hint: Uma lâmpada não dá só luz.
+    a: |
+      Liga o interruptor 1 e deixa-o ligado uns 10 minutos. Depois desliga-o, liga o interruptor 2 e sobe.
+
+      • Lâmpada acesa → interruptor 2.
+      • Apagada mas quente → interruptor 1.
+      • Apagada e fria → interruptor 3.
+
+- answer: [0.05, 5]
+  en:
+    title: Bat and ball
+    q: |
+      A bat and a ball cost €1.10 in total. The bat costs €1.00 more than the ball.
+
+      How much does the ball cost?
+    hint: It's not 10 cents. If the ball cost 10 cents, what would the bat cost?
+    a: |
+      5 cents.
+
+      Ball = x, bat = x + 1.00. So 2x + 1.00 = 1.10 → x = 0.05.
+  pt:
+    title: Taco e bola
+    q: |
+      Um taco e uma bola custam 1,10 € no total. O taco custa mais 1,00 € do que a bola.
+
+      Quanto custa a bola?
+    hint: Não são 10 cêntimos. Se a bola custasse 10 cêntimos, quanto custaria o taco?
+    a: |
+      5 cêntimos.
+
+      Bola = x, taco = x + 1,00. Então 2x + 1,00 = 1,10 → x = 0,05.
+
+- en:
+    title: Burning ropes
+    q: |
+      You have two ropes and a lighter. Each rope takes exactly 60 minutes to burn completely, but they burn unevenly: half the rope does not necessarily take 30 minutes.
+
+      How do you measure exactly 45 minutes?
+    hint: What happens if you light a rope at both ends at the same time?
+    a: |
+      Light rope A at both ends and rope B at one end, all at the same time.
+
+      Rope A burns out after exactly 30 minutes. At that moment rope B has 30 minutes left, so light its other end too: it burns out 15 minutes later.
+
+      30 + 15 = 45 minutes.
+  pt:
+    title: Cordas a arder
+    q: |
+      Tens duas cordas e um isqueiro. Cada corda demora exatamente 60 minutos a arder por completo, mas ardem de forma irregular: metade da corda não demora necessariamente 30 minutos.
+
+      Como medes exatamente 45 minutos?
+    hint: O que acontece se acenderes uma corda pelas duas pontas ao mesmo tempo?
+    a: |
+      Acende a corda A pelas duas pontas e a corda B por uma ponta, tudo ao mesmo tempo.
+
+      A corda A acaba ao fim de exatamente 30 minutos. Nesse momento faltam 30 minutos à corda B, por isso acende-lhe a outra ponta: acaba 15 minutos depois.
+
+      30 + 15 = 45 minutos.
+
+- answer: [47]
+  en:
+    title: Lily pads
+    q: |
+      A patch of lily pads in a lake doubles in size every day. It takes 48 days to cover the whole lake.
+
+      How many days does it take to cover half the lake?
+    hint: Think backwards from day 48.
+    a: |
+      47 days. It doubles every day, so the day before it covers the whole lake, it covers half.
+  pt:
+    title: Nenúfares
+    q: |
+      Uma mancha de nenúfares num lago duplica de tamanho todos os dias. Demora 48 dias a cobrir o lago inteiro.
+
+      Quantos dias demora a cobrir metade do lago?
+    hint: Pensa para trás a partir do dia 48.
+    a: |
+      47 dias. Duplica todos os dias, por isso no dia antes de cobrir o lago todo cobre metade.
+
+- en:
+    title: Two jugs
+    q: |
+      You have a 3-litre jug, a 5-litre jug and an unlimited tap. The jugs have no markings.
+
+      How do you get exactly 4 litres of water?
+    hint: Filling the 5 L jug and pouring it into the 3 L jug leaves you with something useful.
+    a: |
+      1. Fill the 5 L jug and pour it into the 3 L jug → 2 L left in the 5 L jug.
+      2. Empty the 3 L jug and pour the 2 L into it.
+      3. Fill the 5 L jug again and top up the 3 L jug (it takes only 1 L).
+
+      The 5 L jug now holds exactly 4 L.
+  pt:
+    title: Dois jarros
+    q: |
+      Tens um jarro de 3 litros, um de 5 litros e uma torneira. Os jarros não têm marcas.
+
+      Como obténs exatamente 4 litros de água?
+    hint: Encher o jarro de 5 L e despejá-lo no de 3 L deixa-te com algo útil.
+    a: |
+      1. Enche o de 5 L e despeja-o no de 3 L → ficam 2 L no de 5 L.
+      2. Esvazia o de 3 L e põe lá os 2 L.
+      3. Enche outra vez o de 5 L e completa o de 3 L (só leva 1 L).
+
+      O jarro de 5 L fica com exatamente 4 L.
+
+- answer: [28]
+  en:
+    title: Snail in a well
+    q: |
+      A snail is at the bottom of a 30-metre well. Every day it climbs 3 metres, and every night it slides back 2 metres.
+
+      On which day does it get out?
+    hint: It's not day 30. Watch the last day.
+    a: |
+      Day 28. After 27 days and nights it is at 27 m. On day 28 it climbs to 30 m and is out before it can slide back.
+  pt:
+    title: Caracol no poço
+    q: |
+      Um caracol está no fundo de um poço com 30 metros. Todos os dias sobe 3 metros e todas as noites escorrega 2 metros.
+
+      Em que dia sai do poço?
+    hint: Não é no dia 30. Repara no último dia.
+    a: |
+      No dia 28. Ao fim de 27 dias e noites está nos 27 m. No dia 28 sobe até aos 30 m e sai antes de escorregar.
+
+- en:
+    title: Wolf, goat and cabbage
+    q: |
+      A farmer must take a wolf, a goat and a cabbage across a river. His boat carries him and only one of them at a time.
+
+      Left alone together, the wolf eats the goat, and the goat eats the cabbage. How does he get everything across?
+    hint: Nothing says he can't bring something back.
+    a: |
+      Goat across. Back alone. Wolf across. Goat back. Cabbage across. Back alone. Goat across.
+  pt:
+    title: Lobo, cabra e couve
+    q: |
+      Um agricultor tem de levar um lobo, uma cabra e uma couve para o outro lado do rio. O barco só leva ele e mais uma coisa de cada vez.
+
+      Sozinhos, o lobo come a cabra e a cabra come a couve. Como leva tudo?
+    hint: Nada diz que ele não pode trazer algo de volta.
+    a: |
+      Leva a cabra. Volta sozinho. Leva o lobo. Traz a cabra. Leva a couve. Volta sozinho. Leva a cabra.
+
+- answer: [3]
+  en:
+    title: Socks in the dark
+    q: |
+      A drawer holds 10 black socks and 10 white socks, all mixed up. The room is completely dark.
+
+      What is the smallest number of socks you must take to be sure of a matching pair?
+    hint: There are only two colours.
+    a: |
+      3. With 2 you might have one of each colour; the 3rd must match one of them.
+  pt:
+    title: Meias às escuras
+    q: |
+      Uma gaveta tem 10 meias pretas e 10 brancas, misturadas. O quarto está completamente às escuras.
+
+      Qual o menor número de meias que tens de tirar para ter a certeza de um par igual?
+    hint: Só há duas cores.
+    a: |
+      3. Com 2 podes ter uma de cada cor; a 3.ª tem de ser igual a uma delas.
+
+- en:
+    title: Nine balls
+    q: |
+      You have 9 identical-looking balls. One is slightly heavier.
+
+      Using a two-pan balance only twice, how do you find the heavy one?
+    hint: Split them into three groups.
+    a: |
+      Make three groups of 3: A, B, C. Weigh A vs B. The heavier group has it; if balanced, it's in C.
+
+      From that group, put one ball on each pan. The heavier one is it; if balanced, it's the third.
+  pt:
+    title: Nove bolas
+    q: |
+      Tens 9 bolas iguais à vista. Uma é ligeiramente mais pesada.
+
+      Usando uma balança de dois pratos só duas vezes, como descobres a mais pesada?
+    hint: Divide-as em três grupos.
+    a: |
+      Faz três grupos de 3: A, B, C. Pesa A contra B. O grupo mais pesado tem a bola; se equilibrar, está no C.
+
+      Desse grupo, põe uma bola em cada prato. A mais pesada é a certa; se equilibrar, é a terceira.
+
+- answer: [45]
+  en:
+    title: Handshakes
+    q: |
+      10 people meet at a party. Each person shakes hands with every other person exactly once.
+
+      How many handshakes are there?
+    hint: Each person shakes 9 hands, but each handshake involves two people.
+    a: |
+      45. 10 × 9 = 90 counts every handshake twice, so 90 ÷ 2 = 45.
+  pt:
+    title: Apertos de mão
+    q: |
+      10 pessoas encontram-se numa festa. Cada uma aperta a mão a cada uma das outras exatamente uma vez.
+
+      Quantos apertos de mão há?
+    hint: Cada pessoa aperta 9 mãos, mas cada aperto envolve duas pessoas.
+    a: |
+      45. 10 × 9 = 90 conta cada aperto duas vezes, por isso 90 ÷ 2 = 45.
+
+- en:
+    title: The portrait
+    q: |
+      A man looks at a portrait and says:
+
+      "Brothers and sisters I have none, but that man's father is my father's son."
+
+      Who is in the portrait?
+    hint: With no siblings, who is "my father's son"?
+    a: |
+      His son. "My father's son" is the man himself, so "that man's father is me".
+  pt:
+    title: O retrato
+    q: |
+      Um homem olha para um retrato e diz:
+
+      "Irmãos e irmãs não tenho nenhum, mas o pai daquele homem é o filho do meu pai."
+
+      Quem está no retrato?
+    hint: Sem irmãos, quem é "o filho do meu pai"?
+    a: |
+      O filho dele. "O filho do meu pai" é ele próprio, por isso "o pai daquele homem sou eu".
+
+- answer: [75]
+  en:
+    title: Two trains and a bird
+    q: |
+      Two trains 100 km apart head towards each other at 50 km/h each. A bird flies at 75 km/h from one train to the other, turns instantly, flies back, and keeps going until the trains meet.
+
+      How many km does the bird fly in total?
+    hint: Don't add up the trips. How long does the bird fly?
+    a: |
+      75 km. The trains meet after 1 hour, and the bird flies at 75 km/h for that hour.
+  pt:
+    title: Dois comboios e um pássaro
+    q: |
+      Dois comboios a 100 km um do outro vão um contra o outro a 50 km/h cada. Um pássaro voa a 75 km/h de um comboio para o outro, vira instantaneamente, volta, e continua até os comboios se encontrarem.
+
+      Quantos km voa o pássaro no total?
+    hint: Não somes as viagens. Quanto tempo voa o pássaro?
+    a: |
+      75 km. Os comboios encontram-se ao fim de 1 hora e o pássaro voa a 75 km/h durante essa hora.
+
+- answer: [21]
+  en:
+    title: Counting ones
+    q: |
+      You write down every whole number from 1 to 100.
+
+      How many times do you write the digit 1?
+    hint: Count units, tens and hundreds separately.
+    a: |
+      21. Units: 1, 11, …, 91 → 10. Tens: 10–19 → 10. Hundreds: 100 → 1.
+  pt:
+    title: Contar uns
+    q: |
+      Escreves todos os números inteiros de 1 a 100.
+
+      Quantas vezes escreves o algarismo 1?
+    hint: Conta unidades, dezenas e centenas separadamente.
+    a: |
+      21. Unidades: 1, 11, …, 91 → 10. Dezenas: 10–19 → 10. Centenas: 100 → 1.
+
+- en:
+    title: The missing euro
+    q: |
+      Three friends pay €30 for a room, €10 each. The room actually costs €25, so the porter is given €5 to return. He keeps €2 and gives each friend €1 back.
+
+      Each friend paid €9: 3 × 9 = 27, plus the porter's €2 makes 29. Where is the missing euro?
+    hint: Should the porter's €2 be added to the 27, or is it already in it?
+    a: |
+      Nothing is missing; the sum is wrong. The €27 already includes the porter's €2 (25 + 2). The right sum is 25 (hotel) + 2 (porter) + 3 (returned) = 30.
+  pt:
+    title: O euro desaparecido
+    q: |
+      Três amigos pagam 30 € por um quarto, 10 € cada. O quarto custa afinal 25 €, e o paquete recebe 5 € para devolver. Fica com 2 € e devolve 1 € a cada amigo.
+
+      Cada amigo pagou 9 €: 3 × 9 = 27, mais os 2 € do paquete dá 29. Onde está o euro que falta?
+    hint: Os 2 € do paquete devem somar-se aos 27, ou já estão lá dentro?
+    a: |
+      Não falta nada; a conta está errada. Os 27 € já incluem os 2 € do paquete (25 + 2). A conta certa é 25 (hotel) + 2 (paquete) + 3 (devolvidos) = 30.
+
+- answer: [2]
+  en:
+    title: The overtake
+    q: |
+      You're running a race and you overtake the person in second place.
+
+      What position are you in now?
+    hint: Who is still ahead of you?
+    a: |
+      Second. You took their place; the leader is still ahead.
+  pt:
+    title: A ultrapassagem
+    q: |
+      Estás numa corrida e ultrapassas quem vai em segundo lugar.
+
+      Em que lugar ficas?
+    hint: Quem continua à tua frente?
+    a: |
+      Segundo. Ficaste com o lugar dele; o primeiro continua à frente.
+
+- answer: [9]
+  en:
+    title: Runaway sheep
+    q: |
+      A farmer has 17 sheep. All but 9 run away.
+
+      How many sheep does he have left?
+    hint: Read "all but 9" slowly.
+    a: |
+      9. "All but 9" means 9 stayed.
+  pt:
+    title: Ovelhas fugidas
+    q: |
+      Um agricultor tem 17 ovelhas. Fogem todas menos 9.
+
+      Com quantas fica?
+    hint: Lê "todas menos 9" devagar.
+    a: |
+      9. "Todas menos 9" quer dizer que ficaram 9.
+
+- answer: [12]
+  en:
+    title: Twenty-eight days
+    q: |
+      Some months have 31 days, others have 30.
+
+      How many months have 28 days?
+    hint: Does a month with 31 days have 28 days?
+    a: |
+      All 12. Every month has at least 28 days.
+  pt:
+    title: Vinte e oito dias
+    q: |
+      Alguns meses têm 31 dias, outros têm 30.
+
+      Quantos meses têm 28 dias?
+    hint: Um mês com 31 dias tem 28 dias?
+    a: |
+      Todos os 12. Todos os meses têm pelo menos 28 dias.
+
+- en:
+    title: Five daughters
+    q: |
+      Mary's father has five daughters: Nana, Nene, Nini and Nono.
+
+      What is the fifth daughter's name?
+    hint: Read the first three words again.
+    a: |
+      Mary.
+  pt:
+    title: Cinco filhas
+    q: |
+      O pai da Maria tem cinco filhas: Nana, Nene, Nini e Nono.
+
+      Como se chama a quinta filha?
+    hint: Lê outra vez as primeiras palavras.
+    a: |
+      Maria.
+
+- en:
+    title: Fishing trip
+    q: |
+      Two fathers and two sons go fishing. Each catches exactly one fish, yet only three fish are brought home, and none were lost or eaten.
+
+      How?
+    hint: Can one person be both a father and a son?
+    a: |
+      There are only three people: a grandfather, his son and his grandson. The middle one is both a father and a son.
+  pt:
+    title: Dia de pesca
+    q: |
+      Dois pais e dois filhos vão pescar. Cada um apanha exatamente um peixe, mas só levam três peixes para casa, e nenhum se perdeu nem foi comido.
+
+      Como é possível?
+    hint: Uma pessoa pode ser pai e filho ao mesmo tempo?
+    a: |
+      São só três pessoas: avô, pai e neto. O do meio é pai e filho.
+
+- answer: [60]
+  en:
+    title: Three pills
+    q: |
+      A doctor gives you 3 pills and tells you to take one every half hour.
+
+      How many minutes until all the pills are gone?
+    hint: When do you take the first one?
+    a: |
+      60 minutes. First pill now, second at 30 min, third at 60 min.
+  pt:
+    title: Três comprimidos
+    q: |
+      Um médico dá-te 3 comprimidos e diz para tomares um a cada meia hora.
+
+      Quantos minutos até acabarem?
+    hint: Quando tomas o primeiro?
+    a: |
+      60 minutos. O primeiro agora, o segundo aos 30 min, o terceiro aos 60 min.
+
+- answer: [70]
+  en:
+    title: Divide by half
+    q: |
+      Divide 30 by half and add 10.
+
+      What do you get?
+    hint: Dividing by half is not the same as dividing in half.
+    a: |
+      70. 30 ÷ ½ = 60, and 60 + 10 = 70.
+  pt:
+    title: Dividir por metade
+    q: |
+      Divide 30 por meio e soma 10.
+
+      Quanto dá?
+    hint: Dividir por meio não é o mesmo que dividir ao meio.
+    a: |
+      70. 30 ÷ ½ = 60, e 60 + 10 = 70.
+
+- answer: [11]
+  en:
+    title: The striking clock
+    q: |
+      A clock takes 5 seconds to strike 6 o'clock (6 strikes).
+
+      How many seconds does it take to strike 12 o'clock?
+    hint: Count the gaps, not the strikes.
+    a: |
+      11 seconds. 6 strikes have 5 gaps, so each gap is 1 s. 12 strikes have 11 gaps.
+  pt:
+    title: O relógio que bate
+    q: |
+      Um relógio demora 5 segundos a dar as 6 horas (6 badaladas).
+
+      Quantos segundos demora a dar as 12?
+    hint: Conta os intervalos, não as badaladas.
+    a: |
+      11 segundos. 6 badaladas têm 5 intervalos, logo cada um é 1 s. 12 badaladas têm 11 intervalos.
+
+- answer: [27]
+  en:
+    title: Cutting a log
+    q: |
+      Each cut through a log takes 3 minutes.
+
+      How many minutes does it take to cut the log into 10 pieces?
+    hint: How many cuts make 10 pieces?
+    a: |
+      27 minutes. 10 pieces need 9 cuts: 9 × 3 = 27.
+  pt:
+    title: Cortar um tronco
+    q: |
+      Cada corte num tronco demora 3 minutos.
+
+      Quantos minutos demora a cortar o tronco em 10 pedaços?
+    hint: Quantos cortes fazem 10 pedaços?
+    a: |
+      27 minutos. 10 pedaços precisam de 9 cortes: 9 × 3 = 27.
+
+- answer: [11]
+  en:
+    title: Fence posts
+    q: |
+      You build a straight fence 100 metres long, with a post every 10 metres, including both ends.
+
+      How many posts do you need?
+    hint: Try it with a 20-metre fence first.
+    a: |
+      11. 10 gaps of 10 m need 11 posts.
+  pt:
+    title: Postes da vedação
+    q: |
+      Constróis uma vedação reta com 100 metros, com um poste a cada 10 metros, incluindo as duas pontas.
+
+      Quantos postes precisas?
+    hint: Experimenta primeiro com uma vedação de 20 metros.
+    a: |
+      11. 10 intervalos de 10 m precisam de 11 postes.
+
+- en:
+    title: Two coins
+    q: |
+      I have two euro coins that add up to 30 cents. One of them is not a 20-cent coin.
+
+      What are the two coins?
+    hint: "One of them is not" doesn't say anything about the other.
+    a: |
+      A 20-cent coin and a 10-cent coin. The 10-cent coin is the one that isn't a 20-cent coin.
+  pt:
+    title: Duas moedas
+    q: |
+      Tenho duas moedas de euro que somam 30 cêntimos. Uma delas não é de 20 cêntimos.
+
+      Que moedas são?
+    hint: "Uma delas não é" não diz nada sobre a outra.
+    a: |
+      Uma de 20 cêntimos e uma de 10. A de 10 é a que não é de 20.
+
+- answer: [5]
+  en:
+    title: Widget machines
+    q: |
+      5 machines make 5 widgets in 5 minutes.
+
+      How many minutes do 100 machines take to make 100 widgets?
+    hint: How long does one machine take to make one widget?
+    a: |
+      5 minutes. Each machine makes one widget in 5 minutes, so 100 machines make 100 widgets in 5 minutes.
+  pt:
+    title: Máquinas
+    q: |
+      5 máquinas fazem 5 peças em 5 minutos.
+
+      Quantos minutos demoram 100 máquinas a fazer 100 peças?
+    hint: Quanto demora uma máquina a fazer uma peça?
+    a: |
+      5 minutos. Cada máquina faz uma peça em 5 minutos, por isso 100 máquinas fazem 100 peças em 5 minutos.
+
+- answer: [20]
+  en:
+    title: Big brother
+    q: |
+      When Inês was 4, her brother was 3 times her age.
+
+      How old will her brother be when Inês is 12?
+    hint: The age difference never changes.
+    a: |
+      20. He was 12 when she was 4, so he's 8 years older. 12 + 8 = 20.
+  pt:
+    title: O irmão mais velho
+    q: |
+      Quando a Inês tinha 4 anos, o irmão tinha o triplo da idade dela.
+
+      Que idade terá o irmão quando a Inês tiver 12?
+    hint: A diferença de idades nunca muda.
+    a: |
+      20. Ele tinha 12 quando ela tinha 4, logo é 8 anos mais velho. 12 + 8 = 20.
+
+- en:
+    title: 25 to 28
+    q: |
+      "The day before yesterday I was 25. Next year I'll be 28."
+
+      How is this possible?
+    hint: It only works on one specific day of the year.
+    a: |
+      Today is 1 January and the birthday is 31 December. On 30 Dec they were 25, on 31 Dec they turned 26, this year they turn 27, and next year 28.
+  pt:
+    title: De 25 a 28
+    q: |
+      "Anteontem tinha 25 anos. No próximo ano vou fazer 28."
+
+      Como é possível?
+    hint: Só funciona num dia específico do ano.
+    a: |
+      Hoje é 1 de janeiro e o aniversário é a 31 de dezembro. A 30 de dezembro tinha 25, a 31 fez 26, este ano faz 27 e no próximo 28.
+
+- answer: [42]
+  en:
+    title: Next in line
+    q: |
+      What comes next?
+
+      2, 6, 12, 20, 30, ?
+    hint: Look at the gaps between the numbers.
+    a: |
+      42. The gaps are 4, 6, 8, 10, 12. (It's also n × (n+1): 6 × 7 = 42.)
+  pt:
+    title: O próximo
+    q: |
+      Qual é o próximo?
+
+      2, 6, 12, 20, 30, ?
+    hint: Olha para as diferenças entre os números.
+    a: |
+      42. As diferenças são 4, 6, 8, 10, 12. (Também é n × (n+1): 6 × 7 = 42.)
+
+- answer: [4]
+  en:
+    title: Rising tide
+    q: |
+      A rope ladder hangs over the side of a boat. Its rungs are 20 cm apart and 4 rungs are above the water. The tide rises 40 cm.
+
+      How many rungs are above the water now?
+    hint: What does the boat do when the tide rises?
+    a: |
+      Still 4. The boat floats, so it rises with the tide along with the ladder.
+  pt:
+    title: Maré a subir
+    q: |
+      Uma escada de corda está pendurada num barco. Os degraus estão a 20 cm uns dos outros e há 4 degraus fora de água. A maré sobe 40 cm.
+
+      Quantos degraus estão fora de água agora?
+    hint: O que faz o barco quando a maré sobe?
+    a: |
+      Continuam 4. O barco flutua e sobe com a maré, juntamente com a escada.
+
+- answer: [2]
+  en:
+    title: Half a brick
+    q: |
+      A brick weighs 1 kg plus half a brick.
+
+      How many kg does the brick weigh?
+    hint: If half a brick is 1 kg…
+    a: |
+      2 kg. Brick = 1 + brick/2, so brick/2 = 1 and the brick is 2 kg.
+  pt:
+    title: Meio tijolo
+    q: |
+      Um tijolo pesa 1 kg mais meio tijolo.
+
+      Quantos kg pesa o tijolo?
+    hint: Se meio tijolo é 1 kg…
+    a: |
+      2 kg. Tijolo = 1 + tijolo/2, logo tijolo/2 = 1 e o tijolo pesa 2 kg.
+
+- en:
+    title: Wrong labels
+    q: |
+      Three boxes are labelled "Apples", "Oranges" and "Apples & oranges". Every label is wrong.
+
+      You may take out one fruit from one box (without looking inside). How do you relabel all three boxes correctly?
+    hint: Which box is guaranteed not to be mixed?
+    a: |
+      Take a fruit from the box labelled "Apples & oranges". It can't be mixed, so it holds only that fruit, say apples.
+
+      The box labelled "Oranges" can't be oranges and can't be apples (taken), so it's mixed. The one labelled "Apples" is oranges.
+  pt:
+    title: Rótulos trocados
+    q: |
+      Três caixas têm os rótulos "Maçãs", "Laranjas" e "Maçãs e laranjas". Todos os rótulos estão errados.
+
+      Podes tirar uma fruta de uma caixa (sem espreitar). Como corriges os três rótulos?
+    hint: Que caixa de certeza não é a mista?
+    a: |
+      Tira uma fruta da caixa "Maçãs e laranjas". Não pode ser mista, por isso só tem essa fruta, por exemplo maçãs.
+
+      A caixa "Laranjas" não pode ter laranjas nem maçãs (já atribuídas), logo é a mista. A caixa "Maçãs" tem laranjas.
+
+- answer: [0.1667, 0.16667, 0.167]
+  tol: 0.002
+  en:
+    title: Lucky seven
+    q: |
+      You roll two ordinary dice.
+
+      What is the probability that the total is 7? (Give a decimal.)
+    hint: Count the pairs that add to 7 out of 36.
+    a: |
+      1/6 ≈ 0.167. Six pairs make 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). 6/36 = 1/6.
+  pt:
+    title: Sete da sorte
+    q: |
+      Lanças dois dados normais.
+
+      Qual a probabilidade de a soma ser 7? (Dá um número decimal.)
+    hint: Conta os pares que somam 7 em 36.
+    a: |
+      1/6 ≈ 0,167. Seis pares dão 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). 6/36 = 1/6.
+
+- answer: [40]
+  en:
+    title: Average speed
+    q: |
+      You drive 60 km at 30 km/h, then another 60 km at 60 km/h.
+
+      What is your average speed for the whole trip, in km/h?
+    hint: It's not 45. Work out the total time.
+    a: |
+      40 km/h. The first part takes 2 h and the second 1 h: 120 km in 3 h.
+  pt:
+    title: Velocidade média
+    q: |
+      Conduzes 60 km a 30 km/h e depois mais 60 km a 60 km/h.
+
+      Qual a velocidade média da viagem toda, em km/h?
+    hint: Não é 45. Calcula o tempo total.
+    a: |
+      40 km/h. A primeira parte demora 2 h e a segunda 1 h: 120 km em 3 h.
+
+- answer: [13]
+  en:
+    title: In the queue
+    q: |
+      Ana is 7th from the front of a queue and 7th from the back.
+
+      How many people are in the queue?
+    hint: Don't count Ana twice.
+    a: |
+      13. 6 people in front, 6 behind, plus Ana.
+  pt:
+    title: Na fila
+    q: |
+      A Ana é a 7.ª a contar da frente de uma fila e a 7.ª a contar de trás.
+
+      Quantas pessoas há na fila?
+    hint: Não contes a Ana duas vezes.
+    a: |
+      13. 6 à frente, 6 atrás, mais a Ana.
+
+- en:
+    title: All sides south
+    q: |
+      A man builds a rectangular house where all four walls face south. A bear walks past.
+
+      What colour is the bear?
+    hint: Where on Earth does every direction point south?
+    a: |
+      White. The only place where every wall faces south is the North Pole, so it's a polar bear.
+  pt:
+    title: Tudo virado a sul
+    q: |
+      Um homem constrói uma casa retangular com as quatro paredes viradas a sul. Passa um urso.
+
+      De que cor é o urso?
+    hint: Em que sítio da Terra todas as direções apontam para sul?
+    a: |
+      Branco. O único sítio onde todas as paredes ficam viradas a sul é o Polo Norte, por isso é um urso polar.
+
+- answer: [100]
+  en:
+    title: Page numbers
+    q: |
+      Numbering the pages of a book, starting at 1, uses exactly 192 digits.
+
+      How many pages does the book have?
+    hint: Pages 1–9 use 9 digits, pages 10–99 use 180.
+    a: |
+      100. 9 + 180 = 189 digits for pages 1–99, and the remaining 3 digits are page 100.
+  pt:
+    title: Números de página
+    q: |
+      Para numerar as páginas de um livro, a começar no 1, usam-se exatamente 192 algarismos.
+
+      Quantas páginas tem o livro?
+    hint: As páginas 1–9 usam 9 algarismos, as 10–99 usam 180.
+    a: |
+      100. 9 + 180 = 189 algarismos até à página 99, e os 3 que faltam são a página 100.
+
+- answer: [194]
+  en:
+    title: Mystery number
+    q: |
+      I'm a three-digit number. My tens digit is 5 more than my units digit, and my hundreds digit is 8 less than my tens digit.
+
+      What number am I?
+    hint: The hundreds digit can't be 0, so the tens digit must be big.
+    a: |
+      194. Tens − 8 ≥ 1 forces tens = 9, so hundreds = 1 and units = 4.
+  pt:
+    title: Número mistério
+    q: |
+      Sou um número de três algarismos. O algarismo das dezenas é mais 5 do que o das unidades, e o das centenas é menos 8 do que o das dezenas.
+
+      Que número sou?
+    hint: As centenas não podem ser 0, por isso as dezenas têm de ser grandes.
+    a: |
+      194. Dezenas − 8 ≥ 1 obriga a dezenas = 9, logo centenas = 1 e unidades = 4.
+
+- answer: [5050]
+  en:
+    title: Young Gauss
+    q: |
+      What is 1 + 2 + 3 + … + 100?
+    hint: Pair the first number with the last.
+    a: |
+      5050. 1 + 100, 2 + 99, … gives 50 pairs of 101.
+  pt:
+    title: O jovem Gauss
+    q: |
+      Quanto é 1 + 2 + 3 + … + 100?
+    hint: Junta o primeiro com o último.
+    a: |
+      5050. 1 + 100, 2 + 99, … dá 50 pares de 101.
+
+- answer: [15]
+  en:
+    title: Sale price
+    q: |
+      A €20 shirt is reduced by 50%. Later its price goes up by 50%.
+
+      What does it cost now, in euros?
+    hint: 50% of what?
+    a: |
+      €15. €20 → €10, then +50% of €10 = €15.
+  pt:
+    title: Saldos
+    q: |
+      Uma camisola de 20 € tem 50% de desconto. Mais tarde o preço sobe 50%.
+
+      Quanto custa agora, em euros?
+    hint: 50% de quê?
+    a: |
+      15 €. 20 € → 10 €, depois +50% de 10 € = 15 €.
+
+- en:
+    title: Not twins
+    q: |
+      Two girls were born on the same day of the same year to the same mother and father, but they are not twins.
+
+      How?
+    hint: Who said there were only two babies?
+    a: |
+      They're two of a set of triplets (or more).
+  pt:
+    title: Não são gémeas
+    q: |
+      Duas raparigas nasceram no mesmo dia do mesmo ano, filhas da mesma mãe e do mesmo pai, mas não são gémeas.
+
+      Como?
+    hint: Quem disse que só nasceram duas?
+    a: |
+      São duas de um grupo de trigémeas (ou mais).
+
+- answer: [2]
+  en:
+    title: Two taps
+    q: |
+      Tap A fills a bath in 3 hours. Tap B fills it in 6 hours.
+
+      With both open, how many hours does it take?
+    hint: How much of the bath does each fill in one hour?
+    a: |
+      2 hours. In one hour: 1/3 + 1/6 = 1/2 of the bath.
+  pt:
+    title: Duas torneiras
+    q: |
+      A torneira A enche uma banheira em 3 horas. A torneira B enche-a em 6 horas.
+
+      Com as duas abertas, quantas horas demora?
+    hint: Que fração da banheira enche cada uma numa hora?
+    a: |
+      2 horas. Numa hora: 1/3 + 1/6 = 1/2 da banheira.
+
+- answer: [11]
+  en:
+    title: Overlapping hands
+    q: |
+      How many times do the hour and minute hands of a clock overlap in 12 hours (counting 12:00 once)?
+    hint: It's not 12. Check between 11:00 and 1:00.
+    a: |
+      11. Between 11:00 and 1:00 they overlap only once, at 12:00.
+  pt:
+    title: Ponteiros sobrepostos
+    q: |
+      Quantas vezes se sobrepõem os ponteiros das horas e dos minutos em 12 horas (contando as 12:00 uma vez)?
+    hint: Não são 12. Verifica entre as 11:00 e a 1:00.
+    a: |
+      11. Entre as 11:00 e a 1:00 só se sobrepõem uma vez, às 12:00.
+
+- en:
+    title: The dog and the bone
+    q: |
+      A dog is on a 10-metre leash. A bone is 15 metres away. The dog walks over and eats it.
+
+      How?
+    hint: What's on the other end of the leash?
+    a: |
+      The leash isn't tied to anything.
+  pt:
+    title: O cão e o osso
+    q: |
+      Um cão tem uma trela de 10 metros. Um osso está a 15 metros. O cão vai lá e come-o.
+
+      Como?
+    hint: O que está na outra ponta da trela?
+    a: |
+      A trela não está presa a nada.
+
+- answer: [21]
+  en:
+    title: Candle stubs
+    q: |
+      You can make one new candle from 4 candle stubs. You start with 16 candles.
+
+      How many candles can you burn in total?
+    hint: The new candles leave stubs too.
+    a: |
+      21. 16 candles → 16 stubs → 4 candles → 4 stubs → 1 candle. 16 + 4 + 1 = 21.
+  pt:
+    title: Restos de velas
+    q: |
+      Com 4 restos de vela fazes uma vela nova. Começas com 16 velas.
+
+      Quantas velas consegues queimar no total?
+    hint: As velas novas também deixam restos.
+    a: |
+      21. 16 velas → 16 restos → 4 velas → 4 restos → 1 vela. 16 + 4 + 1 = 21.
+
+- answer: [0.5]
+  en:
+    title: Lucky streak
+    q: |
+      A fair coin has landed heads 5 times in a row.
+
+      What is the probability that the next flip is heads? (Give a decimal.)
+    hint: Does the coin remember?
+    a: |
+      0.5. Each flip is independent.
+  pt:
+    title: Maré de sorte
+    q: |
+      Uma moeda justa saiu cara 5 vezes seguidas.
+
+      Qual a probabilidade de o próximo lançamento ser cara? (Dá um decimal.)
+    hint: A moeda tem memória?
+    a: |
+      0,5. Cada lançamento é independente.
+
+- answer: [1]
+  en:
+    title: Subtracting fives
+    q: |
+      How many times can you subtract 5 from 25?
+    hint: What's left after the first time?
+    a: |
+      Once. After that you're subtracting from 20, not 25.
+  pt:
+    title: Tirar cincos
+    q: |
+      Quantas vezes podes subtrair 5 a 25?
+    hint: O que sobra depois da primeira vez?
+    a: |
+      Uma. Depois disso já estás a subtrair a 20, não a 25.
+
+- en:
+    title: On the border
+    q: |
+      A plane crashes exactly on the border between Spain and Portugal.
+
+      In which country do they bury the survivors?
+    hint: Read the question again.
+    a: |
+      Neither. You don't bury survivors.
+  pt:
+    title: Na fronteira
+    q: |
+      Um avião despenha-se exatamente na fronteira entre Espanha e Portugal.
+
+      Em que país se enterram os sobreviventes?
+    hint: Lê a pergunta outra vez.
+    a: |
+      Em nenhum. Os sobreviventes não se enterram.
+
+- answer: [4]
+  en:
+    title: Digging holes
+    q: |
+      4 people take 4 days to dig 4 holes.
+
+      How many days does it take 1 person to dig 1 hole?
+    hint: How many holes does each person dig?
+    a: |
+      4 days. Each person digs one hole in 4 days.
+  pt:
+    title: Cavar buracos
+    q: |
+      4 pessoas demoram 4 dias a cavar 4 buracos.
+
+      Quantos dias demora 1 pessoa a cavar 1 buraco?
+    hint: Quantos buracos cava cada pessoa?
+    a: |
+      4 dias. Cada pessoa cava um buraco em 4 dias.
+
+- answer: [55]
+  en:
+    title: Palindrome odometer
+    q: |
+      A car's odometer shows 15951 km, a palindrome (it reads the same backwards). Exactly 2 hours later it shows the next palindrome.
+
+      What was the average speed, in km/h?
+    hint: What's the next number that reads the same both ways?
+    a: |
+      55 km/h. The next palindrome is 16061: 110 km in 2 hours.
+  pt:
+    title: Conta-quilómetros capicua
+    q: |
+      O conta-quilómetros de um carro mostra 15951 km, uma capicua. Exatamente 2 horas depois mostra a capicua seguinte.
+
+      Qual foi a velocidade média, em km/h?
+    hint: Qual é o número seguinte que se lê igual nos dois sentidos?
+    a: |
+      55 km/h. A capicua seguinte é 16061: 110 km em 2 horas.
+
+- answer: [40]
+  en:
+    title: Father and son
+    q: |
+      A father is 4 times as old as his son. In 20 years he'll be twice as old.
+
+      How old is the father now?
+    hint: Son = s, father = 4s. Write the equation for 20 years from now.
+    a: |
+      40. 4s + 20 = 2(s + 20) → s = 10, father = 40.
+  pt:
+    title: Pai e filho
+    q: |
+      Um pai tem o quádruplo da idade do filho. Daqui a 20 anos terá o dobro.
+
+      Que idade tem o pai agora?
+    hint: Filho = s, pai = 4s. Escreve a equação para daqui a 20 anos.
+    a: |
+      40. 4s + 20 = 2(s + 20) → s = 10, pai = 40.
+
+- en:
+    title: 3 and 5 hourglasses
+    q: |
+      You have a 3-minute hourglass and a 5-minute hourglass.
+
+      How do you measure exactly 7 minutes?
+    hint: Start both together and watch the 3-minute one.
+    a: |
+      Start both. At 3 min, flip the 3-minute one. At 5 min, the 5-minute one ends; the 3-minute one has run 2 min, so flip it: it runs 2 more minutes and ends at 7.
+  pt:
+    title: Ampulhetas de 3 e 5
+    q: |
+      Tens uma ampulheta de 3 minutos e uma de 5.
+
+      Como medes exatamente 7 minutos?
+    hint: Começa as duas juntas e repara na de 3.
+    a: |
+      Começa as duas. Aos 3 min vira a de 3. Aos 5 min a de 5 acaba; a de 3 já correu 2 min, por isso vira-a: corre mais 2 minutos e acaba aos 7.
+
+- en:
+    title: The hotel and the fortune
+    q: |
+      A man pushes his car to a hotel and tells the owner he's bankrupt.
+
+      Why?
+    hint: It's a game.
+    a: |
+      He's playing Monopoly.
+  pt:
+    title: O hotel e a fortuna
+    q: |
+      Um homem empurra o carro até um hotel e diz ao dono que está falido.
+
+      Porquê?
+    hint: É um jogo.
+    a: |
+      Está a jogar Monopólio.
+
+- answer: [12]
+  en:
+    title: Painted cube
+    q: |
+      A 3 × 3 × 3 cube is painted on the outside and cut into 27 small cubes.
+
+      How many small cubes have exactly two painted faces?
+    hint: Where are the cubes with two painted faces?
+    a: |
+      12. They're the middle cubes of the edges: a cube has 12 edges, each with one.
+  pt:
+    title: Cubo pintado
+    q: |
+      Um cubo 3 × 3 × 3 é pintado por fora e cortado em 27 cubinhos.
+
+      Quantos cubinhos têm exatamente duas faces pintadas?
+    hint: Onde estão os cubinhos com duas faces pintadas?
+    a: |
+      12. São os do meio das arestas: o cubo tem 12 arestas, cada uma com um.
+
+- answer: [10]
+  en:
+    title: Heads and legs
+    q: |
+      A farm has chickens and cows: 40 heads and 100 legs in total.
+
+      How many cows are there?
+    hint: If all 40 were chickens, how many legs would there be?
+    a: |
+      10. 40 chickens would have 80 legs. Each cow adds 2 more, and 20 extra legs means 10 cows.
+  pt:
+    title: Cabeças e patas
+    q: |
+      Uma quinta tem galinhas e vacas: 40 cabeças e 100 patas no total.
+
+      Quantas vacas há?
+    hint: Se as 40 fossem galinhas, quantas patas haveria?
+    a: |
+      10. 40 galinhas teriam 80 patas. Cada vaca acrescenta 2, e 20 patas a mais dá 10 vacas.
+
+- answer: [7]
+  en:
+    title: Pizza cuts
+    q: |
+      With 3 straight cuts (no stacking or moving pieces), what is the largest number of pieces you can cut a pizza into?
+    hint: It's more than 6. Don't make all cuts go through the centre.
+    a: |
+      7. Each new cut should cross every previous cut: 1 + 1 + 2 + 3 = 7.
+  pt:
+    title: Cortes na pizza
+    q: |
+      Com 3 cortes retos (sem empilhar nem mexer nos pedaços), qual o maior número de pedaços em que consegues cortar uma pizza?
+    hint: São mais de 6. Não faças os cortes todos pelo centro.
+    a: |
+      7. Cada corte novo deve cruzar todos os anteriores: 1 + 1 + 2 + 3 = 7.
+
+- answer: [40]
+  en:
+    title: Two black socks
+    q: |
+      A drawer has 21 blue, 15 black and 17 red socks. It's dark.
+
+      How many socks must you take to be sure of getting 2 black ones?
+    hint: Imagine the worst luck possible.
+    a: |
+      40. In the worst case you take all 21 blue and 17 red first (38), then 2 black.
+  pt:
+    title: Duas meias pretas
+    q: |
+      Uma gaveta tem 21 meias azuis, 15 pretas e 17 vermelhas. Está escuro.
+
+      Quantas meias tens de tirar para ter a certeza de 2 pretas?
+    hint: Imagina o maior azar possível.
+    a: |
+      40. No pior caso tiras primeiro as 21 azuis e as 17 vermelhas (38), depois 2 pretas.
+
+- answer: [0.3056, 0.306, 0.31]
+  tol: 0.004
+  en:
+    title: At least one six
+    q: |
+      You roll a die twice.
+
+      What is the probability of getting at least one 6? (Give a decimal.)
+    hint: Work out the chance of no 6 at all first.
+    a: |
+      11/36 ≈ 0.306. No 6 at all: (5/6)² = 25/36, so at least one 6 = 11/36.
+  pt:
+    title: Pelo menos um seis
+    q: |
+      Lanças um dado duas vezes.
+
+      Qual a probabilidade de sair pelo menos um 6? (Dá um decimal.)
+    hint: Calcula primeiro a probabilidade de não sair nenhum 6.
+    a: |
+      11/36 ≈ 0,306. Nenhum 6: (5/6)² = 25/36, logo pelo menos um 6 = 11/36.
+
+- answer: [3]
+  en:
+    title: Think of a number
+    q: |
+      Think of any number. Double it, add 6, halve the result, then subtract the number you started with.
+
+      What do you get?
+    hint: Try it with x.
+    a: |
+      Always 3. (2x + 6) / 2 − x = x + 3 − x = 3.
+  pt:
+    title: Pensa num número
+    q: |
+      Pensa num número qualquer. Duplica-o, soma 6, divide ao meio e subtrai o número inicial.
+
+      Quanto dá?
+    hint: Experimenta com x.
+    a: |
+      Dá sempre 3. (2x + 6) / 2 − x = x + 3 − x = 3.
+
+- answer: [720]
+  en:
+    title: Hexagon angles
+    q: |
+      What is the sum of the interior angles of a hexagon, in degrees?
+    hint: Split it into triangles from one corner.
+    a: |
+      720°. From one corner you can cut a hexagon into 4 triangles: 4 × 180 = 720.
+  pt:
+    title: Ângulos do hexágono
+    q: |
+      Qual a soma dos ângulos internos de um hexágono, em graus?
+    hint: Divide-o em triângulos a partir de um vértice.
+    a: |
+      720°. A partir de um vértice divides o hexágono em 4 triângulos: 4 × 180 = 720.

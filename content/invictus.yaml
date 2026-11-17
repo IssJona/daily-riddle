@@ -1,0 +1,1134 @@
+# INVICTUS riddles: multi-step calculations, always a numeric answer (checked by tools/verify.py).
+# Order = day order. Never reorder; only append.
+
+- answer: [505]
+  en:
+    title: Zeros of 2026!
+    q: |
+      How many zeros are at the end of 2026! (2026 × 2025 × … × 2 × 1)?
+    hint: Count factors of 5, including the extra ones in multiples of 25, 125 and 625.
+    a: |
+      505 = ⌊2026/5⌋ + ⌊2026/25⌋ + ⌊2026/125⌋ + ⌊2026/625⌋ = 405 + 81 + 16 + 3.
+  pt:
+    title: Zeros de 2026!
+    q: |
+      Com quantos zeros acaba 2026! (2026 × 2025 × … × 2 × 1)?
+    hint: Conta os fatores 5, incluindo os extra dos múltiplos de 25, 125 e 625.
+    a: |
+      505 = ⌊2026/5⌋ + ⌊2026/25⌋ + ⌊2026/125⌋ + ⌊2026/625⌋ = 405 + 81 + 16 + 3.
+
+- answer: [14.7]
+  tol: 0.01
+  en:
+    title: Every face
+    q: |
+      You roll a die until every face from 1 to 6 has appeared at least once.
+
+      On average, how many rolls does it take? (Give a decimal.)
+    hint: Once you've seen k faces, a new one appears with probability (6 − k)/6.
+    a: |
+      14.7 = 6/6 + 6/5 + 6/4 + 6/3 + 6/2 + 6/1.
+  pt:
+    title: Todas as faces
+    q: |
+      Lanças um dado até terem saído todas as faces de 1 a 6 pelo menos uma vez.
+
+      Em média, quantos lançamentos são precisos? (Dá um decimal.)
+    hint: Depois de veres k faces, sai uma nova com probabilidade (6 − k)/6.
+    a: |
+      14,7 = 6/6 + 6/5 + 6/4 + 6/3 + 6/2 + 6/1.
+
+- answer: [52]
+  en:
+    title: Sum and product
+    q: |
+      Two whole numbers x and y satisfy 1 < x < y and x + y ≤ 100. Sam knows only their sum; Pam knows only their product.
+
+      Sam: "I'm sure you don't know the numbers."
+      Pam: "Now I know them."
+      Sam: "Now I know them too."
+
+      What is their product?
+    hint: First find all sums that can't be written as two primes (Sam's statement). Then filter step by step. A computer helps, but it can be done by hand.
+    a: |
+      52 (the numbers are 4 and 13). Sam's sum must be one where no split gives a product Pam could factor uniquely: 11, 17, 23, 27, 29, 35, 37, 41, 47, 53. Among products from those sums, only some are unique; and of those, only the sum 17 leaves exactly one option: 4 × 13 = 52.
+  pt:
+    title: Soma e produto
+    q: |
+      Dois números inteiros x e y com 1 < x < y e x + y ≤ 100. O Sam só sabe a soma; a Pam só sabe o produto.
+
+      Sam: "Tenho a certeza de que não sabes os números."
+      Pam: "Agora sei."
+      Sam: "Agora também sei."
+
+      Qual é o produto?
+    hint: Encontra primeiro as somas que não se escrevem como soma de dois primos (a frase do Sam). Depois filtra passo a passo. Um computador ajuda, mas faz-se à mão.
+    a: |
+      52 (os números são 4 e 13). A soma do Sam tem de ser uma em que nenhuma divisão dá um produto que a Pam fatorizasse de forma única: 11, 17, 23, 27, 29, 35, 37, 41, 47, 53. Entre os produtos dessas somas só alguns são únicos; e destes, só a soma 17 deixa uma única opção: 4 × 13 = 52.
+
+- answer: [4]
+  en:
+    title: Circle in a triangle
+    q: |
+      A triangle has sides 13, 14 and 15.
+
+      What is the radius of the circle inscribed in it?
+    hint: Area = r × s, where s is half the perimeter. Use Heron's formula for the area.
+    a: |
+      4. s = 21, area = √(21 · 8 · 7 · 6) = 84, r = 84 / 21 = 4.
+  pt:
+    title: Círculo no triângulo
+    q: |
+      Um triângulo tem lados 13, 14 e 15.
+
+      Qual o raio da circunferência inscrita?
+    hint: Área = r × s, com s o semiperímetro. Usa a fórmula de Heron para a área.
+    a: |
+      4. s = 21, área = √(21 · 8 · 7 · 6) = 84, r = 84 / 21 = 4.
+
+- answer: [15621]
+  en:
+    title: Sailors and coconuts
+    q: |
+      Five sailors collect a pile of coconuts. During the night each sailor in turn wakes up, splits the pile into 5 equal parts with 1 left over (given to a monkey), hides his fifth and puts the rest back. In the morning they split what's left into 5 equal parts, again with 1 left over for the monkey.
+
+      What is the smallest possible number of coconuts at the start?
+    hint: Try adding 4 coconuts to the pile: then every split works without remainders.
+    a: |
+      15621. With N + 4 coconuts every step is an exact division by 5 followed by keeping 4/5, six times in all, so N + 4 must be a multiple of 5⁶ = 15625.
+  pt:
+    title: Marinheiros e cocos
+    q: |
+      Cinco marinheiros juntam um monte de cocos. Durante a noite, cada um acorda à vez, divide o monte em 5 partes iguais e sobra 1 (que dá a um macaco), esconde a sua parte e volta a juntar o resto. De manhã dividem o que resta em 5 partes iguais, e volta a sobrar 1 para o macaco.
+
+      Qual o menor número possível de cocos no início?
+    hint: Experimenta somar 4 cocos ao monte: assim todas as divisões são exatas.
+    a: |
+      15621. Com N + 4 cocos cada passo é uma divisão exata por 5 seguida de ficar com 4/5, seis vezes ao todo, por isso N + 4 tem de ser múltiplo de 5⁶ = 15625.
+
+- answer: [265]
+  en:
+    title: Wrong envelopes
+    q: |
+      6 letters are put into 6 addressed envelopes at random.
+
+      In how many ways can every single letter end up in the wrong envelope?
+    hint: Derangements: D(n) = (n − 1)(D(n − 1) + D(n − 2)), with D(1) = 0, D(2) = 1.
+    a: |
+      265. D(3) = 2, D(4) = 9, D(5) = 44, D(6) = 5 × (44 + 9) = 265.
+  pt:
+    title: Envelopes trocados
+    q: |
+      6 cartas são postas ao acaso em 6 envelopes endereçados.
+
+      De quantas maneiras podem ficar todas as cartas no envelope errado?
+    hint: Desarranjos: D(n) = (n − 1)(D(n − 1) + D(n − 2)), com D(1) = 0, D(2) = 1.
+    a: |
+      265. D(3) = 2, D(4) = 9, D(5) = 44, D(6) = 5 × (44 + 9) = 265.
+
+- answer: [49]
+  en:
+    title: Last two digits
+    q: |
+      What are the last two digits of 7²⁰²⁶? (Give them as a number.)
+    hint: Compute 7⁴ modulo 100.
+    a: |
+      49. 7⁴ = 2401 ends in 01, so 7²⁰²⁴ ends in 01 and 7²⁰²⁶ ends like 7² = 49.
+  pt:
+    title: Dois últimos algarismos
+    q: |
+      Quais são os dois últimos algarismos de 7²⁰²⁶? (Dá-os como número.)
+    hint: Calcula 7⁴ módulo 100.
+    a: |
+      49. 7⁴ = 2401 acaba em 01, logo 7²⁰²⁴ acaba em 01 e 7²⁰²⁶ acaba como 7² = 49.
+
+- answer: [11.59]
+  tol: 0.02
+  en:
+    title: The grazing goat
+    q: |
+      A circular field has a radius of 10 m. A goat is tied to a post on the fence at the edge of the field.
+
+      How long must the rope be, in metres, so the goat can graze exactly half the field? (Two decimals.)
+    hint: The grazed area is the overlap of two circles. You'll need to solve the equation numerically.
+    a: |
+      About 11.59 m. With field radius 1 and rope R, the overlap is R²·arccos(R/2) + arccos(1 − R²/2) − (R/2)·√(4 − R²). Setting it to π/2 gives R ≈ 1.1587.
+  pt:
+    title: A cabra a pastar
+    q: |
+      Um campo circular tem 10 m de raio. Uma cabra está presa a um poste na vedação, na borda do campo.
+
+      Que comprimento deve ter a corda, em metros, para a cabra pastar exatamente metade do campo? (Duas casas decimais.)
+    hint: A área pastada é a interseção de dois círculos. Tens de resolver a equação numericamente.
+    a: |
+      Cerca de 11,59 m. Com raio do campo 1 e corda R, a interseção é R²·arccos(R/2) + arccos(1 − R²/2) − (R/2)·√(4 − R²). Igualando a π/2 obtém-se R ≈ 1,1587.
+
+- answer: [4562]
+  en:
+    title: Change for a euro
+    q: |
+      In how many different ways can you make €1 using 1, 2, 5, 10, 20 and 50 cent coins? (Order doesn't matter.)
+    hint: Build a table: ways to make each amount using only the first k coin types.
+    a: |
+      4562, using dynamic programming: for each coin c, ways[n] += ways[n − c].
+  pt:
+    title: Trocos de um euro
+    q: |
+      De quantas maneiras diferentes fazes 1 € com moedas de 1, 2, 5, 10, 20 e 50 cêntimos? (A ordem não importa.)
+    hint: Faz uma tabela: maneiras de fazer cada valor usando só os primeiros k tipos de moeda.
+    a: |
+      4562, por programação dinâmica: para cada moeda c, maneiras[n] += maneiras[n − c].
+
+- answer: [0.706, 0.7063, 0.71]
+  tol: 0.005
+  en:
+    title: Thirty birthdays
+    q: |
+      There are 30 people in a room.
+
+      What is the probability that at least two share a birthday? (Ignore 29 February; give a decimal.)
+    hint: 1 − (365 × 364 × … × 336) / 365³⁰.
+    a: |
+      ≈ 0.706.
+  pt:
+    title: Trinta aniversários
+    q: |
+      Estão 30 pessoas numa sala.
+
+      Qual a probabilidade de pelo menos duas fazerem anos no mesmo dia? (Ignora o 29 de fevereiro; dá um decimal.)
+    hint: 1 − (365 × 364 × … × 336) / 365³⁰.
+    a: |
+      ≈ 0,706.
+
+- answer: [42]
+  en:
+    title: Bracket pairs
+    q: |
+      In how many ways can you write 5 pairs of brackets so that they're correctly matched? For example, (()()) uses 3 pairs.
+    hint: Catalan numbers: C(n) = C(2n, n) / (n + 1).
+    a: |
+      42 = C(10, 5) / 6 = 252 / 6.
+  pt:
+    title: Pares de parênteses
+    q: |
+      De quantas maneiras escreves 5 pares de parênteses bem emparelhados? Por exemplo, (()()) usa 3 pares.
+    hint: Números de Catalan: C(n) = C(2n, n) / (n + 1).
+    a: |
+      42 = C(10, 5) / 6 = 252 / 6.
+
+- answer: [10.392, 10.39]
+  tol: 0.01
+  en:
+    title: Hexagon area
+    q: |
+      A regular hexagon has sides of length 2.
+
+      What is its area? (Three decimals.)
+    hint: It's 6 equilateral triangles.
+    a: |
+      6√3 ≈ 10.392. Each triangle has area (√3/4) × 2² = √3.
+  pt:
+    title: Área do hexágono
+    q: |
+      Um hexágono regular tem lados de comprimento 2.
+
+      Qual a sua área? (Três casas decimais.)
+    hint: São 6 triângulos equiláteros.
+    a: |
+      6√3 ≈ 10,392. Cada triângulo tem área (√3/4) × 2² = √3.
+
+- answer: [233]
+  en:
+    title: Domino strip
+    q: |
+      In how many ways can you tile a 2 × 12 strip with 1 × 2 dominoes?
+    hint: The left end is either one vertical domino or two horizontal ones stacked.
+    a: |
+      233. T(n) = T(n − 1) + T(n − 2) with T(1) = 1, T(2) = 2: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233.
+  pt:
+    title: Faixa de dominós
+    q: |
+      De quantas maneiras cobres uma faixa 2 × 12 com dominós 1 × 2?
+    hint: A ponta esquerda é um dominó vertical ou dois horizontais empilhados.
+    a: |
+      233. T(n) = T(n − 1) + T(n − 2) com T(1) = 1, T(2) = 2: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233.
+
+- answer: [66660]
+  en:
+    title: Shuffled digits
+    q: |
+      Write down every 4-digit number that uses the digits 1, 2, 3 and 4 once each.
+
+      What is their sum?
+    hint: Each digit appears in each position the same number of times.
+    a: |
+      66660. There are 24 numbers; each digit sits in each position 6 times: 6 × (1 + 2 + 3 + 4) × 1111.
+  pt:
+    title: Algarismos baralhados
+    q: |
+      Escreve todos os números de 4 algarismos que usam o 1, 2, 3 e 4 uma vez cada.
+
+      Quanto é a soma?
+    hint: Cada algarismo aparece em cada posição o mesmo número de vezes.
+    a: |
+      66660. São 24 números; cada algarismo está em cada posição 6 vezes: 6 × (1 + 2 + 3 + 4) × 1111.
+
+- answer: [21.818, 21.82]
+  tol: 0.02
+  en:
+    title: Overlap after four
+    q: |
+      Between 4:00 and 5:00, at how many minutes past 4 do the hour and minute hands overlap? (Two decimals.)
+    hint: At 4:00 the gap is 120°. The minute hand gains 5.5° per minute.
+    a: |
+      120 / 5.5 = 21 9/11 ≈ 21.82 minutes past 4.
+  pt:
+    title: Sobreposição depois das quatro
+    q: |
+      Entre as 4:00 e as 5:00, a quantos minutos depois das 4 se sobrepõem os ponteiros? (Duas casas decimais.)
+    hint: Às 4:00 a diferença é 120°. O ponteiro dos minutos ganha 5,5° por minuto.
+    a: |
+      120 / 5,5 = 21 9/11 ≈ 21,82 minutos depois das 4.
+
+- answer: [73]
+  en:
+    title: Circle of 100
+    q: |
+      100 people stand in a circle, numbered 1 to 100. Starting from 1, every second person leaves (2, 4, 6, …), continuing around the circle.
+
+      Which number is the last one left?
+    hint: Write 100 = 64 + 36. The answer is 2 × 36 + 1.
+    a: |
+      73. With n = 2ᵐ + L, the survivor is 2L + 1. 100 = 64 + 36 → 73.
+  pt:
+    title: Roda de 100
+    q: |
+      100 pessoas estão em roda, numeradas de 1 a 100. A começar no 1, sai uma sim, outra não (2, 4, 6, …), continuando à volta.
+
+      Qual o número que fica no fim?
+    hint: Escreve 100 = 64 + 36. A resposta é 2 × 36 + 1.
+    a: |
+      73. Com n = 2ᵐ + L, o sobrevivente é 2L + 1. 100 = 64 + 36 → 73.
+
+- answer: [3.761, 3.76]
+  tol: 0.005
+  en:
+    title: Ladder over a box
+    q: |
+      A 1 m × 1 m × 1 m box sits on the floor against a wall. A 4 m ladder leans against the wall, just touching the box's outer top edge.
+
+      With the ladder as steep as possible, how high up the wall does it reach, in metres? (Three decimals.)
+    hint: If the ladder meets the floor at a and the wall at b, then 1/a + 1/b = 1 and a² + b² = 16.
+    a: |
+      ≈ 3.761 m. Substituting a = b/(b − 1) into a² + b² = 16 and solving numerically gives b ≈ 3.761 (and a ≈ 1.361).
+  pt:
+    title: Escada sobre a caixa
+    q: |
+      Uma caixa de 1 m × 1 m × 1 m está no chão encostada a uma parede. Uma escada de 4 m encosta-se à parede, tocando a aresta superior exterior da caixa.
+
+      Com a escada o mais inclinada possível, a que altura da parede chega, em metros? (Três casas decimais.)
+    hint: Se a escada toca o chão em a e a parede em b, então 1/a + 1/b = 1 e a² + b² = 16.
+    a: |
+      ≈ 3,761 m. Substituindo a = b/(b − 1) em a² + b² = 16 e resolvendo numericamente, b ≈ 3,761 (e a ≈ 1,361).
+
+- answer: [270]
+  en:
+    title: Divisors of 10!
+    q: |
+      How many positive divisors does 10! = 3,628,800 have?
+    hint: Prime factorisation first.
+    a: |
+      270. 10! = 2⁸ × 3⁴ × 5² × 7, so the count is 9 × 5 × 3 × 2.
+  pt:
+    title: Divisores de 10!
+    q: |
+      Quantos divisores positivos tem 10! = 3 628 800?
+    hint: Fatoriza primeiro em primos.
+    a: |
+      270. 10! = 2⁸ × 3⁴ × 5² × 7, por isso são 9 × 5 × 3 × 2.
+
+- answer: [0.25]
+  tol: 0.005
+  en:
+    title: Broken stick
+    q: |
+      You break a stick at two random points.
+
+      What is the probability that the three pieces can form a triangle? (Give a decimal.)
+    hint: No piece may be longer than half the stick. Draw the possible break points as a square.
+    a: |
+      0.25. In the unit square of break points, the region where every piece is under ½ is a quarter of the area.
+  pt:
+    title: Pau partido
+    q: |
+      Partes um pau em dois pontos aleatórios.
+
+      Qual a probabilidade de os três pedaços formarem um triângulo? (Dá um decimal.)
+    hint: Nenhum pedaço pode ter mais de metade do pau. Desenha os pontos de corte num quadrado.
+    a: |
+      0,25. No quadrado unitário dos pontos de corte, a região onde todos os pedaços têm menos de ½ é um quarto da área.
+
+- answer: [400]
+  en:
+    title: Coprime to 1000
+    q: |
+      How many whole numbers from 1 to 1000 have no common factor with 1000 (other than 1)?
+    hint: Euler's totient: φ(1000) = 1000 × (1 − 1/2) × (1 − 1/5).
+    a: |
+      400.
+  pt:
+    title: Primos com 1000
+    q: |
+      Quantos números inteiros de 1 a 1000 não têm fatores comuns com 1000 (além de 1)?
+    hint: Função de Euler: φ(1000) = 1000 × (1 − 1/2) × (1 − 1/5).
+    a: |
+      400.
+
+- answer: [14]
+  en:
+    title: Three heads in a row
+    q: |
+      You flip a fair coin until you get three heads in a row.
+
+      On average, how many flips does it take?
+    hint: Set up states: 0, 1 or 2 heads in a row so far.
+    a: |
+      14. In general it's 2ⁿ⁺¹ − 2 for n in a row: 2 for one, 6 for two, 14 for three.
+  pt:
+    title: Três caras seguidas
+    q: |
+      Lanças uma moeda justa até saírem três caras seguidas.
+
+      Em média, quantos lançamentos são precisos?
+    hint: Define estados: 0, 1 ou 2 caras seguidas até agora.
+    a: |
+      14. Em geral é 2ⁿ⁺¹ − 2 para n seguidas: 2 para uma, 6 para duas, 14 para três.
+
+- answer: [12.31]
+  tol: 0.02
+  en:
+    title: Crossed ladders
+    q: |
+      Two ladders lean across an alley, each with its foot against one wall and its top against the opposite wall. One is 30 m long, the other 20 m. They cross 10 m above the ground.
+
+      How wide is the alley, in metres? (Two decimals.)
+    hint: If the tops are at heights h₁ and h₂, the crossing height is h₁h₂ / (h₁ + h₂).
+    a: |
+      ≈ 12.31 m. With width w: h₁ = √(900 − w²), h₂ = √(400 − w²), and h₁h₂/(h₁ + h₂) = 10. Solving numerically gives w ≈ 12.31.
+  pt:
+    title: Escadas cruzadas
+    q: |
+      Duas escadas atravessam uma ruela, cada uma com o pé encostado a uma parede e o topo na parede oposta. Uma tem 30 m, a outra 20 m. Cruzam-se a 10 m do chão.
+
+      Qual a largura da ruela, em metros? (Duas casas decimais.)
+    hint: Se os topos estão às alturas h₁ e h₂, o cruzamento fica à altura h₁h₂ / (h₁ + h₂).
+    a: |
+      ≈ 12,31 m. Com largura w: h₁ = √(900 − w²), h₂ = √(400 − w²) e h₁h₂/(h₁ + h₂) = 10. Resolvendo numericamente, w ≈ 12,31.
+
+- answer: [405]
+  en:
+    title: A hundred zeros
+    q: |
+      What is the smallest n for which n! ends in exactly 100 zeros?
+    hint: Estimate n ≈ 400, then count factors of 5 carefully.
+    a: |
+      405. 400! has 80 + 16 + 3 = 99 zeros; 405! has 81 + 16 + 3 = 100.
+  pt:
+    title: Cem zeros
+    q: |
+      Qual o menor n para o qual n! acaba em exatamente 100 zeros?
+    hint: Estima n ≈ 400 e depois conta os fatores 5 com cuidado.
+    a: |
+      405. 400! tem 80 + 16 + 3 = 99 zeros; 405! tem 81 + 16 + 3 = 100.
+
+- answer: [694]
+  tol: 1
+  en:
+    title: Full house
+    q: |
+      You're dealt 5 cards from a 52-card deck.
+
+      The chance of a full house (three of one rank and two of another) is about 1 in how many?
+    hint: Choose the rank of the three, its suits, then the rank of the pair and its suits.
+    a: |
+      About 1 in 694. 13 × C(4,3) × 12 × C(4,2) = 3744 full houses out of C(52,5) = 2,598,960 hands.
+  pt:
+    title: Full house
+    q: |
+      Recebes 5 cartas de um baralho de 52.
+
+      A probabilidade de um full house (três de um valor e duas de outro) é cerca de 1 em quantas?
+    hint: Escolhe o valor do trio e os naipes, depois o valor do par e os naipes.
+    a: |
+      Cerca de 1 em 694. 13 × C(4,3) × 12 × C(4,2) = 3744 full houses em C(52,5) = 2 598 960 mãos.
+
+- answer: [338350]
+  en:
+    title: Sum of squares
+    q: |
+      What is 1² + 2² + 3² + … + 100²?
+    hint: n(n + 1)(2n + 1) / 6.
+    a: |
+      338350 = 100 × 101 × 201 / 6.
+  pt:
+    title: Soma de quadrados
+    q: |
+      Quanto é 1² + 2² + 3² + … + 100²?
+    hint: n(n + 1)(2n + 1) / 6.
+    a: |
+      338350 = 100 × 101 × 201 / 6.
+
+- answer: [0.6366, 0.637]
+  tol: 0.002
+  en:
+    title: Buffon's needle
+    q: |
+      A floor has parallel lines 1 unit apart. You drop a needle of length 1 at random.
+
+      What is the probability it crosses a line? (Four decimals.)
+    hint: The answer involves π.
+    a: |
+      2/π ≈ 0.6366. Integrate over the needle's angle θ: at angle θ the needle crosses with probability sin θ, and the average of sin θ over [0, π/2] is 2/π.
+  pt:
+    title: A agulha de Buffon
+    q: |
+      Um chão tem linhas paralelas a 1 unidade de distância. Deixas cair ao acaso uma agulha de comprimento 1.
+
+      Qual a probabilidade de cruzar uma linha? (Quatro casas decimais.)
+    hint: A resposta envolve π.
+    a: |
+      2/π ≈ 0,6366. Integrando sobre o ângulo θ da agulha: a probabilidade de cruzar com ângulo θ é sen θ, e a média de sen θ em [0, π/2] dá 2/π.
+
+- answer: [1296]
+  en:
+    title: Chessboard rectangles
+    q: |
+      How many rectangles (squares included) can be found on an 8 × 8 chessboard?
+    hint: Choose 2 of the 9 vertical lines and 2 of the 9 horizontal lines.
+    a: |
+      1296 = C(9, 2)² = 36².
+  pt:
+    title: Retângulos no tabuleiro
+    q: |
+      Quantos retângulos (incluindo quadrados) há num tabuleiro 8 × 8?
+    hint: Escolhe 2 das 9 linhas verticais e 2 das 9 horizontais.
+    a: |
+      1296 = C(9, 2)² = 36².
+
+- answer: [27]
+  en:
+    title: Triangles in a triangle
+    q: |
+      A big equilateral triangle with side 4 is divided into 16 small equilateral triangles of side 1 by lines parallel to its sides.
+
+      How many triangles of any size are in the picture?
+    hint: Count upward-pointing triangles of each size, then downward-pointing ones.
+    a: |
+      27. Upward: 10 + 6 + 3 + 1 = 20. Downward: 6 of size 1 and 1 of size 2 = 7.
+  pt:
+    title: Triângulos no triângulo
+    q: |
+      Um triângulo equilátero grande, de lado 4, está dividido em 16 triângulos equiláteros de lado 1 por linhas paralelas aos lados.
+
+      Quantos triângulos de qualquer tamanho há na figura?
+    hint: Conta os triângulos virados para cima de cada tamanho, depois os virados para baixo.
+    a: |
+      27. Para cima: 10 + 6 + 3 + 1 = 20. Para baixo: 6 de tamanho 1 e 1 de tamanho 2 = 7.
+
+- answer: [10946]
+  en:
+    title: Frog on the stairs
+    q: |
+      A frog climbs a staircase of 20 steps, jumping 1 or 2 steps at a time.
+
+      In how many ways can it reach the top?
+    hint: Ways(n) = Ways(n − 1) + Ways(n − 2).
+    a: |
+      10946, the 21st Fibonacci number.
+  pt:
+    title: Sapo na escada
+    q: |
+      Um sapo sobe uma escada de 20 degraus, saltando 1 ou 2 degraus de cada vez.
+
+      De quantas maneiras chega ao topo?
+    hint: Maneiras(n) = Maneiras(n − 1) + Maneiras(n − 2).
+    a: |
+      10946, o 21.º número de Fibonacci.
+
+- answer: [5040]
+  en:
+    title: Round table
+    q: |
+      In how many ways can 8 people sit around a round table? (Rotations of the same arrangement count as one.)
+    hint: Fix one person's seat.
+    a: |
+      5040 = 7!.
+  pt:
+    title: Mesa redonda
+    q: |
+      De quantas maneiras se podem sentar 8 pessoas à volta de uma mesa redonda? (Rodar a mesma disposição conta como uma.)
+    hint: Fixa o lugar de uma pessoa.
+    a: |
+      5040 = 7!.
+
+- answer: [0.155]
+  tol: 0.002
+  en:
+    title: Three sixes
+    q: |
+      You roll a die 10 times.
+
+      What is the probability of exactly three 6s? (Three decimals.)
+    hint: Binomial: C(10, 3) × (1/6)³ × (5/6)⁷.
+    a: |
+      ≈ 0.155.
+  pt:
+    title: Três seis
+    q: |
+      Lanças um dado 10 vezes.
+
+      Qual a probabilidade de saírem exatamente três 6? (Três casas decimais.)
+    hint: Binomial: C(10, 3) × (1/6)³ × (5/6)⁷.
+    a: |
+      ≈ 0,155.
+
+- answer: [30]
+  en:
+    title: Three workers
+    q: |
+      A and B together finish a job in 12 days. B and C take 15 days. A and C take 20 days.
+
+      How many days would A take alone?
+    hint: Add the three pair rates: you get twice the total rate.
+    a: |
+      30. 1/12 + 1/15 + 1/20 = 1/5 = 2(a + b + c), so a + b + c = 1/10, and a = 1/10 − 1/15 = 1/30.
+  pt:
+    title: Três trabalhadores
+    q: |
+      A e B juntos acabam um trabalho em 12 dias. B e C em 15 dias. A e C em 20 dias.
+
+      Quantos dias demoraria A sozinho?
+    hint: Soma os três ritmos dos pares: dá o dobro do ritmo total.
+    a: |
+      30. 1/12 + 1/15 + 1/20 = 1/5 = 2(a + b + c), logo a + b + c = 1/10, e a = 1/10 − 1/15 = 1/30.
+
+- answer: [31875000]
+  en:
+    title: Special triangle
+    q: |
+      There's exactly one right triangle with whole-number sides a < b < c and a + b + c = 1000.
+
+      What is a × b × c?
+    hint: Substitute c = 1000 − a − b into a² + b² = c².
+    a: |
+      31,875,000. The sides are 200, 375 and 425.
+  pt:
+    title: Triângulo especial
+    q: |
+      Há exatamente um triângulo retângulo com lados inteiros a < b < c e a + b + c = 1000.
+
+      Quanto é a × b × c?
+    hint: Substitui c = 1000 − a − b em a² + b² = c².
+    a: |
+      31 875 000. Os lados são 200, 375 e 425.
+
+- answer: [60]
+  en:
+    title: Twelve divisors
+    q: |
+      What is the smallest positive whole number with exactly 12 divisors?
+    hint: The exponents of its prime factorisation, each plus 1, multiply to 12.
+    a: |
+      60 = 2² × 3 × 5, with (2+1)(1+1)(1+1) = 12 divisors.
+  pt:
+    title: Doze divisores
+    q: |
+      Qual o menor número inteiro positivo com exatamente 12 divisores?
+    hint: Os expoentes da fatorização em primos, cada um mais 1, multiplicam para 12.
+    a: |
+      60 = 2² × 3 × 5, com (2+1)(1+1)(1+1) = 12 divisores.
+
+- answer: [0.4167, 0.417]
+  tol: 0.002
+  en:
+    title: Prime dice
+    q: |
+      You roll two dice and add them.
+
+      What is the probability that the total is a prime number? (Four decimals.)
+    hint: The prime totals possible are 2, 3, 5, 7 and 11.
+    a: |
+      15/36 ≈ 0.4167. Ways: 2 (1), 3 (2), 5 (4), 7 (6), 11 (2).
+  pt:
+    title: Dados primos
+    q: |
+      Lanças dois dados e somas.
+
+      Qual a probabilidade de a soma ser um número primo? (Quatro casas decimais.)
+    hint: As somas primas possíveis são 2, 3, 5, 7 e 11.
+    a: |
+      15/36 ≈ 0,4167. Maneiras: 2 (1), 3 (2), 5 (4), 7 (6), 11 (2).
+
+- answer: [1013]
+  en:
+    title: Factor this year
+    q: |
+      What is the largest prime factor of 2026?
+    hint: 2026 is even.
+    a: |
+      1013. 2026 = 2 × 1013, and 1013 is prime (no prime up to 31 divides it).
+  pt:
+    title: Fatoriza o ano
+    q: |
+      Qual o maior fator primo de 2026?
+    hint: 2026 é par.
+    a: |
+      1013. 2026 = 2 × 1013, e 1013 é primo (nenhum primo até 31 o divide).
+
+- answer: [4.472, 4.47]
+  tol: 0.005
+  en:
+    title: The higher die
+    q: |
+      You roll two dice and keep the higher number.
+
+      What is the expected value? (Three decimals.)
+    hint: The higher number is k in 2k − 1 of the 36 outcomes.
+    a: |
+      161/36 ≈ 4.472. Σ k(2k − 1)/36 for k = 1…6 = (1 + 6 + 15 + 28 + 45 + 66)/36.
+  pt:
+    title: O dado mais alto
+    q: |
+      Lanças dois dados e ficas com o maior número.
+
+      Qual o valor esperado? (Três casas decimais.)
+    hint: O maior é k em 2k − 1 dos 36 resultados.
+    a: |
+      161/36 ≈ 4,472. Σ k(2k − 1)/36 para k = 1…6 = (1 + 6 + 15 + 28 + 45 + 66)/36.
+
+- answer: [328]
+  en:
+    title: Primes under fifty
+    q: |
+      What is the sum of all prime numbers less than 50?
+    hint: There are 15 of them.
+    a: |
+      328 = 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 + 23 + 29 + 31 + 37 + 41 + 43 + 47.
+  pt:
+    title: Primos abaixo de cinquenta
+    q: |
+      Qual a soma de todos os números primos menores que 50?
+    hint: São 15.
+    a: |
+      328 = 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 + 23 + 29 + 31 + 37 + 41 + 43 + 47.
+
+- answer: [1.5396, 1.54]
+  tol: 0.002
+  en:
+    title: Cube in a sphere
+    q: |
+      What is the volume of the largest cube that fits inside a sphere of radius 1? (Four decimals.)
+    hint: The cube's space diagonal equals the sphere's diameter.
+    a: |
+      ≈ 1.5396. Side √3·s = 2 → s = 2/√3, volume = 8/(3√3).
+  pt:
+    title: Cubo na esfera
+    q: |
+      Qual o volume do maior cubo que cabe numa esfera de raio 1? (Quatro casas decimais.)
+    hint: A diagonal espacial do cubo é igual ao diâmetro da esfera.
+    a: |
+      ≈ 1,5396. √3·s = 2 → s = 2/√3, volume = 8/(3√3).
+
+- answer: [31]
+  en:
+    title: Digits of 2¹⁰⁰
+    q: |
+      How many digits does 2¹⁰⁰ have?
+    hint: log₁₀ 2 ≈ 0.30103.
+    a: |
+      31. 100 × 0.30103 = 30.1, so 2¹⁰⁰ ≈ 1.27 × 10³⁰.
+  pt:
+    title: Algarismos de 2¹⁰⁰
+    q: |
+      Quantos algarismos tem 2¹⁰⁰?
+    hint: log₁₀ 2 ≈ 0,30103.
+    a: |
+      31. 100 × 0,30103 = 30,1, logo 2¹⁰⁰ ≈ 1,27 × 10³⁰.
+
+- answer: [0.625]
+  tol: 0.001
+  en:
+    title: Three dice, ten or more
+    q: |
+      You roll three dice.
+
+      What is the probability that the total is 10 or more? (Give a decimal.)
+    hint: The distribution of three dice is symmetric around 10.5.
+    a: |
+      0.625 = 135/216. Totals 10 and 11 each have 27 ways; by symmetry, totals of 11 or more are exactly half (108), plus 27 ways for 10.
+  pt:
+    title: Três dados, dez ou mais
+    q: |
+      Lanças três dados.
+
+      Qual a probabilidade de a soma ser 10 ou mais? (Dá um decimal.)
+    hint: A distribuição de três dados é simétrica em torno de 10,5.
+    a: |
+      0,625 = 135/216. As somas 10 e 11 têm 27 maneiras cada; por simetria, 11 ou mais é exatamente metade (108), mais 27 maneiras para o 10.
+
+- answer: [192]
+  en:
+    title: Writing zeros
+    q: |
+      You write all whole numbers from 1 to 1000.
+
+      How many zeros do you write?
+    hint: Count zeros in the units place, then in the tens place, then 1000.
+    a: |
+      192. Units: 10, 20, …, 990 → 99 (plus 1000's units: 1 more = 100). Tens: 100–109, 200–209, … 900–909 → 90, plus 1000 → 91. Hundreds: 1000 → 1. 100 + 91 + 1 = 192.
+  pt:
+    title: Escrever zeros
+    q: |
+      Escreves todos os números inteiros de 1 a 1000.
+
+      Quantos zeros escreves?
+    hint: Conta os zeros nas unidades, depois nas dezenas, depois o 1000.
+    a: |
+      192. Unidades: 10, 20, …, 990 → 99 (mais o do 1000 = 100). Dezenas: 100–109, 200–209, … 900–909 → 90, mais o 1000 → 91. Centenas: 1000 → 1. 100 + 91 + 1 = 192.
+
+- answer: [28.5]
+  en:
+    title: Coordinate triangle
+    q: |
+      What is the area of the triangle with corners at (0, 0), (7, 2) and (3, 9)?
+    hint: Area = |x₁y₂ − x₂y₁| / 2 when one corner is at the origin.
+    a: |
+      28.5 = |7 × 9 − 3 × 2| / 2 = 57 / 2.
+  pt:
+    title: Triângulo em coordenadas
+    q: |
+      Qual a área do triângulo com vértices em (0, 0), (7, 2) e (3, 9)?
+    hint: Área = |x₁y₂ − x₂y₁| / 2 quando um vértice está na origem.
+    a: |
+      28,5 = |7 × 9 − 3 × 2| / 2 = 57 / 2.
+
+- answer: [8]
+  en:
+    title: 2026 in binary
+    q: |
+      How many 1s are there when 2026 is written in binary?
+    hint: Subtract the largest powers of 2 one by one.
+    a: |
+      8. 2026 = 1024 + 512 + 256 + 128 + 64 + 32 + 8 + 2 = 11111101010₂.
+  pt:
+    title: 2026 em binário
+    q: |
+      Quantos 1 tem o número 2026 escrito em binário?
+    hint: Subtrai as maiores potências de 2 uma a uma.
+    a: |
+      8. 2026 = 1024 + 512 + 256 + 128 + 64 + 32 + 8 + 2 = 11111101010₂.
+
+- answer: [47]
+  en:
+    title: x plus one over x
+    q: |
+      A positive number x satisfies x + 1/x = 3.
+
+      What is x⁴ + 1/x⁴?
+    hint: Square twice.
+    a: |
+      47. (x + 1/x)² = 9 → x² + 1/x² = 7. (x² + 1/x²)² = 49 → x⁴ + 1/x⁴ = 47.
+  pt:
+    title: x mais um sobre x
+    q: |
+      Um número positivo x satisfaz x + 1/x = 3.
+
+      Quanto é x⁴ + 1/x⁴?
+    hint: Eleva ao quadrado duas vezes.
+    a: |
+      47. (x + 1/x)² = 9 → x² + 1/x² = 7. (x² + 1/x²)² = 49 → x⁴ + 1/x⁴ = 47.
+
+- answer: [0.99]
+  tol: 0.0001
+  en:
+    title: Telescoping sum
+    q: |
+      What is 1/(1·2) + 1/(2·3) + 1/(3·4) + … + 1/(99·100)? (Give a decimal.)
+    hint: 1/(k(k+1)) = 1/k − 1/(k+1).
+    a: |
+      0.99 = 1 − 1/100. Almost everything cancels.
+  pt:
+    title: Soma telescópica
+    q: |
+      Quanto é 1/(1·2) + 1/(2·3) + 1/(3·4) + … + 1/(99·100)? (Dá um decimal.)
+    hint: 1/(k(k+1)) = 1/k − 1/(k+1).
+    a: |
+      0,99 = 1 − 1/100. Quase tudo se cancela.
+
+- answer: [165]
+  en:
+    title: Digit sum nine
+    q: |
+      How many 4-digit numbers have digits that add up to 9?
+    hint: Stars and bars, with the first digit at least 1.
+    a: |
+      165. Let the first digit be 1 + a; then a + b + c + d = 8 with all ≥ 0: C(11, 3) = 165. (No digit can exceed 9, so nothing to subtract.)
+  pt:
+    title: Soma dos algarismos nove
+    q: |
+      Quantos números de 4 algarismos têm algarismos que somam 9?
+    hint: Combinações com repetição, com o primeiro algarismo pelo menos 1.
+    a: |
+      165. Seja o primeiro algarismo 1 + a; então a + b + c + d = 8, todos ≥ 0: C(11, 3) = 165. (Nenhum algarismo passa de 9, nada a subtrair.)
+
+- answer: [29.29, 29.3]
+  tol: 0.02
+  en:
+    title: Collecting stickers
+    q: |
+      A cereal box contains one of 10 different stickers, each equally likely.
+
+      On average, how many boxes must you buy to collect all 10? (Two decimals.)
+    hint: Same idea as rolling every face of a die.
+    a: |
+      ≈ 29.29 = 10 × (1 + 1/2 + … + 1/10).
+  pt:
+    title: Colecionar cromos
+    q: |
+      Cada caixa de cereais traz um de 10 cromos diferentes, todos igualmente prováveis.
+
+      Em média, quantas caixas tens de comprar para ter os 10? (Duas casas decimais.)
+    hint: A mesma ideia que sair todas as faces de um dado.
+    a: |
+      ≈ 29,29 = 10 × (1 + 1/2 + … + 1/10).
+
+- answer: [153]
+  en:
+    title: 3 × 8 tiling
+    q: |
+      In how many ways can you tile a 3 × 8 rectangle with 1 × 2 dominoes?
+    hint: For 3 × n (n even): a(n) = 4a(n − 2) − a(n − 4), with a(0) = 1, a(2) = 3.
+    a: |
+      153. a(4) = 11, a(6) = 41, a(8) = 4 × 41 − 11 = 153.
+  pt:
+    title: Pavimentar 3 × 8
+    q: |
+      De quantas maneiras cobres um retângulo 3 × 8 com dominós 1 × 2?
+    hint: Para 3 × n (n par): a(n) = 4a(n − 2) − a(n − 4), com a(0) = 1, a(2) = 3.
+    a: |
+      153. a(4) = 11, a(6) = 41, a(8) = 4 × 41 − 11 = 153.
+
+- answer: [832040]
+  en:
+    title: Fibonacci thirty
+    q: |
+      The Fibonacci sequence starts 1, 1, 2, 3, 5, 8, …, each term the sum of the previous two.
+
+      What is the 30th term?
+    hint: F(15) = 610 and F(2n) = F(n) × (2F(n+1) − F(n)).
+    a: |
+      832040.
+  pt:
+    title: Fibonacci trinta
+    q: |
+      A sequência de Fibonacci começa 1, 1, 2, 3, 5, 8, …, cada termo a soma dos dois anteriores.
+
+      Qual é o 30.º termo?
+    hint: F(15) = 610 e F(2n) = F(n) × (2F(n+1) − F(n)).
+    a: |
+      832040.
+
+- answer: [0.3]
+  tol: 0.001
+  en:
+    title: Gambler's ruin
+    q: |
+      You have €3. You bet €1 at a time on a fair coin flip. You stop when you reach €10 or go broke.
+
+      What is the probability of reaching €10? (Give a decimal.)
+    hint: In a fair game your expected money stays the same.
+    a: |
+      0.3. Expected money stays €3, so p × 10 + (1 − p) × 0 = 3.
+  pt:
+    title: A ruína do jogador
+    q: |
+      Tens 3 €. Apostas 1 € de cada vez no lançamento de uma moeda justa. Paras quando chegares a 10 € ou ficares sem nada.
+
+      Qual a probabilidade de chegar aos 10 €? (Dá um decimal.)
+    hint: Num jogo justo o dinheiro esperado não muda.
+    a: |
+      0,3. O dinheiro esperado continua 3 €, logo p × 10 + (1 − p) × 0 = 3.
+
+- answer: [2800]
+  en:
+    title: St Ives
+    q: |
+      Going to St Ives, I met a man with 7 wives. Each wife had 7 sacks, each sack had 7 cats, each cat had 7 kittens.
+
+      How many kittens, cats, sacks and wives were there in total?
+    hint: 7 + 7² + 7³ + 7⁴.
+    a: |
+      2800 = 7 + 49 + 343 + 2401.
+  pt:
+    title: St Ives
+    q: |
+      A caminho de St Ives encontrei um homem com 7 mulheres. Cada mulher tinha 7 sacos, cada saco 7 gatos, cada gato 7 gatinhos.
+
+      Quantos gatinhos, gatos, sacos e mulheres havia no total?
+    hint: 7 + 7² + 7³ + 7⁴.
+    a: |
+      2800 = 7 + 49 + 343 + 2401.
+
+- answer: [38]
+  en:
+    title: Squares or cubes
+    q: |
+      How many whole numbers from 1 to 1000 are perfect squares or perfect cubes (or both)?
+    hint: Don't count the sixth powers twice.
+    a: |
+      38. 31 squares + 10 cubes − 3 sixth powers (1, 64, 729).
+  pt:
+    title: Quadrados ou cubos
+    q: |
+      Quantos números inteiros de 1 a 1000 são quadrados perfeitos ou cubos perfeitos (ou ambos)?
+    hint: Não contes as sextas potências duas vezes.
+    a: |
+      38. 31 quadrados + 10 cubos − 3 sextas potências (1, 64, 729).
+
+- answer: [172]
+  en:
+    title: Sunday the first
+    q: |
+      How many months in the years 2001 to 2100 (inclusive) start on a Sunday?
+    hint: 1 January 2001 was a Monday. 2100 is not a leap year.
+    a: |
+      172. Counting month by month (by hand with a weekday table, or with a short program).
+  pt:
+    title: Domingo dia 1
+    q: |
+      Quantos meses, entre 2001 e 2100 (inclusive), começam a um domingo?
+    hint: 1 de janeiro de 2001 foi uma segunda-feira. 2100 não é bissexto.
+    a: |
+      172. Contando mês a mês (à mão com uma tabela de dias da semana, ou com um pequeno programa).
+
+- answer: [48]
+  en:
+    title: Round trip
+    q: |
+      You drive from A to B at 60 km/h and back from B to A at 40 km/h.
+
+      What is your average speed for the whole trip, in km/h?
+    hint: Not 50. Use the harmonic mean.
+    a: |
+      48 = 2 × 60 × 40 / (60 + 40).
+  pt:
+    title: Ida e volta
+    q: |
+      Vais de A a B a 60 km/h e voltas de B a A a 40 km/h.
+
+      Qual a velocidade média da viagem toda, em km/h?
+    hint: Não é 50. Usa a média harmónica.
+    a: |
+      48 = 2 × 60 × 40 / (60 + 40).
+
+- answer: [0.125]
+  tol: 0.001
+  en:
+    title: Half-filled cone
+    q: |
+      A cone-shaped glass, point down, is filled with water to half its height.
+
+      What fraction of the glass's volume is water? (Give a decimal.)
+    hint: Similar cones: volume scales with the cube of height.
+    a: |
+      0.125 = (1/2)³.
+  pt:
+    title: Cone a meio
+    q: |
+      Um copo em forma de cone, com o bico para baixo, tem água até metade da altura.
+
+      Que fração do volume do copo é água? (Dá um decimal.)
+    hint: Cones semelhantes: o volume varia com o cubo da altura.
+    a: |
+      0,125 = (1/2)³.
+
+- answer: [1]
+  en:
+    title: Hats back
+    q: |
+      10 people leave their hats at a cloakroom. The attendant returns them completely at random.
+
+      On average, how many people get their own hat back?
+    hint: Linearity of expectation: each person has a 1/10 chance.
+    a: |
+      1. 10 people × 1/10 = 1. (It's 1 for any number of people.)
+  pt:
+    title: Chapéus de volta
+    q: |
+      10 pessoas deixam os chapéus no bengaleiro. O funcionário devolve-os completamente ao acaso.
+
+      Em média, quantas pessoas recebem o seu chapéu?
+    hint: Linearidade da esperança: cada pessoa tem 1/10 de hipótese.
+    a: |
+      1. 10 pessoas × 1/10 = 1. (Dá 1 para qualquer número de pessoas.)
+
+- answer: [0.1422, 0.142]
+  tol: 0.001
+  en:
+    title: Divisible by seven
+    q: |
+      You pick a random 3-digit number (100 to 999).
+
+      What is the probability it's divisible by 7? (Four decimals.)
+    hint: Find the first and last multiples of 7 in the range.
+    a: |
+      128/900 ≈ 0.1422. Multiples run from 105 to 994: (994 − 105)/7 + 1 = 128.
+  pt:
+    title: Divisível por sete
+    q: |
+      Escolhes ao acaso um número de 3 algarismos (100 a 999).
+
+      Qual a probabilidade de ser divisível por 7? (Quatro casas decimais.)
+    hint: Encontra o primeiro e o último múltiplos de 7 no intervalo.
+    a: |
+      128/900 ≈ 0,1422. Os múltiplos vão de 105 a 994: (994 − 105)/7 + 1 = 128.
+
+- answer: [13983816]
+  en:
+    title: Lottery odds
+    q: |
+      A lottery draws 6 different numbers from 1 to 49.
+
+      How many different tickets are possible?
+    hint: C(49, 6).
+    a: |
+      13,983,816 = 49 × 48 × 47 × 46 × 45 × 44 / 720.
+  pt:
+    title: Probabilidades da lotaria
+    q: |
+      Uma lotaria sorteia 6 números diferentes de 1 a 49.
+
+      Quantos boletins diferentes são possíveis?
+    hint: C(49, 6).
+    a: |
+      13 983 816 = 49 × 48 × 47 × 46 × 45 × 44 / 720.
+
+- answer: [400]
+  en:
+    title: Doubling bacteria
+    q: |
+      A single bacterium divides into two every 20 minutes.
+
+      After how many minutes are there first more than 1,000,000 bacteria?
+    hint: 2¹⁰ = 1024.
+    a: |
+      400. 2¹⁹ = 524,288 and 2²⁰ = 1,048,576, so 20 doublings × 20 min.
+  pt:
+    title: Bactérias a duplicar
+    q: |
+      Uma bactéria divide-se em duas a cada 20 minutos.
+
+      Ao fim de quantos minutos há pela primeira vez mais de 1 000 000 de bactérias?
+    hint: 2¹⁰ = 1024.
+    a: |
+      400. 2¹⁹ = 524 288 e 2²⁰ = 1 048 576, logo 20 duplicações × 20 min.

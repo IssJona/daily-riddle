@@ -1,0 +1,1186 @@
+# MEDIUM riddles. Order = day order. Never reorder; only append.
+
+- en:
+    title: Knights and knaves
+    q: |
+      On an island, knights always tell the truth and knaves always lie. You meet A and B.
+
+      A says: "We are both knaves."
+
+      What are A and B?
+    hint: Could a knight ever say that sentence?
+    a: |
+      A is a knave, B is a knight.
+
+      A knight can't say it (it would make him a knave). So A is a knave and the sentence is false: they're not both knaves, so B is a knight.
+  pt:
+    title: Cavaleiros e mentirosos
+    q: |
+      Numa ilha, os cavaleiros dizem sempre a verdade e os mentirosos mentem sempre. Encontras A e B.
+
+      A diz: "Somos os dois mentirosos."
+
+      O que são A e B?
+    hint: Um cavaleiro alguma vez diria essa frase?
+    a: |
+      A é mentiroso, B é cavaleiro.
+
+      Um cavaleiro não a pode dizer (seria mentiroso). Logo A é mentiroso e a frase é falsa: não são os dois mentirosos, por isso B é cavaleiro.
+
+- en:
+    title: Two doors, two guards
+    q: |
+      One door leads to freedom, the other to a dungeon. Each has a guard: one always tells the truth, the other always lies, and you don't know which is which.
+
+      You may ask one guard one question. What do you ask?
+    hint: Make the lie and the truth point to the same door.
+    a: |
+      Ask either guard: "Which door would the other guard say leads to freedom?" Then take the other door.
+
+      The truth-teller faithfully reports the liar's wrong answer; the liar twists the truth-teller's right answer. Either way you hear the wrong door.
+  pt:
+    title: Duas portas, dois guardas
+    q: |
+      Uma porta leva à liberdade, a outra a uma masmorra. Cada uma tem um guarda: um diz sempre a verdade, o outro mente sempre, e não sabes qual é qual.
+
+      Podes fazer uma pergunta a um guarda. O que perguntas?
+    hint: Faz com que a mentira e a verdade apontem para a mesma porta.
+    a: |
+      Pergunta a qualquer um: "Que porta é que o outro guarda diria que leva à liberdade?" E escolhe a outra.
+
+      O sincero repete a resposta errada do mentiroso; o mentiroso deturpa a resposta certa do sincero. Em ambos os casos ouves a porta errada.
+
+- answer: [10]
+  en:
+    title: 100 doors
+    q: |
+      100 closed doors are numbered 1 to 100. On pass 1 you toggle every door, on pass 2 every 2nd door, on pass 3 every 3rd, … up to pass 100 (only door 100).
+
+      How many doors are open at the end?
+    hint: Door n is toggled once per divisor of n. Which numbers have an odd number of divisors?
+    a: |
+      10: the perfect squares 1, 4, 9, …, 100.
+
+      Divisors come in pairs (2 × 6 = 12) except for squares (6 × 6 = 36), so only squares are toggled an odd number of times.
+  pt:
+    title: 100 portas
+    q: |
+      100 portas fechadas estão numeradas de 1 a 100. Na passagem 1 mudas todas, na 2 uma em cada 2, na 3 uma em cada 3, … até à passagem 100 (só a porta 100).
+
+      Quantas portas ficam abertas?
+    hint: A porta n é mudada uma vez por cada divisor de n. Que números têm um número ímpar de divisores?
+    a: |
+      10: os quadrados perfeitos 1, 4, 9, …, 100.
+
+      Os divisores vêm aos pares (2 × 6 = 12) exceto nos quadrados (6 × 6 = 36), por isso só os quadrados são mudados um número ímpar de vezes.
+
+- en:
+    title: Two hourglasses
+    q: |
+      You have a 7-minute hourglass and an 11-minute hourglass.
+
+      How do you measure exactly 15 minutes?
+    hint: Start both. How much sand has fallen in the 7-minute one when the 11-minute one ends?
+    a: |
+      Start both. At 7 min flip the small one. At 11 min the big one ends; the small one has run 4 min, so flip it again. It runs those 4 minutes back and ends at 15.
+  pt:
+    title: Duas ampulhetas
+    q: |
+      Tens uma ampulheta de 7 minutos e outra de 11.
+
+      Como medes exatamente 15 minutos?
+    hint: Começa as duas. Quanta areia caiu na de 7 quando a de 11 acaba?
+    a: |
+      Começa as duas. Aos 7 min vira a pequena. Aos 11 a grande acaba; a pequena já correu 4 min, por isso vira-a outra vez. Corre esses 4 minutos e acaba aos 15.
+
+- en:
+    title: The cut chessboard
+    q: |
+      You cut two opposite corner squares off an 8 × 8 chessboard, leaving 62 squares.
+
+      Can you cover it exactly with 31 dominoes, each covering two adjacent squares?
+    hint: Look at the colours of the removed squares.
+    a: |
+      No. Opposite corners have the same colour, leaving 32 of one colour and 30 of the other. Each domino covers one of each colour.
+  pt:
+    title: O tabuleiro cortado
+    q: |
+      Cortas duas casas de cantos opostos a um tabuleiro 8 × 8, ficando 62 casas.
+
+      Consegues cobri-lo com 31 dominós, cada um a cobrir duas casas adjacentes?
+    hint: Olha para a cor das casas que tiraste.
+    a: |
+      Não. Cantos opostos têm a mesma cor, ficando 32 casas de uma cor e 30 da outra. Cada dominó cobre uma de cada cor.
+
+- en:
+    title: The fake coins
+    q: |
+      10 bags of coins: real coins weigh 10 g, but one whole bag has fake 9 g coins.
+
+      With a digital scale used only once, how do you find the fake bag?
+    hint: Take a different number of coins from each bag.
+    a: |
+      Take 1 coin from bag 1, 2 from bag 2, … 10 from bag 10 (55 coins) and weigh them. All real would be 550 g; the number of grams missing is the fake bag's number.
+  pt:
+    title: As moedas falsas
+    q: |
+      10 sacos de moedas: as verdadeiras pesam 10 g, mas um saco inteiro tem moedas falsas de 9 g.
+
+      Com uma balança digital usada só uma vez, como descobres o saco falso?
+    hint: Tira um número diferente de moedas de cada saco.
+    a: |
+      Tira 1 moeda do saco 1, 2 do saco 2, … 10 do saco 10 (55 moedas) e pesa. Verdadeiras dariam 550 g; os gramas em falta são o número do saco falso.
+
+- en:
+    title: The monk on the mountain
+    q: |
+      A monk walks up a mountain from sunrise to sunset, at varying speeds. The next day he walks down the same path, sunrise to sunset.
+
+      Is there a spot he passes at exactly the same time of day on both days?
+    hint: Imagine both days happening at once.
+    a: |
+      Yes. Picture two monks on the same day, one going up and one coming down. They must meet somewhere: that spot and time.
+  pt:
+    title: O monge na montanha
+    q: |
+      Um monge sobe uma montanha do nascer ao pôr do sol, a velocidades variadas. No dia seguinte desce pelo mesmo caminho, do nascer ao pôr do sol.
+
+      Há um ponto por onde passe exatamente à mesma hora nos dois dias?
+    hint: Imagina os dois dias a acontecer ao mesmo tempo.
+    a: |
+      Sim. Imagina dois monges no mesmo dia, um a subir e outro a descer. Têm de se cruzar algures: esse é o ponto e a hora.
+
+- answer: [312211]
+  en:
+    title: What comes next?
+    q: |
+      1
+      11
+      21
+      1211
+      111221
+      ?
+    hint: Read each line out loud, describing the one above.
+    a: |
+      312211. Each line describes the previous one: "111221" is three 1s, two 2s, one 1.
+  pt:
+    title: O que vem a seguir?
+    q: |
+      1
+      11
+      21
+      1211
+      111221
+      ?
+    hint: Lê cada linha em voz alta, descrevendo a de cima.
+    a: |
+      312211. Cada linha descreve a anterior: "111221" são três 1, dois 2, um 1.
+
+- answer: [24]
+  en:
+    title: Zeros at the end
+    q: |
+      100! = 100 × 99 × … × 2 × 1.
+
+      How many zeros are at the end of this number?
+    hint: Each trailing zero needs a 2 × 5. There are plenty of 2s.
+    a: |
+      24. Multiples of 5 up to 100: 20. Four of them (25, 50, 75, 100) give an extra 5.
+  pt:
+    title: Zeros no fim
+    q: |
+      100! = 100 × 99 × … × 2 × 1.
+
+      Com quantos zeros acaba este número?
+    hint: Cada zero precisa de um 2 × 5. Há 2 de sobra.
+    a: |
+      24. Múltiplos de 5 até 100: 20. Quatro deles (25, 50, 75, 100) dão um 5 extra.
+
+- answer: [7.5]
+  en:
+    title: Clock hands
+    q: |
+      What is the angle between the hour and minute hands at exactly 3:15, in degrees?
+    hint: It's not 0. Where is the hour hand a quarter hour after 3?
+    a: |
+      7.5°. The hour hand moves 30° per hour, so at 3:15 it's 7.5° past the 3, where the minute hand is.
+  pt:
+    title: Ponteiros
+    q: |
+      Qual o ângulo entre os ponteiros às 3:15 em ponto, em graus?
+    hint: Não é 0. Onde está o ponteiro das horas um quarto de hora depois das 3?
+    a: |
+      7,5°. O ponteiro das horas anda 30° por hora, por isso às 3:15 está 7,5° depois do 3, onde está o dos minutos.
+
+- answer: [204]
+  en:
+    title: Squares on a chessboard
+    q: |
+      How many squares of any size are there on an 8 × 8 chessboard?
+    hint: Count 1 × 1, then 2 × 2, then 3 × 3…
+    a: |
+      204 = 64 + 49 + 36 + 25 + 16 + 9 + 4 + 1.
+  pt:
+    title: Quadrados no tabuleiro
+    q: |
+      Quantos quadrados de qualquer tamanho há num tabuleiro 8 × 8?
+    hint: Conta os 1 × 1, depois 2 × 2, depois 3 × 3…
+    a: |
+      204 = 64 + 49 + 36 + 25 + 16 + 9 + 4 + 1.
+
+- answer: [17]
+  en:
+    title: The night bridge
+    q: |
+      Four people must cross a bridge at night with one torch. At most two can cross at once, and the torch must be carried. They take 1, 2, 5 and 10 minutes; a pair moves at the slower pace.
+
+      What is the shortest total time, in minutes?
+    hint: The two slowest should cross together.
+    a: |
+      17. 1+2 cross (2), 1 back (1), 5+10 cross (10), 2 back (2), 1+2 cross (2).
+  pt:
+    title: A ponte à noite
+    q: |
+      Quatro pessoas têm de atravessar uma ponte à noite com uma lanterna. No máximo passam duas de cada vez, e a lanterna tem de ir com elas. Demoram 1, 2, 5 e 10 minutos; um par anda ao ritmo do mais lento.
+
+      Qual o tempo total mínimo, em minutos?
+    hint: Os dois mais lentos devem atravessar juntos.
+    a: |
+      17. 1+2 atravessam (2), 1 volta (1), 5+10 atravessam (10), 2 volta (2), 1+2 atravessam (2).
+
+- answer: [6]
+  en:
+    title: The bookworm
+    q: |
+      Volumes 1, 2 and 3 of an encyclopedia stand in order on a shelf, spines facing you. Each has 4 cm of pages and two covers of 0.5 cm each.
+
+      A worm eats from the first page of volume 1 to the last page of volume 3. How many cm does it eat through?
+    hint: On a shelf, where is the first page of volume 1 actually?
+    a: |
+      6 cm. With spines facing you, volume 1's first page is on its right side, next to volume 2. The worm goes through one cover of vol. 1, all of vol. 2 (5 cm), and one cover of vol. 3: 0.5 + 5 + 0.5.
+  pt:
+    title: A traça
+    q: |
+      Os volumes 1, 2 e 3 de uma enciclopédia estão por ordem numa prateleira, com as lombadas viradas para ti. Cada um tem 4 cm de páginas e duas capas de 0,5 cm.
+
+      Uma traça come desde a primeira página do volume 1 até à última do volume 3. Quantos cm atravessa?
+    hint: Na prateleira, onde fica realmente a primeira página do volume 1?
+    a: |
+      6 cm. Com as lombadas para ti, a primeira página do vol. 1 fica do lado direito, junto ao vol. 2. A traça atravessa uma capa do vol. 1, o vol. 2 inteiro (5 cm) e uma capa do vol. 3: 0,5 + 5 + 0,5.
+
+- en:
+    title: Three islanders
+    q: |
+      Knights always tell the truth, knaves always lie.
+
+      A says: "B is a knave."
+      B says: "C is a knave."
+      C says: "A and B are both knaves."
+
+      Who is what?
+    hint: Start by assuming C is a knight.
+    a: |
+      A knave, B knight, C knave.
+
+      If C were a knight, A and B would be knaves, but then A's statement would be false, making B a knight. Contradiction. So C is a knave, B told the truth (knight), and A lied (knave).
+  pt:
+    title: Três habitantes
+    q: |
+      Cavaleiros dizem sempre a verdade, mentirosos mentem sempre.
+
+      A diz: "B é mentiroso."
+      B diz: "C é mentiroso."
+      C diz: "A e B são ambos mentirosos."
+
+      Quem é o quê?
+    hint: Começa por supor que C é cavaleiro.
+    a: |
+      A mentiroso, B cavaleiro, C mentiroso.
+
+      Se C fosse cavaleiro, A e B seriam mentirosos, mas então a frase de A seria falsa, tornando B cavaleiro. Contradição. Logo C é mentiroso, B disse a verdade (cavaleiro) e A mentiu (mentiroso).
+
+- en:
+    title: Coins in the dark
+    q: |
+      20 coins lie on a table, exactly 10 heads up. You're blindfolded and can't feel which side is up.
+
+      How do you split them into two piles with the same number of heads?
+    hint: You're allowed to flip coins.
+    a: |
+      Take any 10 coins as one pile and flip all of them.
+
+      If that pile had k heads, the other pile has 10 − k heads. After flipping, your pile has 10 − k heads too.
+  pt:
+    title: Moedas às escuras
+    q: |
+      20 moedas estão numa mesa, exatamente 10 com a cara para cima. Estás vendado e não consegues sentir o lado.
+
+      Como as divides em dois montes com o mesmo número de caras?
+    hint: Podes virar moedas.
+    a: |
+      Faz um monte com 10 moedas quaisquer e vira-as todas.
+
+      Se esse monte tinha k caras, o outro tem 10 − k. Depois de virar, o teu também fica com 10 − k caras.
+
+- en:
+    title: Four weights
+    q: |
+      You have a two-pan balance and want to weigh any whole number of kg from 1 to 40 using only 4 weights. Weights can go on either pan.
+
+      Which 4 weights do you need?
+    hint: Think powers of 3.
+    a: |
+      1, 3, 9 and 27 kg. Placing a weight on the object's side subtracts it, so each weight counts as −1, 0 or +1, which covers every value up to 1 + 3 + 9 + 27 = 40.
+  pt:
+    title: Quatro pesos
+    q: |
+      Tens uma balança de dois pratos e queres pesar qualquer número inteiro de kg de 1 a 40 com apenas 4 pesos. Os pesos podem ir para qualquer prato.
+
+      Que 4 pesos precisas?
+    hint: Pensa em potências de 3.
+    a: |
+      1, 3, 9 e 27 kg. Pôr um peso do lado do objeto subtrai, por isso cada peso conta como −1, 0 ou +1, o que cobre tudo até 1 + 3 + 9 + 27 = 40.
+
+- answer: [0.6667, 0.667, 0.67]
+  tol: 0.005
+  en:
+    title: Monty Hall
+    q: |
+      A prize is behind one of 3 doors. You pick door 1. The host, who knows where the prize is, opens door 3, which is empty, and offers to let you switch to door 2.
+
+      If you switch, what is your probability of winning? (Give a decimal.)
+    hint: What was the chance your first pick was wrong?
+    a: |
+      2/3 ≈ 0.667. Your first pick is right 1/3 of the time. The other 2/3 of the time the host is forced to leave the prize behind the remaining door, so switching wins.
+  pt:
+    title: Monty Hall
+    q: |
+      Há um prémio atrás de uma de 3 portas. Escolhes a porta 1. O apresentador, que sabe onde está o prémio, abre a porta 3, vazia, e deixa-te trocar para a porta 2.
+
+      Se trocares, qual a probabilidade de ganhar? (Dá um decimal.)
+    hint: Qual era a probabilidade de a tua primeira escolha estar errada?
+    a: |
+      2/3 ≈ 0,667. A primeira escolha acerta 1/3 das vezes. Nos outros 2/3, o apresentador é obrigado a deixar o prémio na porta que sobra, por isso trocar ganha.
+
+- answer: [23]
+  en:
+    title: Shared birthdays
+    q: |
+      What is the smallest number of people in a room so that the chance that two of them share a birthday is more than 50%? (Ignore 29 February.)
+    hint: It's much smaller than 183. Compute the chance that all birthdays are different.
+    a: |
+      23. The chance all are different is (365/365)(364/365)…(343/365) ≈ 0.493, so the chance of a match is about 50.7%.
+  pt:
+    title: Aniversários
+    q: |
+      Qual o menor número de pessoas numa sala para que a probabilidade de duas fazerem anos no mesmo dia seja mais de 50%? (Ignora o 29 de fevereiro.)
+    hint: É muito menos de 183. Calcula a probabilidade de serem todos diferentes.
+    a: |
+      23. A probabilidade de serem todos diferentes é (365/365)(364/365)…(343/365) ≈ 0,493, logo a de haver coincidência é cerca de 50,7%.
+
+- answer: [11]
+  en:
+    title: Explorers and cannibals
+    q: |
+      3 explorers and 3 cannibals must cross a river in a boat that holds at most 2. If cannibals ever outnumber explorers on either bank, the explorers get eaten. The boat can't cross empty.
+
+      What is the minimum number of crossings?
+    hint: Cannibals can shuttle the boat back.
+    a: |
+      11. One solution (E = explorer, C = cannibal): CC over, C back, CC over, C back, EE over, EC back, EE over, C back, CC over, C back, CC over.
+  pt:
+    title: Exploradores e canibais
+    q: |
+      3 exploradores e 3 canibais têm de atravessar um rio num barco que leva no máximo 2. Se em alguma margem os canibais forem mais do que os exploradores, estes são comidos. O barco não atravessa vazio.
+
+      Qual o número mínimo de travessias?
+    hint: Os canibais podem trazer o barco de volta.
+    a: |
+      11. Uma solução (E = explorador, C = canibal): CC vão, C volta, CC vão, C volta, EE vão, EC volta, EE vão, C volta, CC vão, C volta, CC vão.
+
+- answer: [488]
+  en:
+    title: Big painted cube
+    q: |
+      A 10 × 10 × 10 cube is painted on the outside and cut into 1000 small cubes.
+
+      How many small cubes have at least one painted face?
+    hint: Count the unpainted ones inside.
+    a: |
+      488. The unpainted inner block is 8 × 8 × 8 = 512, and 1000 − 512 = 488.
+  pt:
+    title: Grande cubo pintado
+    q: |
+      Um cubo 10 × 10 × 10 é pintado por fora e cortado em 1000 cubinhos.
+
+      Quantos cubinhos têm pelo menos uma face pintada?
+    hint: Conta os que ficam por pintar lá dentro.
+    a: |
+      488. O bloco interior sem tinta é 8 × 8 × 8 = 512, e 1000 − 512 = 488.
+
+- en:
+    title: Newspaper sheet
+    q: |
+      A 28-page newspaper is made of sheets folded in half. One sheet has pages 7 and 8 on it.
+
+      Which other two pages are on the same sheet?
+    hint: Pages on a sheet add up to the same total in pairs.
+    a: |
+      21 and 22. Opposite pages on a sheet add up to 29 (28 + 1): 7 + 22 and 8 + 21.
+  pt:
+    title: Folha de jornal
+    q: |
+      Um jornal de 28 páginas é feito de folhas dobradas ao meio. Uma folha tem as páginas 7 e 8.
+
+      Que outras duas páginas estão na mesma folha?
+    hint: As páginas de uma folha somam o mesmo, aos pares.
+    a: |
+      21 e 22. Páginas opostas na folha somam 29 (28 + 1): 7 + 22 e 8 + 21.
+
+- en:
+    title: 100 days from Wednesday
+    q: |
+      Today is Wednesday.
+
+      What day of the week will it be in 100 days?
+    hint: What's left after taking out whole weeks?
+    a: |
+      Friday. 100 = 14 weeks + 2 days.
+  pt:
+    title: 100 dias depois de quarta
+    q: |
+      Hoje é quarta-feira.
+
+      Que dia da semana será daqui a 100 dias?
+    hint: O que sobra depois de tirar as semanas completas?
+    a: |
+      Sexta-feira. 100 = 14 semanas + 2 dias.
+
+- answer: [44]
+  en:
+    title: Right angles
+    q: |
+      How many times in a full day (24 hours) do the hour and minute hands form a right angle?
+    hint: It's not 48. The minute hand gains one full lap on the hour hand roughly every 65 minutes.
+    a: |
+      44. The minute hand laps the hour hand 22 times a day, and each lap makes two right angles.
+  pt:
+    title: Ângulos retos
+    q: |
+      Quantas vezes num dia inteiro (24 horas) os ponteiros formam um ângulo reto?
+    hint: Não são 48. O ponteiro dos minutos ganha uma volta ao das horas cerca de cada 65 minutos.
+    a: |
+      44. O ponteiro dos minutos dá 22 voltas de avanço por dia, e cada volta faz dois ângulos retos.
+
+- answer: [5]
+  en:
+    title: Magic square
+    q: |
+      Place the numbers 1 to 9 in a 3 × 3 grid so every row, column and diagonal has the same sum.
+
+      Which number must be in the centre?
+    hint: The centre belongs to 4 lines. What's each line's sum?
+    a: |
+      5. Each line sums to 45 / 3 = 15. The four lines through the centre add up to 4 × 15 = 60 = 45 + 3 × centre, so the centre is 5.
+  pt:
+    title: Quadrado mágico
+    q: |
+      Coloca os números de 1 a 9 numa grelha 3 × 3 de modo que todas as linhas, colunas e diagonais tenham a mesma soma.
+
+      Que número tem de ficar no centro?
+    hint: O centro pertence a 4 linhas. Quanto soma cada linha?
+    a: |
+      5. Cada linha soma 45 / 3 = 15. As quatro linhas pelo centro somam 4 × 15 = 60 = 45 + 3 × centro, logo o centro é 5.
+
+- answer: [16]
+  tol: 0.5
+  en:
+    title: Rope around the Earth
+    q: |
+      A rope is tied tightly around the Earth's equator. You add 1 metre to its length and lift it evenly all around.
+
+      How high above the ground is it now, in cm (roughly)?
+    hint: The Earth's size doesn't matter.
+    a: |
+      About 16 cm. Circumference = 2πr, so adding 1 m adds 1 / (2π) ≈ 0.159 m to the radius.
+  pt:
+    title: Corda à volta da Terra
+    q: |
+      Uma corda está bem esticada à volta do equador. Acrescentas 1 metro ao comprimento e levantas a corda por igual a toda a volta.
+
+      A que altura do chão fica, em cm (aproximadamente)?
+    hint: O tamanho da Terra não importa.
+    a: |
+      Cerca de 16 cm. Perímetro = 2πr, por isso 1 m a mais dá 1 / (2π) ≈ 0,159 m de raio a mais.
+
+- en:
+    title: Coffee and milk
+    q: |
+      You have a cup of coffee and a cup of milk with the same amount. You move a spoonful of milk into the coffee and stir, then move a spoonful of the mixture back into the milk.
+
+      Is there more milk in the coffee or more coffee in the milk?
+    hint: Each cup ends with the same volume it started with.
+    a: |
+      They're equal. Each cup ends with its original volume, so whatever milk is missing from the milk cup has been replaced by exactly that much coffee.
+  pt:
+    title: Café e leite
+    q: |
+      Tens uma chávena de café e uma de leite com a mesma quantidade. Passas uma colher de leite para o café e mexes, depois passas uma colher da mistura de volta para o leite.
+
+      Há mais leite no café ou mais café no leite?
+    hint: Cada chávena acaba com o mesmo volume com que começou.
+    a: |
+      É igual. Cada chávena acaba com o volume inicial, por isso o leite que falta na chávena do leite foi substituído exatamente pela mesma quantidade de café.
+
+- answer: [148]
+  en:
+    title: Letter sum
+    q: |
+      Each letter is a different digit:
+
+      ABC + ABC + ABC = BBB
+
+      What is ABC?
+    hint: BBB = 111 × B, and 111 = 3 × 37.
+    a: |
+      148. 3 × ABC = 111 × B, so ABC = 37 × B. Checking B = 1…9, only 37 × 4 = 148 has 4 as its tens digit. 148 × 3 = 444.
+  pt:
+    title: Soma de letras
+    q: |
+      Cada letra é um algarismo diferente:
+
+      ABC + ABC + ABC = BBB
+
+      Quanto é ABC?
+    hint: BBB = 111 × B, e 111 = 3 × 37.
+    a: |
+      148. 3 × ABC = 111 × B, logo ABC = 37 × B. Testando B = 1…9, só 37 × 4 = 148 tem 4 nas dezenas. 148 × 3 = 444.
+
+- answer: [60]
+  en:
+    title: Train in a tunnel
+    q: |
+      A 300 m train travels at 25 m/s through a 1,200 m tunnel.
+
+      How many seconds from the moment the front enters until the back leaves?
+    hint: The front has to travel more than the tunnel's length.
+    a: |
+      60 s. The front must travel 1,200 + 300 = 1,500 m: 1,500 / 25 = 60.
+  pt:
+    title: Comboio no túnel
+    q: |
+      Um comboio de 300 m passa a 25 m/s por um túnel de 1200 m.
+
+      Quantos segundos desde que a frente entra até a traseira sair?
+    hint: A frente tem de percorrer mais do que o túnel.
+    a: |
+      60 s. A frente percorre 1200 + 300 = 1500 m: 1500 / 25 = 60.
+
+- answer: [1]
+  en:
+    title: Last match loses
+    q: |
+      There are 22 matches. Two players take turns removing 1, 2 or 3 matches. Whoever takes the last match loses.
+
+      You go first. How many matches should you take to be sure to win?
+    hint: You want to leave your opponent with 1 match. Work backwards in steps of 4.
+    a: |
+      1. Leave 21. Then whatever they take (x), you take 4 − x, leaving 17, 13, 9, 5 and finally 1 for them.
+  pt:
+    title: Quem tira o último perde
+    q: |
+      Há 22 fósforos. Dois jogadores tiram à vez 1, 2 ou 3. Quem tirar o último perde.
+
+      Começas tu. Quantos deves tirar para ganhar de certeza?
+    hint: Queres deixar 1 ao adversário. Anda para trás de 4 em 4.
+    a: |
+      1. Deixas 21. Depois, se ele tirar x, tiras 4 − x, deixando 17, 13, 9, 5 e por fim 1.
+
+- en:
+    title: Uphill, downhill
+    q: |
+      You drive up a 1 km hill at 30 km/h.
+
+      How fast must you drive down the 1 km to average 60 km/h over the 2 km?
+    hint: How much time do you have for the whole trip?
+    a: |
+      It's impossible. Averaging 60 km/h over 2 km takes 2 minutes, and you already used 2 minutes going up.
+  pt:
+    title: A subir e a descer
+    q: |
+      Sobes uma colina de 1 km a 30 km/h.
+
+      A que velocidade tens de descer o 1 km para fazer a média de 60 km/h nos 2 km?
+    hint: Quanto tempo tens para a viagem toda?
+    a: |
+      É impossível. Média de 60 km/h em 2 km dá 2 minutos, e já gastaste 2 minutos a subir.
+
+- answer: [70]
+  en:
+    title: Grid paths
+    q: |
+      On a 4 × 4 grid of city blocks, you walk from one corner to the opposite corner, moving only right or up along the streets.
+
+      How many different shortest routes are there?
+    hint: Every route is 4 rights and 4 ups in some order.
+    a: |
+      70. Choose which 4 of the 8 moves are "right": C(8, 4) = 70.
+  pt:
+    title: Caminhos na grelha
+    q: |
+      Numa grelha de 4 × 4 quarteirões, vais de um canto ao canto oposto, andando só para a direita ou para cima pelas ruas.
+
+      Quantos caminhos mais curtos diferentes há?
+    hint: Cada caminho tem 4 passos para a direita e 4 para cima, por alguma ordem.
+    a: |
+      70. Escolhe quais dos 8 passos são "direita": C(8, 4) = 70.
+
+- answer: [2.4]
+  en:
+    title: Two candles
+    q: |
+      Two candles of equal length: one burns out in 4 hours, the other in 3 hours. You light both at the same time.
+
+      After how many hours is one exactly twice as long as the other?
+    hint: Length of each after t hours: 1 − t/4 and 1 − t/3.
+    a: |
+      2.4 hours (2 h 24 min). 1 − t/4 = 2(1 − t/3) → 5t/12 = 1 → t = 2.4.
+  pt:
+    title: Duas velas
+    q: |
+      Duas velas do mesmo tamanho: uma arde em 4 horas, a outra em 3. Acendes as duas ao mesmo tempo.
+
+      Ao fim de quantas horas uma tem exatamente o dobro da outra?
+    hint: Comprimento de cada uma ao fim de t horas: 1 − t/4 e 1 − t/3.
+    a: |
+      2,4 horas (2 h 24 min). 1 − t/4 = 2(1 − t/3) → 5t/12 = 1 → t = 2,4.
+
+- answer: [221]
+  en:
+    title: Two aces
+    q: |
+      You draw 2 cards from a shuffled 52-card deck.
+
+      The probability that both are aces is 1 in how many?
+    hint: Multiply the chance for the first card by the chance for the second.
+    a: |
+      1 in 221. (4/52) × (3/51) = 12/2652 = 1/221.
+  pt:
+    title: Dois ases
+    q: |
+      Tiras 2 cartas de um baralho de 52 baralhado.
+
+      A probabilidade de serem os dois ases é 1 em quantas?
+    hint: Multiplica a probabilidade da primeira carta pela da segunda.
+    a: |
+      1 em 221. (4/52) × (3/51) = 12/2652 = 1/221.
+
+- answer: [35]
+  en:
+    title: Decagon diagonals
+    q: |
+      How many diagonals does a 10-sided polygon have?
+    hint: Each corner connects to all others except itself and its two neighbours.
+    a: |
+      35. Each of the 10 corners has 7 diagonals: 10 × 7 / 2 = 35.
+  pt:
+    title: Diagonais do decágono
+    q: |
+      Quantas diagonais tem um polígono de 10 lados?
+    hint: Cada vértice liga a todos menos a si próprio e aos dois vizinhos.
+    a: |
+      35. Cada um dos 10 vértices tem 7 diagonais: 10 × 7 / 2 = 35.
+
+- answer: [1]
+  en:
+    title: Last digit
+    q: |
+      What is the last digit of 7¹⁰⁰?
+    hint: Look at the last digits of 7, 7², 7³, 7⁴, 7⁵…
+    a: |
+      1. The last digits repeat 7, 9, 3, 1 every 4 powers, and 100 is a multiple of 4.
+  pt:
+    title: Último algarismo
+    q: |
+      Qual é o último algarismo de 7¹⁰⁰?
+    hint: Olha para os últimos algarismos de 7, 7², 7³, 7⁴, 7⁵…
+    a: |
+      1. Os últimos algarismos repetem 7, 9, 3, 1 de 4 em 4 potências, e 100 é múltiplo de 4.
+
+- en:
+    title: 4 and 7 hourglasses
+    q: |
+      You have a 4-minute and a 7-minute hourglass.
+
+      How do you measure exactly 9 minutes?
+    hint: Start both. Pay attention at minute 8.
+    a: |
+      Start both. At 4, flip the 4. At 7, flip the 7. At 8 the 4 ends again; the 7 has run 1 minute since its flip, so flip it: 1 more minute, ending at 9.
+  pt:
+    title: Ampulhetas de 4 e 7
+    q: |
+      Tens uma ampulheta de 4 minutos e uma de 7.
+
+      Como medes exatamente 9 minutos?
+    hint: Começa as duas. Repara no minuto 8.
+    a: |
+      Começa as duas. Aos 4 vira a de 4. Aos 7 vira a de 7. Aos 8 a de 4 acaba outra vez; a de 7 correu 1 minuto desde que a viraste, por isso vira-a: mais 1 minuto, acaba aos 9.
+
+- answer: [8]
+  en:
+    title: Diagonal crossing
+    q: |
+      A rectangle 6 squares wide and 4 squares tall is drawn on squared paper. You draw one of its diagonals.
+
+      How many squares does the diagonal pass through (not just touch at a corner)?
+    hint: The formula is width + height − something.
+    a: |
+      8 = 6 + 4 − gcd(6, 4). The line crosses into a new square at each grid line, but at the 2 − 1 inner lattice points it crosses two lines at once.
+  pt:
+    title: A diagonal
+    q: |
+      Num papel quadriculado desenha-se um retângulo com 6 quadrados de largura e 4 de altura, e uma das suas diagonais.
+
+      Por quantos quadrados passa a diagonal (sem contar os que só toca num canto)?
+    hint: A fórmula é largura + altura − alguma coisa.
+    a: |
+      8 = 6 + 4 − mdc(6, 4). A linha entra num quadrado novo em cada linha da grelha, mas no ponto interior onde cruza duas linhas ao mesmo tempo só conta uma vez.
+
+- answer: [18]
+  en:
+    title: Removed number
+    q: |
+      The average of 5 numbers is 10. You remove one and the average of the other 4 is 8.
+
+      What number did you remove?
+    hint: Work with totals, not averages.
+    a: |
+      18. The total was 50, now it's 32.
+  pt:
+    title: O número retirado
+    q: |
+      A média de 5 números é 10. Retiras um e a média dos outros 4 é 8.
+
+      Que número retiraste?
+    hint: Trabalha com totais, não com médias.
+    a: |
+      18. O total era 50, agora é 32.
+
+- answer: [2520]
+  en:
+    title: Divisible by all
+    q: |
+      What is the smallest positive number divisible by every number from 1 to 10?
+    hint: Find the highest power of each prime you need.
+    a: |
+      2520 = 2³ × 3² × 5 × 7.
+  pt:
+    title: Divisível por todos
+    q: |
+      Qual o menor número positivo divisível por todos os números de 1 a 10?
+    hint: Encontra a maior potência de cada primo de que precisas.
+    a: |
+      2520 = 2³ × 3² × 5 × 7.
+
+- answer: [89]
+  en:
+    title: Climbing stairs
+    q: |
+      You climb a staircase of 10 steps, taking 1 or 2 steps at a time.
+
+      In how many different ways can you reach the top?
+    hint: To reach step n, your last move came from step n−1 or n−2.
+    a: |
+      89. Ways(n) = Ways(n−1) + Ways(n−2): 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.
+  pt:
+    title: Subir escadas
+    q: |
+      Sobes uma escada de 10 degraus, 1 ou 2 degraus de cada vez.
+
+      De quantas maneiras diferentes chegas ao topo?
+    hint: Para chegar ao degrau n, vieste do n−1 ou do n−2.
+    a: |
+      89. Maneiras(n) = Maneiras(n−1) + Maneiras(n−2): 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.
+
+- answer: [99]
+  en:
+    title: Knockout tournament
+    q: |
+      100 players enter a knockout tennis tournament (byes allowed).
+
+      How many matches are played to find the winner?
+    hint: How many players does each match eliminate?
+    a: |
+      99. Each match eliminates exactly one player, and 99 must be eliminated.
+  pt:
+    title: Torneio a eliminar
+    q: |
+      100 jogadores entram num torneio de ténis a eliminar (com isenções quando preciso).
+
+      Quantos jogos se jogam até haver um vencedor?
+    hint: Quantos jogadores elimina cada jogo?
+    a: |
+      99. Cada jogo elimina exatamente um jogador, e é preciso eliminar 99.
+
+- answer: [5]
+  en:
+    title: Ten statements
+    q: |
+      10 people in a room are each either truthful or a liar. Person 1 says "At least 1 of us is a liar", person 2 says "At least 2 of us are liars", … person 10 says "At least 10 of us are liars".
+
+      How many liars are there?
+    hint: If there are L liars, which statements are true?
+    a: |
+      5. With L liars, statements 1…L are true, so there are L truth-tellers and 10 − L liars. L = 10 − L gives L = 5.
+  pt:
+    title: Dez afirmações
+    q: |
+      10 pessoas numa sala são sinceras ou mentirosas. A pessoa 1 diz "Pelo menos 1 de nós é mentiroso", a 2 diz "Pelo menos 2 de nós são mentirosos", … a 10 diz "Pelo menos 10 de nós são mentirosos".
+
+      Quantos mentirosos há?
+    hint: Se há L mentirosos, que afirmações são verdadeiras?
+    a: |
+      5. Com L mentirosos, as afirmações 1…L são verdadeiras, logo há L sinceros e 10 − L mentirosos. L = 10 − L dá L = 5.
+
+- answer: [36]
+  en:
+    title: Reversed ages
+    q: |
+      My age reversed is my mother's age. The difference between our ages is 27 and their sum is 99.
+
+      How old am I?
+    hint: Ages ab and ba: their sum is 11(a + b), their difference 9(b − a).
+    a: |
+      36. a + b = 9 and b − a = 3, so I'm 36 and my mother is 63.
+  pt:
+    title: Idades ao contrário
+    q: |
+      A minha idade ao contrário é a idade da minha mãe. A diferença das idades é 27 e a soma é 99.
+
+      Que idade tenho?
+    hint: Idades ab e ba: a soma é 11(a + b), a diferença 9(b − a).
+    a: |
+      36. a + b = 9 e b − a = 3, logo tenho 36 e a minha mãe 63.
+
+- answer: [0.375]
+  en:
+    title: Two of three
+    q: |
+      You flip a fair coin 3 times.
+
+      What is the probability of exactly 2 heads? (Give a decimal.)
+    hint: List the 8 outcomes.
+    a: |
+      3/8 = 0.375: HHT, HTH, THH out of 8.
+  pt:
+    title: Duas em três
+    q: |
+      Lanças uma moeda justa 3 vezes.
+
+      Qual a probabilidade de saírem exatamente 2 caras? (Dá um decimal.)
+    hint: Lista os 8 resultados.
+    a: |
+      3/8 = 0,375: CCK, CKC, KCC em 8.
+
+- answer: [1]
+  en:
+    title: Sliding ladder
+    q: |
+      A 5 m ladder leans against a wall with its foot 3 m from the wall. The top slides down 1 m.
+
+      How many metres does the foot move away from the wall?
+    hint: Pythagoras, twice.
+    a: |
+      1 m. The top starts at 4 m and drops to 3 m, so the foot is now at √(25 − 9) = 4 m.
+  pt:
+    title: Escada a escorregar
+    q: |
+      Uma escada de 5 m está encostada a uma parede com o pé a 3 m da parede. O topo escorrega 1 m.
+
+      Quantos metros se afasta o pé da parede?
+    hint: Pitágoras, duas vezes.
+    a: |
+      1 m. O topo começa a 4 m e desce para 3 m, por isso o pé fica a √(25 − 9) = 4 m.
+
+- answer: [12]
+  en:
+    title: The pole
+    q: |
+      A third of a pole is stuck in the mud, a quarter is under water, and 5 m stick out above the water.
+
+      How long is the pole, in metres?
+    hint: What fraction is above the water?
+    a: |
+      12 m. 1 − 1/3 − 1/4 = 5/12 of the pole is 5 m.
+  pt:
+    title: O poste
+    q: |
+      Um terço de um poste está enterrado na lama, um quarto está debaixo de água e 5 m estão fora de água.
+
+      Quanto mede o poste, em metros?
+    hint: Que fração está fora de água?
+    a: |
+      12 m. 1 − 1/3 − 1/4 = 5/12 do poste são 5 m.
+
+- answer: [4]
+  en:
+    title: Gears
+    q: |
+      Gear A has 12 teeth and meshes with gear B, which has 30 teeth. Gear A turns 10 times.
+
+      How many times does gear B turn?
+    hint: Count teeth that pass the meeting point.
+    a: |
+      4. 10 × 12 = 120 teeth pass, and 120 / 30 = 4.
+  pt:
+    title: Engrenagens
+    q: |
+      A roda A tem 12 dentes e engrena na roda B, que tem 30. A roda A dá 10 voltas.
+
+      Quantas voltas dá a roda B?
+    hint: Conta os dentes que passam no ponto de contacto.
+    a: |
+      4. Passam 10 × 12 = 120 dentes, e 120 / 30 = 4.
+
+- answer: [36]
+  en:
+    title: Rectangles in a grid
+    q: |
+      How many rectangles of any size (squares included) are there in a 3 × 3 grid of squares?
+    hint: A rectangle is chosen by 2 of the 4 vertical lines and 2 of the 4 horizontal lines.
+    a: |
+      36. C(4, 2) × C(4, 2) = 6 × 6.
+  pt:
+    title: Retângulos na grelha
+    q: |
+      Quantos retângulos de qualquer tamanho (incluindo quadrados) há numa grelha 3 × 3 de quadrados?
+    hint: Um retângulo escolhe-se com 2 das 4 linhas verticais e 2 das 4 horizontais.
+    a: |
+      36. C(4, 2) × C(4, 2) = 6 × 6.
+
+- answer: [3]
+  en:
+    title: Friday the 13th
+    q: |
+      What is the largest number of Friday the 13ths that can happen in one calendar year?
+    hint: The 13th of each month falls on a weekday determined by the month's start.
+    a: |
+      3. For example, in a common year starting on a Thursday, February, March and November all have a Friday the 13th. No year can have more.
+  pt:
+    title: Sexta-feira 13
+    q: |
+      Qual o maior número de sextas-feiras 13 que pode haver num ano?
+    hint: O dia 13 de cada mês cai num dia da semana que depende de como o mês começa.
+    a: |
+      3. Por exemplo, num ano comum que começa a uma quinta-feira, fevereiro, março e novembro têm sexta-feira 13. Nenhum ano tem mais.
+
+- answer: [94]
+  en:
+    title: Strange sequence
+    q: |
+      What comes next?
+
+      1, 4, 9, 61, 52, 63, ?
+    hint: Read some of them backwards.
+    a: |
+      94. They're the squares 1, 4, 9, 16, 25, 36, 49 written backwards.
+  pt:
+    title: Sequência estranha
+    q: |
+      Qual é o próximo?
+
+      1, 4, 9, 61, 52, 63, ?
+    hint: Lê alguns ao contrário.
+    a: |
+      94. São os quadrados 1, 4, 9, 16, 25, 36, 49 escritos ao contrário.
+
+- en:
+    title: Letter sequence
+    q: |
+      What letter comes next?
+
+      O, T, T, F, F, S, S, E, ?
+    hint: Count.
+    a: |
+      N. They're the first letters of One, Two, Three, … Eight, Nine.
+  pt:
+    title: Sequência de letras
+    q: |
+      Que letra vem a seguir?
+
+      U, D, T, Q, C, S, S, O, ?
+    hint: Conta.
+    a: |
+      N. São as iniciais de Um, Dois, Três, … Oito, Nove.
+
+- en:
+    title: Sharing the wine
+    q: |
+      You have an 8-litre jug full of wine and empty 5-litre and 3-litre jugs.
+
+      How do you split the wine into two equal parts of 4 litres?
+    hint: You'll need about 7 pours.
+    a: |
+      (8, 5, 3): 8,0,0 → 3,5,0 → 3,2,3 → 6,2,0 → 6,0,2 → 1,5,2 → 1,4,3 → 4,4,0.
+  pt:
+    title: Dividir o vinho
+    q: |
+      Tens um jarro de 8 litros cheio de vinho e jarros vazios de 5 e 3 litros.
+
+      Como divides o vinho em duas partes iguais de 4 litros?
+    hint: Precisas de umas 7 transferências.
+    a: |
+      (8, 5, 3): 8,0,0 → 3,5,0 → 3,2,3 → 6,2,0 → 6,0,2 → 1,5,2 → 1,4,3 → 4,4,0.
+
+- answer: [5]
+  en:
+    title: Circle of ten
+    q: |
+      10 people stand in a circle, numbered 1 to 10. Starting with person 1, every second person leaves: 2, 4, 6, … and it keeps going around the circle.
+
+      Which number is the last one left?
+    hint: Simulate it. After the first lap, who remains?
+    a: |
+      5. First lap removes 2, 4, 6, 8, 10. Then 3, 7, 1, 9 leave, leaving 5.
+  pt:
+    title: Roda de dez
+    q: |
+      10 pessoas estão numa roda, numeradas de 1 a 10. A começar no 1, sai uma pessoa sim, outra não: 2, 4, 6, … e continua à volta.
+
+      Qual o número que fica no fim?
+    hint: Simula. Depois da primeira volta, quem fica?
+    a: |
+      5. A primeira volta tira 2, 4, 6, 8, 10. Depois saem 3, 7, 1, 9, e fica o 5.
+
+- answer: [6]
+  en:
+    title: Waiting for a six
+    q: |
+      You roll a die until you get a 6.
+
+      On average, how many rolls does it take?
+    hint: The chance per roll is 1/6.
+    a: |
+      6. For an event with probability p, the expected number of tries is 1/p.
+  pt:
+    title: À espera de um seis
+    q: |
+      Lanças um dado até sair um 6.
+
+      Em média, quantos lançamentos são precisos?
+    hint: A probabilidade em cada lançamento é 1/6.
+    a: |
+      6. Para um acontecimento com probabilidade p, o número médio de tentativas é 1/p.
+
+- answer: [5]
+  en:
+    title: Bus stop
+    q: |
+      A bus comes exactly every 10 minutes. You arrive at the stop at a random time.
+
+      On average, how many minutes do you wait?
+    hint: Your wait is equally likely to be anything from 0 to 10.
+    a: |
+      5 minutes.
+  pt:
+    title: Paragem de autocarro
+    q: |
+      Passa um autocarro exatamente a cada 10 minutos. Chegas à paragem a uma hora aleatória.
+
+      Em média, quantos minutos esperas?
+    hint: A espera é igualmente provável entre 0 e 10.
+    a: |
+      5 minutos.
+
+- answer: [2]
+  en:
+    title: Rolling coin
+    q: |
+      Two identical coins lie flat. You roll one all the way around the edge of the other, without slipping, until it's back where it started.
+
+      How many full turns does the rolling coin make?
+    hint: Try it with two real coins.
+    a: |
+      2. It turns once from rolling its own circumference, plus once more because it also goes around the other coin.
+  pt:
+    title: Moeda a rolar
+    q: |
+      Duas moedas iguais estão pousadas. Rolas uma à volta da outra, sem escorregar, até voltar ao ponto de partida.
+
+      Quantas voltas completas dá a moeda que rola?
+    hint: Experimenta com duas moedas.
+    a: |
+      2. Dá uma volta por rolar o seu próprio perímetro, e mais uma por também dar a volta à outra moeda.
+
+- en:
+    title: Which is bigger?
+    q: |
+      Which is bigger: 2³⁰ or 3²⁰?
+    hint: Write both as tenth powers.
+    a: |
+      3²⁰. 2³⁰ = 8¹⁰ and 3²⁰ = 9¹⁰.
+  pt:
+    title: Qual é maior?
+    q: |
+      Qual é maior: 2³⁰ ou 3²⁰?
+    hint: Escreve os dois como potências de expoente 10.
+    a: |
+      3²⁰. 2³⁰ = 8¹⁰ e 3²⁰ = 9¹⁰.
+
+- en:
+    title: 4 and 9 litre jugs
+    q: |
+      You have a 4-litre jug, a 9-litre jug and a tap.
+
+      How do you measure exactly 6 litres?
+    hint: First try to get 1 litre in the 4-litre jug.
+    a: |
+      Fill the 9 and pour into the 4 twice (emptying the 4 between): 1 L stays in the 9. Pour that 1 L into the empty 4. Fill the 9 again and top up the 4 (it takes 3 L): 6 L remain in the 9.
+  pt:
+    title: Jarros de 4 e 9 litros
+    q: |
+      Tens um jarro de 4 litros, um de 9 e uma torneira.
+
+      Como medes exatamente 6 litros?
+    hint: Tenta primeiro ficar com 1 litro no jarro de 4.
+    a: |
+      Enche o de 9 e despeja no de 4 duas vezes (esvaziando o de 4 entre elas): fica 1 L no de 9. Passa esse 1 L para o de 4 vazio. Enche o de 9 e completa o de 4 (leva 3 L): ficam 6 L no de 9.
+
+- answer: [0.5]
+  en:
+    title: The older child
+    q: |
+      A family has two children. You learn that the older one is a girl.
+
+      What is the probability that both are girls? (Give a decimal.)
+    hint: Only the younger child is unknown.
+    a: |
+      0.5. The older is known; the younger is a girl with probability 1/2.
+  pt:
+    title: O filho mais velho
+    q: |
+      Uma família tem dois filhos. Sabes que o mais velho é uma rapariga.
+
+      Qual a probabilidade de serem as duas raparigas? (Dá um decimal.)
+    hint: Só o mais novo é desconhecido.
+    a: |
+      0,5. O mais velho já se sabe; o mais novo é rapariga com probabilidade 1/2.
+
+- en:
+    title: The slow clock
+    q: |
+      A clock loses 10 minutes every hour. You set it correctly at noon. Later it shows 6:00 pm.
+
+      What is the real time?
+    hint: In one real hour the clock moves only 50 minutes.
+    a: |
+      7:12 pm. The clock runs at 50/60 speed, so 6 clock hours = 6 × 60/50 = 7.2 real hours.
+  pt:
+    title: O relógio lento
+    q: |
+      Um relógio atrasa 10 minutos por hora. Acertas-o ao meio-dia. Mais tarde marca 18:00.
+
+      Que horas são realmente?
+    hint: Numa hora real o relógio só anda 50 minutos.
+    a: |
+      19:12. O relógio anda a 50/60 da velocidade, por isso 6 horas do relógio = 6 × 60/50 = 7,2 horas reais.

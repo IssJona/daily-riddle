@@ -1,0 +1,1227 @@
+# HARD riddles. Order = day order. Never reorder; only append.
+
+- answer: [10]
+  en:
+    title: The poisoned bottle
+    q: |
+      A king has 1,000 bottles of wine; exactly one is poisoned. Anyone who drinks even a drop falls ill exactly 24 hours later, not before. The party is in 24 hours.
+
+      What is the smallest number of tasters needed to find the poisoned bottle in time?
+    hint: Each taster either falls ill or doesn't: one bit of information.
+    a: |
+      10. Number the bottles in binary (10 digits, since 2¹⁰ = 1024). Taster k drinks from every bottle whose k-th digit is 1. After 24 h, the pattern of ill (1) and healthy (0) tasters spells the poisoned bottle's number.
+  pt:
+    title: A garrafa envenenada
+    q: |
+      Um rei tem 1000 garrafas de vinho; exatamente uma está envenenada. Quem beber uma gota fica doente exatamente 24 horas depois, não antes. A festa é daqui a 24 horas.
+
+      Qual o menor número de provadores para descobrir a garrafa a tempo?
+    hint: Cada provador fica doente ou não: um bit de informação.
+    a: |
+      10. Numera as garrafas em binário (10 dígitos, pois 2¹⁰ = 1024). O provador k bebe de todas as garrafas cujo k-ésimo dígito é 1. Passadas 24 h, o padrão de doentes (1) e saudáveis (0) dá o número da garrafa.
+
+- en:
+    title: Hats in a line
+    q: |
+      100 prisoners stand in a line facing forward, each with a black or white hat. Each sees all hats in front, not their own or those behind. Starting from the back, each says "black" or "white"; those who name their own colour go free. Everyone hears every answer.
+
+      With a plan agreed beforehand, how many can they guarantee to save?
+    hint: The last person can't be helped, but their word can carry information. Think odd or even.
+    a: |
+      99. The last prisoner says "black" if they see an odd number of black hats, "white" if even. Each next prisoner compares that parity with the black hats they see plus the answers already given, and deduces their own colour.
+  pt:
+    title: Chapéus em fila
+    q: |
+      100 prisioneiros estão em fila virados para a frente, cada um com um chapéu preto ou branco. Cada um vê os chapéus da frente, não o seu nem os de trás. A começar por trás, cada um diz "preto" ou "branco"; quem acertar na sua cor é libertado. Todos ouvem todas as respostas.
+
+      Com um plano combinado, quantos conseguem salvar de certeza?
+    hint: O último não pode ser ajudado, mas a sua palavra pode levar informação. Pensa em par ou ímpar.
+    a: |
+      99. O último diz "preto" se vir um número ímpar de chapéus pretos, "branco" se for par. Cada um a seguir compara essa paridade com os pretos que vê e as respostas já dadas, e deduz a sua cor.
+
+- answer: [14]
+  en:
+    title: Two eggs, 100 floors
+    q: |
+      You have 2 identical eggs and a 100-floor building. There's a highest floor from which an egg survives a drop. A broken egg can't be reused.
+
+      What is the minimum number of drops that guarantees finding that floor in the worst case?
+    hint: If the first egg breaks, you must test floor by floor with the second. Make each first-egg jump one smaller than the last.
+    a: |
+      14. Drop the first egg from floors 14, 27, 39, 50, 60, 69, 77, 84, 90, 95, 99, 100 (gaps 14, 13, 12…). When it breaks, check the floors in between one by one. 14 + 13 + … + 1 = 105 ≥ 100, while 13 drops only cover 91.
+  pt:
+    title: Dois ovos, 100 andares
+    q: |
+      Tens 2 ovos iguais e um prédio de 100 andares. Há um andar máximo do qual um ovo sobrevive à queda. Um ovo partido não se reutiliza.
+
+      Qual o número mínimo de lançamentos que garante descobrir esse andar no pior caso?
+    hint: Se o primeiro ovo partir, tens de testar andar a andar com o segundo. Faz cada salto do primeiro ovo um a menos que o anterior.
+    a: |
+      14. Lança o primeiro ovo dos andares 14, 27, 39, 50, 60, 69, 77, 84, 90, 95, 99, 100 (saltos de 14, 13, 12…). Quando partir, testa um a um os andares intermédios. 14 + 13 + … + 1 = 105 ≥ 100, enquanto 13 lançamentos só cobrem 91.
+
+- answer: [36]
+  en:
+    title: How old are we?
+    q: |
+      I am twice as old as you were when I was as old as you are now. Our ages add up to 63.
+
+      How old am I?
+    hint: Call my age x and yours y. The gap x − y never changes.
+    a: |
+      36 (and you're 27). When I was y, you were 2y − x. So x = 2(2y − x) → 3x = 4y; with x + y = 63, x = 36. Check: when I was 27 you were 18, and 36 = 2 × 18.
+  pt:
+    title: Que idade temos?
+    q: |
+      Eu tenho o dobro da idade que tu tinhas quando eu tinha a idade que tu tens agora. As nossas idades somam 63.
+
+      Que idade tenho eu?
+    hint: Chama x à minha idade e y à tua. A diferença x − y nunca muda.
+    a: |
+      36 (e tu 27). Quando eu tinha y, tu tinhas 2y − x. Então x = 2(2y − x) → 3x = 4y; com x + y = 63, x = 36. Verificação: quando eu tinha 27 tu tinhas 18, e 36 = 2 × 18.
+
+- answer: [0.6667, 0.667, 0.67]
+  tol: 0.005
+  en:
+    title: Three cards
+    q: |
+      A hat holds three cards: red/red, white/white and red/white. You draw one at random and see only the top side: it's red.
+
+      What is the probability the other side is red too? (Give a decimal.)
+    hint: Not 1/2. Count red faces, not cards.
+    a: |
+      2/3. There are 3 red faces you could be looking at, two of them on the red/red card.
+  pt:
+    title: Três cartas
+    q: |
+      Num chapéu há três cartas: vermelha/vermelha, branca/branca e vermelha/branca. Tiras uma ao acaso e só vês o lado de cima: é vermelho.
+
+      Qual a probabilidade de o outro lado também ser vermelho? (Dá um decimal.)
+    hint: Não é 1/2. Conta faces vermelhas, não cartas.
+    a: |
+      2/3. Há 3 faces vermelhas que podes estar a ver, duas delas na carta vermelha/vermelha.
+
+- en:
+    title: Twelve islanders
+    q: |
+      12 people are on an island. One weighs differently from the rest (heavier or lighter, you don't know which); the other 11 all weigh the same.
+
+      You have a two-pan balance that only tells you which side is heavier, and you may use it 3 times. How do you find the odd one out?
+    hint: Start with 4 vs 4. If it tips, the second weighing should move some people across, take some off, and bring in people known to be normal.
+    a: |
+      Number them 1–12. Weigh 1 2 3 4 vs 5 6 7 8.
+
+      BALANCED → odd one is in 9–12. Weigh 9 10 11 vs 1 2 3. Balanced → 12. If 9 10 11 is heavier (or lighter), the odd one is among them and you know which way: weigh 9 vs 10 to finish (balanced → 11).
+
+      LEFT HEAVIER → one of 1–4 is heavy or one of 5–8 is light. Weigh 1 2 5 vs 3 6 9.
+      • Balanced → 4 heavy, or 7/8 light: weigh 7 vs 8 (lighter one; balanced → 4).
+      • Left heavier → 1 or 2 heavy, or 6 light: weigh 1 vs 2 (heavier one; balanced → 6).
+      • Right heavier → 3 heavy or 5 light: weigh 3 vs 9 (heavier → 3; balanced → 5).
+
+      LEFT LIGHTER → the same with heavy and light swapped.
+  pt:
+    title: Doze pessoas na ilha
+    q: |
+      Numa ilha estão 12 pessoas. Uma pesa diferente das outras (mais ou menos, não sabes); as outras 11 pesam todas o mesmo.
+
+      Tens uma balança de dois pratos que só diz qual o lado mais pesado, e podes usá-la 3 vezes. Como descobres a pessoa diferente?
+    hint: Começa com 4 contra 4. Se desequilibrar, na segunda pesagem troca algumas de lado, tira outras e junta pessoas que sabes serem normais.
+    a: |
+      Numera-as de 1 a 12. Pesa 1 2 3 4 contra 5 6 7 8.
+
+      EQUILIBRA → a diferente está em 9–12. Pesa 9 10 11 contra 1 2 3. Equilibra → 12. Se 9 10 11 for mais pesado (ou leve), está aí e já sabes o sentido: pesa 9 contra 10 (equilibra → 11).
+
+      ESQUERDA MAIS PESADA → uma de 1–4 é pesada ou uma de 5–8 é leve. Pesa 1 2 5 contra 3 6 9.
+      • Equilibra → 4 pesada, ou 7/8 leve: pesa 7 contra 8 (a mais leve; equilibra → 4).
+      • Esquerda mais pesada → 1 ou 2 pesada, ou 6 leve: pesa 1 contra 2 (a mais pesada; equilibra → 6).
+      • Direita mais pesada → 3 pesada ou 5 leve: pesa 3 contra 9 (mais pesada → 3; equilibra → 5).
+
+      ESQUERDA MAIS LEVE → igual, trocando pesado e leve.
+
+- answer: [10652]
+  en:
+    title: SEND + MORE = MONEY
+    q: |
+      Each letter is a different digit, and no number starts with 0:
+
+        SEND
+      + MORE
+      = MONEY
+
+      What number is MONEY?
+    hint: M must be 1. What does that force S and O to be?
+    a: |
+      10652. 9567 + 1085 = 10652. M = 1 (carry), so S = 9 and O = 0; the rest follows column by column.
+  pt:
+    title: SEND + MORE = MONEY
+    q: |
+      Cada letra é um algarismo diferente, e nenhum número começa por 0:
+
+        SEND
+      + MORE
+      = MONEY
+
+      Que número é MONEY?
+    hint: M tem de ser 1. O que obriga isso para S e O?
+    a: |
+      10652. 9567 + 1085 = 10652. M = 1 (o transporte), logo S = 9 e O = 0; o resto sai coluna a coluna.
+
+- answer: [98]
+  en:
+    title: Five pirates
+    q: |
+      5 pirates of different seniority share 100 gold coins. The most senior proposes a split and everyone votes. If at least half agree (proposer included), it's done; otherwise the proposer is thrown overboard and the next one proposes.
+
+      Pirates are perfectly logical: they want to survive, then maximise gold, and, all else equal, enjoy throwing someone overboard. How many coins does the most senior pirate keep?
+    hint: Start with 2 pirates and work upwards.
+    a: |
+      98. With pirates A > B > C > D > E: with only D and E, D keeps everything. With C, D, E: C gives E 1 coin. With B to E: B gives D 1. So A offers 1 coin each to C and E (who'd get nothing otherwise): 98, 0, 1, 0, 1.
+  pt:
+    title: Cinco piratas
+    q: |
+      5 piratas de antiguidade diferente dividem 100 moedas de ouro. O mais antigo propõe uma divisão e todos votam. Se pelo menos metade aceitar (incluindo quem propõe), fica assim; senão, o proponente é atirado ao mar e propõe o seguinte.
+
+      Os piratas são perfeitamente lógicos: querem sobreviver, depois ter o máximo de ouro e, em igualdade, gostam de atirar alguém ao mar. Com quantas moedas fica o mais antigo?
+    hint: Começa com 2 piratas e sobe.
+    a: |
+      98. Com piratas A > B > C > D > E: só com D e E, D fica com tudo. Com C, D, E: C dá 1 a E. Com B a E: B dá 1 a D. Por isso A oferece 1 moeda a C e a E (que de outra forma nada teriam): 98, 0, 1, 0, 1.
+
+- answer: [4]
+  en:
+    title: The handshake party
+    q: |
+      My wife and I went to a party with 4 other couples. Some people shook hands; nobody shook their own partner's hand or anyone's hand twice. Afterwards I asked the 9 others how many hands they'd shaken, and all 9 answers were different.
+
+      How many hands did my wife shake?
+    hint: The answers must be 0 to 8. Who is the partner of the person who shook 8?
+    a: |
+      4. The person with 8 shook everyone except their partner, so their partner has 0. Pair off 7 & 1, 6 & 2, 5 & 3 the same way. The one left unpaired, my wife, shook 4.
+  pt:
+    title: A festa dos apertos de mão
+    q: |
+      Eu e a minha mulher fomos a uma festa com mais 4 casais. Algumas pessoas apertaram mãos; ninguém apertou a mão ao próprio par nem a mesma mão duas vezes. No fim perguntei aos outros 9 quantas mãos tinham apertado, e as 9 respostas foram todas diferentes.
+
+      Quantas mãos apertou a minha mulher?
+    hint: As respostas têm de ser de 0 a 8. Quem é o par de quem apertou 8?
+    a: |
+      4. Quem apertou 8 apertou a todos menos ao par, logo o par apertou 0. Emparelha da mesma forma 7 e 1, 6 e 2, 5 e 3. A que sobra, a minha mulher, apertou 4.
+
+- answer: [9]
+  en:
+    title: The census taker
+    q: |
+      A census taker asks a woman the ages of her three daughters. "Their ages multiply to 36." He says that's not enough. "Their ages add up to our house number." He looks at the number and says it's still not enough. "My eldest daughter plays the piano."
+
+      How old is the eldest?
+    hint: List all triples with product 36 and their sums. Which sum is ambiguous?
+    a: |
+      9. Only the sum 13 is ambiguous: 1+6+6 and 2+2+9. "Eldest" rules out 6, 6 (no single eldest), so the ages are 2, 2, 9.
+  pt:
+    title: O recenseador
+    q: |
+      Um recenseador pergunta a uma senhora as idades das três filhas. "O produto das idades é 36." Ele diz que não chega. "A soma é o número da nossa porta." Ele olha para o número e diz que ainda não chega. "A minha filha mais velha toca piano."
+
+      Que idade tem a mais velha?
+    hint: Lista os trios com produto 36 e as somas. Que soma é ambígua?
+    a: |
+      9. Só a soma 13 é ambígua: 1+6+6 e 2+2+9. "A mais velha" exclui 6 e 6 (não há uma só mais velha), logo as idades são 2, 2, 9.
+
+- en:
+    title: Cheryl's birthday
+    q: |
+      Cheryl's birthday is one of: May 15, 16, 19 · June 17, 18 · July 14, 16 · August 14, 15, 17. She tells Albert only the month and Bernard only the day.
+
+      Albert: "I don't know it, but I know Bernard doesn't know either."
+      Bernard: "At first I didn't know, but now I do."
+      Albert: "Then I know too."
+
+      When is Cheryl's birthday?
+    hint: Days 18 and 19 appear only once. Which months can Albert rule out?
+    a: |
+      16 July. Albert's month can't contain a unique day (18 or 19), so it's July or August. Bernard now knows, so his day isn't 14: it's 16, 15 or 17. Albert then knows, so his month has only one of those left: July (16).
+  pt:
+    title: O aniversário da Cheryl
+    q: |
+      O aniversário da Cheryl é um destes: 15, 16, 19 de maio · 17, 18 de junho · 14, 16 de julho · 14, 15, 17 de agosto. Ela diz só o mês ao Alberto e só o dia ao Bernardo.
+
+      Alberto: "Não sei, mas sei que o Bernardo também não sabe."
+      Bernardo: "Ao início não sabia, mas agora sei."
+      Alberto: "Então também já sei."
+
+      Quando faz anos a Cheryl?
+    hint: Os dias 18 e 19 só aparecem uma vez. Que meses pode o Alberto excluir?
+    a: |
+      16 de julho. O mês do Alberto não pode ter um dia único (18 ou 19), logo é julho ou agosto. O Bernardo passa a saber, por isso o dia não é 14: é 16, 15 ou 17. O Alberto passa a saber, por isso o seu mês só tem um desses: julho (16).
+
+- answer: [100]
+  en:
+    title: Blue eyes
+    q: |
+      On an island live 100 people with blue eyes and 100 with brown eyes. Nobody knows their own eye colour, and there are no mirrors. Every night, anyone who knows their eye colour for sure leaves. Everyone is a perfect logician and sees everyone else.
+
+      One day a visitor announces: "I see someone with blue eyes." On which night do the blue-eyed people leave?
+    hint: Solve it for 1 blue-eyed person, then 2, then 3.
+    a: |
+      Night 100. With 1 blue-eyed person, they leave on night 1. With 2, each waits to see if the other leaves on night 1; when they don't, both leave on night 2. By induction, 100 leave on night 100.
+  pt:
+    title: Olhos azuis
+    q: |
+      Numa ilha vivem 100 pessoas de olhos azuis e 100 de olhos castanhos. Ninguém sabe a cor dos próprios olhos e não há espelhos. Todas as noites, quem tiver a certeza da sua cor de olhos vai embora. Todos são lógicos perfeitos e veem todos os outros.
+
+      Um dia, um visitante anuncia: "Vejo alguém de olhos azuis." Em que noite partem os de olhos azuis?
+    hint: Resolve para 1 pessoa de olhos azuis, depois 2, depois 3.
+    a: |
+      Na noite 100. Com 1 pessoa de olhos azuis, parte na noite 1. Com 2, cada uma espera para ver se a outra parte na noite 1; como não parte, saem ambas na noite 2. Por indução, 100 partem na noite 100.
+
+- en:
+    title: The light bulb room
+    q: |
+      100 prisoners are in solitary cells. A room has a light bulb, initially off. Each day the warden picks a random prisoner (repeats allowed) to visit the room, where they can toggle the bulb. At any time, any prisoner may declare "everyone has visited the room". If right, all go free; if wrong, nobody does.
+
+      They can agree on a plan once beforehand. What plan works?
+    hint: Give one prisoner a special job.
+    a: |
+      Choose one counter. Every other prisoner turns the bulb on the first time they find it off, and never again. Only the counter turns it off, adding 1 each time. When the counter reaches 99, they declare.
+  pt:
+    title: A sala da lâmpada
+    q: |
+      100 prisioneiros estão em celas isoladas. Uma sala tem uma lâmpada, inicialmente apagada. Todos os dias o guarda escolhe um prisioneiro ao acaso (pode repetir) para ir à sala, onde pode ligar ou desligar a lâmpada. A qualquer momento, qualquer um pode declarar "todos já visitaram a sala". Se acertar, todos são libertados; se errar, ninguém.
+
+      Podem combinar um plano antes. Que plano funciona?
+    hint: Dá a um dos prisioneiros uma função especial.
+    a: |
+      Escolhem um contador. Cada um dos outros acende a lâmpada na primeira vez que a encontrar apagada, e nunca mais. Só o contador a apaga, somando 1 de cada vez. Quando chegar a 99, declara.
+
+- answer: [2.236, 2.24]
+  tol: 0.005
+  en:
+    title: Ant on a cube
+    q: |
+      An ant sits on one corner of a cube with 1 m edges. It wants to reach the opposite corner, walking only on the surface.
+
+      What is the length of its shortest path, in metres?
+    hint: Unfold two faces flat.
+    a: |
+      √5 ≈ 2.236 m. Unfolded, two adjacent faces make a 2 × 1 rectangle, and the path is its diagonal.
+  pt:
+    title: Formiga no cubo
+    q: |
+      Uma formiga está num canto de um cubo com 1 m de aresta. Quer chegar ao canto oposto andando só pela superfície.
+
+      Qual o comprimento do caminho mais curto, em metros?
+    hint: Planifica duas faces.
+    a: |
+      √5 ≈ 2,236 m. Planificadas, duas faces vizinhas formam um retângulo 2 × 1, e o caminho é a diagonal.
+
+- answer: [5.4545, 5.45]
+  tol: 0.02
+  en:
+    title: Next overlap
+    q: |
+      At 12:00 the hands of a clock overlap.
+
+      How many minutes after 1:00 do they next overlap? (Give a decimal.)
+    hint: The minute hand gains 5.5° per minute on the hour hand.
+    a: |
+      5 5/11 ≈ 5.45 minutes. The hands overlap every 12/11 hours = 65 5/11 minutes.
+  pt:
+    title: A sobreposição seguinte
+    q: |
+      Às 12:00 os ponteiros sobrepõem-se.
+
+      Quantos minutos depois da 1:00 voltam a sobrepor-se? (Dá um decimal.)
+    hint: O ponteiro dos minutos ganha 5,5° por minuto ao das horas.
+    a: |
+      5 5/11 ≈ 5,45 minutos. Os ponteiros sobrepõem-se a cada 12/11 horas = 65 5/11 minutos.
+
+- en:
+    title: Make 24 (I)
+    q: |
+      Using 1, 3, 4 and 6 exactly once each, with +, −, ×, ÷ and brackets, make 24.
+    hint: You'll need a fraction.
+    a: |
+      6 ÷ (1 − 3/4) = 6 ÷ 1/4 = 24.
+  pt:
+    title: Fazer 24 (I)
+    q: |
+      Usando 1, 3, 4 e 6 exatamente uma vez cada, com +, −, ×, ÷ e parênteses, faz 24.
+    hint: Vais precisar de uma fração.
+    a: |
+      6 ÷ (1 − 3/4) = 6 ÷ 1/4 = 24.
+
+- en:
+    title: Three wise men
+    q: |
+      A king has 3 white and 2 black hats. He puts a hat on each of three wise men, who can see the others' hats but not their own. All three get white hats. After a long silence, one of them correctly announces his colour.
+
+      How did he know it was white?
+    hint: What would he conclude if he imagined his own hat were black?
+    a: |
+      If mine were black, each of the others would see one black and one white. Each would think: "If I were black too, the third would see two blacks and know instantly he's white." Since nobody spoke, they'd both work out they're white quickly. But they stayed silent, so my hat isn't black.
+  pt:
+    title: Três sábios
+    q: |
+      Um rei tem 3 chapéus brancos e 2 pretos. Põe um chapéu em cada um de três sábios, que veem os chapéus dos outros mas não o seu. Os três recebem chapéus brancos. Após um longo silêncio, um deles anuncia corretamente a sua cor.
+
+      Como soube que era branco?
+    hint: O que concluiria se imaginasse que o seu chapéu era preto?
+    a: |
+      Se o meu fosse preto, cada um dos outros veria um preto e um branco. Cada um pensaria: "Se eu também fosse preto, o terceiro veria dois pretos e saberia logo que é branco." Como ninguém falou, depressa ambos concluiriam que são brancos. Mas ficaram calados, por isso o meu não é preto.
+
+- en:
+    title: Three houses
+    q: |
+      Three houses stand in a row: left, middle, right. They're red, green and blue; Ana, Bruno and Carla live in them; the pets are a cat, a dog and a fish (one each).
+
+      1. Ana lives in the red house.
+      2. The dog lives in the middle house.
+      3. Bruno lives immediately to the right of the green house.
+      4. Carla has the fish.
+      5. The blue house is not on the left.
+
+      Who has the cat?
+    hint: Where can the green house be, given clue 3?
+    a: |
+      Ana. Green can't be on the right. If green were in the middle, Bruno would be on the right, red (Ana) on the left, and Carla in the middle with the dog, but Carla has the fish. So green is on the left (Carla), Bruno in the blue middle house with the dog, Ana on the right in red with the cat.
+  pt:
+    title: Três casas
+    q: |
+      Três casas estão em fila: esquerda, meio, direita. São vermelha, verde e azul; nelas vivem a Ana, o Bruno e a Carla; os animais são um gato, um cão e um peixe (um por casa).
+
+      1. A Ana vive na casa vermelha.
+      2. O cão vive na casa do meio.
+      3. O Bruno vive imediatamente à direita da casa verde.
+      4. A Carla tem o peixe.
+      5. A casa azul não fica à esquerda.
+
+      Quem tem o gato?
+    hint: Onde pode ficar a casa verde, dada a pista 3?
+    a: |
+      A Ana. A verde não pode ficar à direita. Se ficasse no meio, o Bruno ficaria à direita, a vermelha (Ana) à esquerda e a Carla no meio com o cão, mas a Carla tem o peixe. Logo a verde fica à esquerda (Carla), o Bruno na casa azul do meio com o cão, e a Ana à direita, na vermelha, com o gato.
+
+- answer: [6]
+  en:
+    title: Two heads in a row
+    q: |
+      You flip a fair coin until you get two heads in a row.
+
+      On average, how many flips does it take?
+    hint: Let E be the expected flips from the start, and F after one head. Write two equations.
+    a: |
+      6. E = 1 + ½F + ½E and F = 1 + ½·0 + ½E. Solving: E = 6.
+  pt:
+    title: Duas caras seguidas
+    q: |
+      Lanças uma moeda justa até saírem duas caras seguidas.
+
+      Em média, quantos lançamentos são precisos?
+    hint: Seja E o número esperado a partir do início, e F depois de uma cara. Escreve duas equações.
+    a: |
+      6. E = 1 + ½F + ½E e F = 1 + ½·0 + ½E. Resolvendo: E = 6.
+
+- answer: [29]
+  en:
+    title: Five on the bridge
+    q: |
+      Five people must cross a bridge at night with one lamp. At most two cross at once, the lamp must be carried, and a pair moves at the slower pace. They take 1, 3, 6, 8 and 12 seconds.
+
+      What is the shortest total time, in seconds?
+    hint: Send the two slowest together, and use the fastest two as shuttles.
+    a: |
+      29. 1+3 (3), 1 back (1), 8+12 (12), 3 back (3), 1+3 (3), 1 back (1), 1+6 (6).
+  pt:
+    title: Cinco na ponte
+    q: |
+      Cinco pessoas têm de atravessar uma ponte à noite com uma lanterna. Passam no máximo duas de cada vez, a lanterna tem de ir, e um par anda ao ritmo do mais lento. Demoram 1, 3, 6, 8 e 12 segundos.
+
+      Qual o tempo total mínimo, em segundos?
+    hint: Manda os dois mais lentos juntos e usa os dois mais rápidos para trazer a lanterna.
+    a: |
+      29. 1+3 (3), 1 volta (1), 8+12 (12), 3 volta (3), 1+3 (3), 1 volta (1), 1+6 (6).
+
+- en:
+    title: Da and ja
+    q: |
+      At a fork, one road leads to the village. A local stands there: either a knight (always truthful) or a knave (always lies). He answers yes/no questions only with "da" or "ja", and you don't know which word means "yes".
+
+      What one question tells you the way?
+    hint: Build the question so the meaning of the words and his lying both cancel out.
+    a: |
+      Ask: "If I asked you whether the left road leads to the village, would you answer 'da'?" If he says "da", go left; if "ja", go right. Both the unknown language and any lie are applied twice, so they cancel.
+  pt:
+    title: Da e ja
+    q: |
+      Numa bifurcação, um dos caminhos leva à aldeia. Lá está um habitante: cavaleiro (diz sempre a verdade) ou mentiroso (mente sempre). Só responde "da" ou "ja", e não sabes qual quer dizer "sim".
+
+      Que pergunta única te diz o caminho?
+    hint: Constrói a pergunta para que o significado das palavras e a mentira se anulem.
+    a: |
+      Pergunta: "Se eu te perguntasse se o caminho da esquerda leva à aldeia, responderias 'da'?" Se disser "da", vai pela esquerda; se disser "ja", pela direita. A língua desconhecida e a eventual mentira aplicam-se duas vezes e anulam-se.
+
+- en:
+    title: Four cards
+    q: |
+      Each card has a letter on one side and a number on the other. On the table you see: E, K, 4, 7.
+
+      Rule: "If a card has a vowel on one side, it has an even number on the other." Which cards must you turn over to check the rule?
+    hint: Most people pick the 4. Can the 4 break the rule?
+    a: |
+      E and 7. E must have an even number behind it; 7 must not have a vowel behind it. K and 4 can't break the rule.
+  pt:
+    title: Quatro cartas
+    q: |
+      Cada carta tem uma letra de um lado e um número do outro. Na mesa vês: E, K, 4, 7.
+
+      Regra: "Se uma carta tem uma vogal de um lado, tem um número par do outro." Que cartas tens de virar para verificar a regra?
+    hint: Quase toda a gente escolhe o 4. O 4 pode violar a regra?
+    a: |
+      O E e o 7. O E tem de ter um par atrás; o 7 não pode ter uma vogal atrás. O K e o 4 não podem violar a regra.
+
+- en:
+    title: Coins on a table
+    q: |
+      Two players take turns placing identical coins flat on a round table. Coins can't overlap or hang off the edge. Whoever can't place a coin loses.
+
+      Do you want to go first or second, and how do you win?
+    hint: Symmetry.
+    a: |
+      First. Put your first coin exactly in the centre. Then always place your coin at the point opposite your opponent's, through the centre. If they found space, so will you.
+  pt:
+    title: Moedas na mesa
+    q: |
+      Dois jogadores põem à vez moedas iguais numa mesa redonda. As moedas não se podem sobrepor nem sair da mesa. Quem não conseguir pôr uma moeda perde.
+
+      Queres jogar primeiro ou segundo, e como ganhas?
+    hint: Simetria.
+    a: |
+      Primeiro. Põe a primeira moeda exatamente no centro. Depois põe sempre a tua no ponto simétrico ao da moeda do adversário, em relação ao centro. Se ele encontrou espaço, tu também encontras.
+
+- answer: [31]
+  en:
+    title: Circle of 41
+    q: |
+      41 people stand in a circle, numbered 1 to 41. Counting from 1, every third person leaves (3, 6, 9, …), continuing around the circle.
+
+      What number is the last one standing?
+    hint: The Josephus recurrence: J(n) = (J(n−1) + 3) mod n.
+    a: |
+      31. Using J(1) = 0 and J(n) = (J(n−1) + 3) mod n gives J(41) = 30, i.e. position 31.
+  pt:
+    title: Roda de 41
+    q: |
+      41 pessoas estão em roda, numeradas de 1 a 41. A contar do 1, sai uma em cada três (3, 6, 9, …), continuando à volta.
+
+      Qual o número que fica no fim?
+    hint: A recorrência de Josefo: J(n) = (J(n−1) + 3) mod n.
+    a: |
+      31. Com J(1) = 0 e J(n) = (J(n−1) + 3) mod n obtém-se J(41) = 30, ou seja, a posição 31.
+
+- en:
+    title: Calendar cubes
+    q: |
+      A desk calendar shows the day of the month (01 to 31) using two cubes, each with one digit on each face.
+
+      Which digits go on each cube?
+    hint: 11 and 22 need 1 and 2 on both cubes. And 0 has to pair with every digit. You're one face short… unless one digit can do double duty.
+    a: |
+      Cube 1: 0, 1, 2, 3, 4, 5. Cube 2: 0, 1, 2, 6, 7, 8. The 6 is turned upside down to make 9.
+  pt:
+    title: Cubos do calendário
+    q: |
+      Um calendário de secretária mostra o dia do mês (01 a 31) com dois cubos, cada um com um algarismo em cada face.
+
+      Que algarismos vão em cada cubo?
+    hint: 11 e 22 precisam do 1 e do 2 nos dois cubos. E o 0 tem de fazer par com todos. Falta uma face… a não ser que um algarismo sirva para dois.
+    a: |
+      Cubo 1: 0, 1, 2, 3, 4, 5. Cubo 2: 0, 1, 2, 6, 7, 8. O 6 vira-se ao contrário para fazer 9.
+
+- answer: [4]
+  en:
+    title: Two red socks
+    q: |
+      A drawer has only red and black socks. If you pick two at random, the probability that both are red is exactly 1/2.
+
+      What is the smallest possible number of socks in the drawer?
+    hint: r/n × (r−1)/(n−1) = 1/2. Try small n.
+    a: |
+      4: 3 red and 1 black. 3/4 × 2/3 = 1/2.
+  pt:
+    title: Duas meias vermelhas
+    q: |
+      Uma gaveta só tem meias vermelhas e pretas. Se tirares duas ao acaso, a probabilidade de serem ambas vermelhas é exatamente 1/2.
+
+      Qual o menor número possível de meias na gaveta?
+    hint: r/n × (r−1)/(n−1) = 1/2. Experimenta n pequenos.
+    a: |
+      4: 3 vermelhas e 1 preta. 3/4 × 2/3 = 1/2.
+
+- en:
+    title: All of us are knaves
+    q: |
+      Knights always tell the truth, knaves always lie. You meet A, B and C.
+
+      A says: "All of us are knaves."
+      B says: "Exactly one of us is a knight."
+
+      What is C?
+    hint: Can A be a knight?
+    a: |
+      A knave. A can't be a knight, so A is a knave and not all are knaves. If B were a knave too, the number of knights wouldn't be 1, so it would be 0, but then all would be knaves. So B is the one knight, and C is a knave.
+  pt:
+    title: Somos todos mentirosos
+    q: |
+      Cavaleiros dizem sempre a verdade, mentirosos mentem sempre. Encontras A, B e C.
+
+      A diz: "Somos todos mentirosos."
+      B diz: "Exatamente um de nós é cavaleiro."
+
+      O que é C?
+    hint: A pode ser cavaleiro?
+    a: |
+      Mentiroso. A não pode ser cavaleiro, logo é mentiroso e não são todos mentirosos. Se B também fosse mentiroso, o número de cavaleiros não seria 1, portanto seria 0, mas então seriam todos mentirosos. Logo B é o único cavaleiro e C é mentiroso.
+
+- en:
+    title: Three caskets
+    q: |
+      A portrait is in one of three caskets. Each has an inscription:
+
+      Gold: "The portrait is in this casket."
+      Silver: "The portrait is not in this casket."
+      Lead: "The portrait is not in the gold casket."
+
+      At most one inscription is true. Where is the portrait?
+    hint: Try each casket and count the true inscriptions.
+    a: |
+      Silver. Gold makes Gold and Silver true (2). Lead makes Silver and Lead true (2). Silver makes only Lead true.
+  pt:
+    title: Três cofres
+    q: |
+      Um retrato está num de três cofres. Cada um tem uma inscrição:
+
+      Ouro: "O retrato está neste cofre."
+      Prata: "O retrato não está neste cofre."
+      Chumbo: "O retrato não está no cofre de ouro."
+
+      No máximo uma inscrição é verdadeira. Onde está o retrato?
+    hint: Experimenta cada cofre e conta as inscrições verdadeiras.
+    a: |
+      Prata. Ouro torna verdadeiras Ouro e Prata (2). Chumbo torna verdadeiras Prata e Chumbo (2). Prata só torna verdadeira a de Chumbo.
+
+- answer: [0.8889, 0.889, 0.89]
+  tol: 0.005
+  en:
+    title: Suspicious coin
+    q: |
+      A bag has two coins: one fair, one with heads on both sides. You pick one at random and flip it 3 times: heads every time.
+
+      What is the probability you picked the double-headed coin? (Give a decimal.)
+    hint: Compare how likely 3 heads is with each coin.
+    a: |
+      8/9 ≈ 0.889. 3 heads has probability 1 with the double-headed coin and 1/8 with the fair one: 1 / (1 + 1/8) = 8/9.
+  pt:
+    title: Moeda suspeita
+    q: |
+      Um saco tem duas moedas: uma justa e outra com cara dos dois lados. Tiras uma ao acaso e lanças 3 vezes: sai sempre cara.
+
+      Qual a probabilidade de teres tirado a moeda de duas caras? (Dá um decimal.)
+    hint: Compara a probabilidade de 3 caras com cada moeda.
+    a: |
+      8/9 ≈ 0,889. 3 caras tem probabilidade 1 com a moeda de duas caras e 1/8 com a justa: 1 / (1 + 1/8) = 8/9.
+
+- en:
+    title: Chameleons
+    q: |
+      An island has 13 red, 15 green and 17 blue chameleons. When two chameleons of different colours meet, both change to the third colour.
+
+      Can all the chameleons end up the same colour?
+    hint: Look at the differences between the counts, modulo 3.
+    a: |
+      No. Each meeting changes the counts by (−1, −1, +2), so every difference between two counts changes by 0 or ±3. For all to be one colour, two counts must reach 0, so their difference must be divisible by 3. The differences are 2, 2 and 4: none is.
+  pt:
+    title: Camaleões
+    q: |
+      Uma ilha tem 13 camaleões vermelhos, 15 verdes e 17 azuis. Quando dois de cores diferentes se encontram, ambos mudam para a terceira cor.
+
+      Podem ficar todos da mesma cor?
+    hint: Olha para as diferenças entre as contagens, módulo 3.
+    a: |
+      Não. Cada encontro muda as contagens em (−1, −1, +2), por isso cada diferença entre duas contagens muda em 0 ou ±3. Para ficarem todos iguais, duas contagens têm de chegar a 0, e a diferença delas tem de ser múltipla de 3. As diferenças são 2, 2 e 4: nenhuma é.
+
+- answer: [32.727, 32.73]
+  tol: 0.02
+  en:
+    title: Opposite hands
+    q: |
+      Starting at 12:00, how many minutes until the hour and minute hands first point in exactly opposite directions? (Give a decimal.)
+    hint: The minute hand gains 5.5° per minute. You need a 180° gap.
+    a: |
+      180 / 5.5 = 32 8/11 ≈ 32.73 minutes.
+  pt:
+    title: Ponteiros opostos
+    q: |
+      A partir das 12:00, quantos minutos até os ponteiros apontarem pela primeira vez em sentidos exatamente opostos? (Dá um decimal.)
+    hint: O ponteiro dos minutos ganha 5,5° por minuto. Precisas de 180°.
+    a: |
+      180 / 5,5 = 32 8/11 ≈ 32,73 minutos.
+
+- en:
+    title: Coins in a row
+    q: |
+      8 coins of different values lie in a row. Two players take turns taking one coin from either end. Whoever has more money at the end wins.
+
+      Can the first player always make sure they get at least as much as the second?
+    hint: Colour the positions alternately.
+    a: |
+      Yes. Number positions 1–8. Add up the odd-position coins and the even-position coins. The first player can always take a coin from whichever set is bigger, and leave the second player only coins from the other set.
+  pt:
+    title: Moedas em fila
+    q: |
+      8 moedas de valores diferentes estão em fila. Dois jogadores tiram à vez uma moeda de uma das pontas. Ganha quem tiver mais dinheiro no fim.
+
+      O primeiro jogador consegue garantir pelo menos tanto como o segundo?
+    hint: Pinta as posições alternadamente.
+    a: |
+      Sim. Numera as posições de 1 a 8. Soma as moedas das posições ímpares e as das pares. O primeiro pode sempre tirar do conjunto maior e deixar ao segundo apenas moedas do outro.
+
+- answer: [37]
+  tol: 1
+  en:
+    title: Choosing a partner
+    q: |
+      You'll interview 100 candidates in random order. After each one you must decide immediately: accept (and stop) or reject forever. You want the very best one.
+
+      The best strategy is to reject the first N% automatically, then accept the first candidate better than everyone so far. Roughly what is N?
+    hint: The answer involves e ≈ 2.718.
+    a: |
+      About 37%, since 1/e ≈ 0.368. This also gives about a 37% chance of picking the best.
+  pt:
+    title: Escolher o melhor
+    q: |
+      Vais entrevistar 100 candidatos por ordem aleatória. Depois de cada um tens de decidir logo: aceitar (e parar) ou rejeitar para sempre. Queres o melhor de todos.
+
+      A melhor estratégia é rejeitar automaticamente os primeiros N% e depois aceitar o primeiro melhor do que todos os anteriores. Aproximadamente, quanto é N?
+    hint: A resposta envolve e ≈ 2,718.
+    a: |
+      Cerca de 37%, pois 1/e ≈ 0,368. Também dá cerca de 37% de probabilidade de escolher o melhor.
+
+- en:
+    title: The lion and the unicorn
+    q: |
+      The lion lies on Monday, Tuesday and Wednesday and tells the truth on other days. The unicorn lies on Thursday, Friday and Saturday and tells the truth on other days.
+
+      One day both say: "Yesterday was one of my lying days." What day is it?
+    hint: For each animal, find the days on which it could say this.
+    a: |
+      Thursday. The lion can say it on Monday (lie) or Thursday (truth). The unicorn can say it on Thursday (lie) or Sunday (truth). Only Thursday works for both.
+  pt:
+    title: O leão e o unicórnio
+    q: |
+      O leão mente à segunda, terça e quarta e diz a verdade nos outros dias. O unicórnio mente à quinta, sexta e sábado e diz a verdade nos outros dias.
+
+      Um dia ambos dizem: "Ontem foi um dos meus dias de mentir." Que dia é?
+    hint: Para cada animal, encontra os dias em que poderia dizer isto.
+    a: |
+      Quinta-feira. O leão pode dizê-lo à segunda (a mentir) ou à quinta (a verdade). O unicórnio pode dizê-lo à quinta (a mentir) ou ao domingo (a verdade). Só a quinta serve aos dois.
+
+- en:
+    title: Nim
+    q: |
+      There are three piles with 3, 4 and 5 coins. Two players take turns removing any number of coins (at least one) from a single pile. Whoever takes the last coin wins.
+
+      You go first. What is your winning first move?
+    hint: Write the pile sizes in binary and make the XOR zero.
+    a: |
+      Take 2 coins from the pile of 3, leaving 1, 4, 5. 1 XOR 4 XOR 5 = 0, and you can keep it at zero after every one of your opponent's moves.
+  pt:
+    title: Nim
+    q: |
+      Há três montes com 3, 4 e 5 moedas. Dois jogadores tiram à vez quantas moedas quiserem (pelo menos uma) de um só monte. Ganha quem tirar a última.
+
+      Começas tu. Qual a jogada vencedora?
+    hint: Escreve os tamanhos em binário e torna o XOR zero.
+    a: |
+      Tira 2 moedas do monte de 3, deixando 1, 4, 5. 1 XOR 4 XOR 5 = 0, e consegues mantê-lo a zero depois de cada jogada do adversário.
+
+- answer: [40]
+  en:
+    title: The spider and the fly
+    q: |
+      A room is 30 m long, 12 m wide and 12 m high. A spider is on one end wall, in the middle, 1 m below the ceiling. A fly is on the opposite end wall, in the middle, 1 m above the floor.
+
+      What is the shortest distance the spider must crawl to reach the fly, in metres?
+    hint: It's less than 42. Unfold the room so the path crosses five of the six faces.
+    a: |
+      40 m. With the right unfolding (ceiling, a side wall and the floor, entered at angles), the path is the hypotenuse of a 24 × 32 right triangle.
+  pt:
+    title: A aranha e a mosca
+    q: |
+      Uma sala tem 30 m de comprimento, 12 m de largura e 12 m de altura. Uma aranha está numa parede do topo, ao centro, 1 m abaixo do teto. Uma mosca está na parede oposta, ao centro, 1 m acima do chão.
+
+      Qual a distância mínima que a aranha tem de percorrer até à mosca, em metros?
+    hint: É menos de 42. Planifica a sala de modo que o caminho atravesse cinco das seis faces.
+    a: |
+      40 m. Com a planificação certa (teto, uma parede lateral e o chão, atravessados na diagonal), o caminho é a hipotenusa de um triângulo retângulo de 24 × 32.
+
+- answer: [255]
+  en:
+    title: Tower of Hanoi
+    q: |
+      You have 8 discs of different sizes stacked on one of three pegs, largest at the bottom. Move the whole tower to another peg, one disc at a time, never placing a larger disc on a smaller one.
+
+      What is the minimum number of moves?
+    hint: To move the largest disc, the other 7 must first be on the third peg.
+    a: |
+      255 = 2⁸ − 1. Moves(n) = 2 × Moves(n−1) + 1.
+  pt:
+    title: Torre de Hanói
+    q: |
+      Tens 8 discos de tamanhos diferentes empilhados num de três pinos, o maior em baixo. Passa a torre toda para outro pino, um disco de cada vez, sem nunca pôr um disco maior em cima de um menor.
+
+      Qual o número mínimo de movimentos?
+    hint: Para mover o maior, os outros 7 têm de estar primeiro no terceiro pino.
+    a: |
+      255 = 2⁸ − 1. Movimentos(n) = 2 × Movimentos(n−1) + 1.
+
+- answer: [15]
+  en:
+    title: Ships at sea
+    q: |
+      Every day at noon a ship leaves Lisbon for New York, and at the same moment a ship leaves New York for Lisbon. Every crossing takes exactly 7 days.
+
+      How many ships from New York does a ship leaving Lisbon today meet, counting the ones in the harbours at departure and arrival?
+    hint: Draw it as a timeline. Think about ships that are already at sea.
+    a: |
+      15. It meets the ship arriving in Lisbon as it leaves, 13 ships at sea (those that left New York 6 days ago up to 6 days from now), and the ship leaving New York as it arrives.
+  pt:
+    title: Navios no mar
+    q: |
+      Todos os dias ao meio-dia sai um navio de Lisboa para Nova Iorque, e no mesmo instante sai um de Nova Iorque para Lisboa. Cada travessia demora exatamente 7 dias.
+
+      Quantos navios vindos de Nova Iorque encontra um navio que sai hoje de Lisboa, contando os que estão nos portos à partida e à chegada?
+    hint: Desenha como uma linha do tempo. Pensa nos navios que já estão no mar.
+    a: |
+      15. Encontra o que chega a Lisboa quando parte, 13 no mar (os que saíram de Nova Iorque desde há 6 dias até daqui a 6 dias), e o que sai de Nova Iorque quando chega.
+
+- en:
+    title: Three logicians
+    q: |
+      Three logicians walk into a bar. The bartender asks: "Does everyone want a beer?"
+
+      The first says "I don't know." The second says "I don't know." The third says "Yes!"
+
+      What do the first two want?
+    hint: When would the first one answer "no"?
+    a: |
+      Both want a beer. If the first didn't, they'd know the answer is "no". "I don't know" means they want one but can't speak for the others. Same for the second. The third, wanting one too, can say yes.
+  pt:
+    title: Três lógicos
+    q: |
+      Três lógicos entram num bar. O empregado pergunta: "Todos querem uma cerveja?"
+
+      O primeiro diz "Não sei." O segundo diz "Não sei." O terceiro diz "Sim!"
+
+      O que querem os dois primeiros?
+    hint: Quando é que o primeiro responderia "não"?
+    a: |
+      Ambos querem cerveja. Se o primeiro não quisesse, saberia que a resposta é "não". "Não sei" quer dizer que quer, mas não pode falar pelos outros. O mesmo para o segundo. O terceiro, que também quer, pode dizer sim.
+
+- answer: [301]
+  en:
+    title: Eggs in a basket
+    q: |
+      A basket holds some eggs. Taken out 2, 3, 4, 5 or 6 at a time, there's always 1 left over. Taken out 7 at a time, none are left.
+
+      What is the smallest possible number of eggs?
+    hint: One less than the number is divisible by 2, 3, 4, 5 and 6.
+    a: |
+      301. The number is 60k + 1, and 60k + 1 is divisible by 7 first at k = 5.
+  pt:
+    title: Ovos no cesto
+    q: |
+      Um cesto tem ovos. Tirando-os de 2 em 2, 3 em 3, 4 em 4, 5 em 5 ou 6 em 6, sobra sempre 1. Tirando-os de 7 em 7, não sobra nenhum.
+
+      Qual o menor número possível de ovos?
+    hint: O número menos 1 é divisível por 2, 3, 4, 5 e 6.
+    a: |
+      301. O número é 60k + 1, e 60k + 1 é divisível por 7 pela primeira vez com k = 5.
+
+- answer: [30]
+  en:
+    title: Painting a cube
+    q: |
+      You paint each face of a cube a different colour, using 6 given colours.
+
+      How many different-looking cubes can you make? (Two cubes are the same if one can be rotated to look like the other.)
+    hint: 6! colourings, but each cube can be rotated in 24 ways.
+    a: |
+      30 = 720 / 24.
+  pt:
+    title: Pintar um cubo
+    q: |
+      Pintas cada face de um cubo de uma cor diferente, usando 6 cores dadas.
+
+      Quantos cubos diferentes consegues fazer? (Dois cubos são iguais se um puder rodar até ficar igual ao outro.)
+    hint: 6! pinturas, mas cada cubo pode rodar de 24 maneiras.
+    a: |
+      30 = 720 / 24.
+
+- en:
+    title: The seven bridges
+    q: |
+      A city has four land areas: an island (I), a north bank (N), a south bank (S) and an east bank (E). Bridges: 2 between I and N, 2 between I and S, 1 between I and E, 1 between N and E, 1 between S and E.
+
+      Can you take a walk that crosses every bridge exactly once?
+    hint: Count the bridges touching each area.
+    a: |
+      No. I has 5 bridges, N, S and E have 3 each. A walk can only have odd counts at its start and end, so at most 2 areas can be odd. Here all 4 are.
+  pt:
+    title: As sete pontes
+    q: |
+      Uma cidade tem quatro zonas: uma ilha (I), uma margem norte (N), uma margem sul (S) e uma zona a leste (E). Pontes: 2 entre I e N, 2 entre I e S, 1 entre I e E, 1 entre N e E, 1 entre S e E.
+
+      Consegues dar um passeio que passe por cada ponte exatamente uma vez?
+    hint: Conta as pontes que tocam cada zona.
+    a: |
+      Não. I tem 5 pontes, N, S e E têm 3 cada. Um passeio só pode ter contagens ímpares no início e no fim, por isso no máximo 2 zonas podem ser ímpares. Aqui são as 4.
+
+- answer: [16]
+  en:
+    title: Peaceful kings
+    q: |
+      What is the largest number of kings you can place on an 8 × 8 chessboard so that no two attack each other (kings attack all 8 neighbouring squares)?
+    hint: Split the board into 2 × 2 blocks.
+    a: |
+      16. Each of the 16 blocks of 2 × 2 can hold at most one king, and placing one in the top-left corner of each block works.
+  pt:
+    title: Reis em paz
+    q: |
+      Qual o maior número de reis que podes pôr num tabuleiro 8 × 8 sem que dois se ataquem (um rei ataca as 8 casas vizinhas)?
+    hint: Divide o tabuleiro em blocos 2 × 2.
+    a: |
+      16. Cada um dos 16 blocos 2 × 2 leva no máximo um rei, e pondo um no canto superior esquerdo de cada bloco funciona.
+
+- answer: [1]
+  en:
+    title: The gold chain
+    q: |
+      You have a gold chain of 7 links and must pay a worker exactly 1 link per day for 7 days. You can take back links as change.
+
+      What is the minimum number of links you must cut?
+    hint: Pieces of size 1, 2 and 4 can make any total from 1 to 7.
+    a: |
+      1. Cut the 3rd link: you get pieces of 1, 2 and 4. Day 1: give 1. Day 2: give 2, take back 1. Day 3: give 1. Day 4: give 4, take back 1 and 2. And so on.
+  pt:
+    title: A corrente de ouro
+    q: |
+      Tens uma corrente de ouro com 7 elos e tens de pagar a um trabalhador exatamente 1 elo por dia durante 7 dias. Podes receber elos de troco.
+
+      Qual o número mínimo de elos que tens de cortar?
+    hint: Peças de 1, 2 e 4 fazem qualquer total de 1 a 7.
+    a: |
+      1. Corta o 3.º elo: ficas com peças de 1, 2 e 4. Dia 1: dás 1. Dia 2: dás 2 e recebes 1. Dia 3: dás 1. Dia 4: dás 4 e recebes 1 e 2. E assim por diante.
+
+- answer: [72]
+  en:
+    title: Three generations
+    q: |
+      "My grandson is about as many days old as my son is weeks old. My grandson is as many months old as I am years old. Together, the three of us are 120 years old."
+
+      How old is the grandfather?
+    hint: There are about 7 days in a week and 12 months in a year.
+    a: |
+      72. Son ≈ 7 × grandson, grandfather = 12 × grandson. 1 + 7 + 12 = 20 times the grandson's age is 120, so he's 6, the son 42, the grandfather 72.
+  pt:
+    title: Três gerações
+    q: |
+      "O meu neto tem mais ou menos tantos dias como o meu filho tem semanas. O meu neto tem tantos meses como eu tenho anos. Os três juntos temos 120 anos."
+
+      Que idade tem o avô?
+    hint: Uma semana tem cerca de 7 dias e um ano 12 meses.
+    a: |
+      72. Filho ≈ 7 × neto, avô = 12 × neto. 1 + 7 + 12 = 20 vezes a idade do neto é 120, por isso ele tem 6, o filho 42 e o avô 72.
+
+- answer: [271]
+  en:
+    title: Lucky sevens
+    q: |
+      How many whole numbers from 1 to 1000 contain at least one digit 7?
+    hint: Count the ones with no 7 at all.
+    a: |
+      271. Writing 0–999 as three digits, 9³ = 729 have no 7. So 1000 − 729 = 271 have a 7 (and 1000 itself has none).
+  pt:
+    title: Setes da sorte
+    q: |
+      Quantos números inteiros de 1 a 1000 têm pelo menos um algarismo 7?
+    hint: Conta os que não têm nenhum 7.
+    a: |
+      271. Escrevendo 0–999 com três algarismos, 9³ = 729 não têm 7. Logo 1000 − 729 = 271 têm (e o 1000 não tem).
+
+- en:
+    title: Seventeen camels
+    q: |
+      A man leaves 17 camels to his three sons: half to the eldest, a third to the middle one, and a ninth to the youngest. They can't split camels.
+
+      How do they share them fairly?
+    hint: A neighbour lends them a camel.
+    a: |
+      Borrow one camel to make 18: the eldest gets 9, the middle 6 and the youngest 2. That's 17, so the borrowed camel goes back. (1/2 + 1/3 + 1/9 is only 17/18, which is why it works.)
+  pt:
+    title: Dezassete camelos
+    q: |
+      Um homem deixa 17 camelos aos três filhos: metade ao mais velho, um terço ao do meio e um nono ao mais novo. Não podem dividir camelos.
+
+      Como os repartem?
+    hint: Um vizinho empresta-lhes um camelo.
+    a: |
+      Pedem um camelo emprestado e ficam com 18: o mais velho recebe 9, o do meio 6 e o mais novo 2. São 17, por isso o camelo emprestado é devolvido. (1/2 + 1/3 + 1/9 é só 17/18, por isso funciona.)
+
+- en:
+    title: Two padlocks
+    q: |
+      Alice wants to send Bob a ring in a box by courier. The courier steals anything from a box that isn't locked. Alice and Bob each have padlocks with their own keys, but they've never met and can't share keys.
+
+      How can Alice get the ring to Bob safely?
+    hint: The box can travel more than once.
+    a: |
+      Alice locks the box with her padlock and sends it. Bob adds his own padlock and sends it back. Alice removes hers and sends it again. Bob opens his. The box is never unlocked in transit.
+  pt:
+    title: Dois cadeados
+    q: |
+      A Alice quer enviar um anel ao Bob numa caixa, por um estafeta. O estafeta rouba tudo das caixas que não estejam trancadas. Cada um tem cadeados com as suas chaves, mas nunca se encontraram e não podem trocar chaves.
+
+      Como faz a Alice chegar o anel ao Bob em segurança?
+    hint: A caixa pode viajar mais do que uma vez.
+    a: |
+      A Alice tranca a caixa com o seu cadeado e envia. O Bob acrescenta o seu e devolve. A Alice tira o dela e envia outra vez. O Bob abre o seu. A caixa nunca viaja destrancada.
+
+- en:
+    title: Which twin is older?
+    q: |
+      Two brothers, one older than the other. The first says: "I'm the older one." The second says: "I'm the younger one."
+
+      At least one of them is lying. Which one is older?
+    hint: If one is telling the truth, what about the other?
+    a: |
+      The second. The two statements are either both true or both false. Since at least one is a lie, both are: the first is younger and the second is older.
+  pt:
+    title: Qual é o mais velho?
+    q: |
+      Dois irmãos, um mais velho do que o outro. O primeiro diz: "Sou o mais velho." O segundo diz: "Sou o mais novo."
+
+      Pelo menos um está a mentir. Qual é o mais velho?
+    hint: Se um disser a verdade, e o outro?
+    a: |
+      O segundo. As duas frases são ambas verdadeiras ou ambas falsas. Como pelo menos uma é mentira, são as duas: o primeiro é o mais novo e o segundo o mais velho.
+
+- answer: [0.6875]
+  tol: 0.001
+  en:
+    title: At least two heads
+    q: |
+      You flip a fair coin 4 times.
+
+      What is the probability of at least 2 heads? (Give a decimal.)
+    hint: Subtract the cases with 0 or 1 heads.
+    a: |
+      11/16 = 0.6875. 0 heads: 1 way, 1 head: 4 ways, out of 16. 1 − 5/16 = 11/16.
+  pt:
+    title: Pelo menos duas caras
+    q: |
+      Lanças uma moeda justa 4 vezes.
+
+      Qual a probabilidade de saírem pelo menos 2 caras? (Dá um decimal.)
+    hint: Subtrai os casos com 0 ou 1 cara.
+    a: |
+      11/16 = 0,6875. 0 caras: 1 maneira, 1 cara: 4 maneiras, em 16. 1 − 5/16 = 11/16.
+
+- answer: [84]
+  en:
+    title: Diophantus' epitaph
+    q: |
+      "His boyhood lasted a sixth of his life. His beard grew after another twelfth. After another seventh he married, and 5 years later his son was born. The son lived half as long as his father. The father died 4 years after his son."
+
+      How old was Diophantus when he died?
+    hint: x/6 + x/12 + x/7 + 5 + x/2 + 4 = x.
+    a: |
+      84. The fractions add to 75x/84, so the remaining 9x/84 = 9 years, giving x = 84.
+  pt:
+    title: O epitáfio de Diofanto
+    q: |
+      "A infância durou um sexto da sua vida. A barba cresceu após mais um doze avos. Após mais um sétimo casou, e 5 anos depois nasceu-lhe um filho. O filho viveu metade do que viveu o pai. O pai morreu 4 anos depois do filho."
+
+      Com que idade morreu Diofanto?
+    hint: x/6 + x/12 + x/7 + 5 + x/2 + 4 = x.
+    a: |
+      84. As frações somam 75x/84, por isso os 9x/84 que faltam são 9 anos, e x = 84.
+
+- en:
+    title: Several fake bags
+    q: |
+      10 bags of coins. Real coins weigh 10 g, fake ones 9 g. Each bag is entirely real or entirely fake, but any number of bags could be fake.
+
+      With a digital scale used only once, how do you find all the fake bags?
+    hint: Taking 1, 2, 3… coins isn't enough anymore. Use powers of 2.
+    a: |
+      Take 1, 2, 4, 8, … 512 coins from bags 1 to 10. Weigh them. The grams missing, written in binary, show exactly which bags are fake (e.g. 13 g missing = 1 + 4 + 8 → bags 1, 3 and 4).
+  pt:
+    title: Vários sacos falsos
+    q: |
+      10 sacos de moedas. As verdadeiras pesam 10 g, as falsas 9 g. Cada saco é todo verdadeiro ou todo falso, mas qualquer número de sacos pode ser falso.
+
+      Com uma balança digital usada só uma vez, como descobres todos os sacos falsos?
+    hint: Tirar 1, 2, 3… moedas já não chega. Usa potências de 2.
+    a: |
+      Tira 1, 2, 4, 8, … 512 moedas dos sacos 1 a 10. Pesa. Os gramas em falta, escritos em binário, dizem exatamente que sacos são falsos (por exemplo, faltam 13 g = 1 + 4 + 8 → sacos 1, 3 e 4).
+
+- answer: [23]
+  en:
+    title: Stamps
+    q: |
+      A post office only sells 5-cent and 7-cent stamps.
+
+      What is the largest postage (in cents) that you can't make exactly?
+    hint: Once you can make 5 consecutive amounts, you can make everything after.
+    a: |
+      23. 24 to 28 can all be made (e.g. 24 = 5 + 5 + 7 + 7, 28 = 7 × 4), and adding 5s covers everything after. 23 can't be made. (In general: 5 × 7 − 5 − 7 = 23.)
+  pt:
+    title: Selos
+    q: |
+      Uns correios só vendem selos de 5 e de 7 cêntimos.
+
+      Qual o maior valor (em cêntimos) que não consegues fazer exatamente?
+    hint: Quando consegues 5 valores seguidos, consegues tudo a partir daí.
+    a: |
+      23. De 24 a 28 todos se conseguem (ex.: 24 = 5 + 5 + 7 + 7, 28 = 7 × 4), e somando 5 cobres tudo depois. O 23 não se consegue. (Em geral: 5 × 7 − 5 − 7 = 23.)
+
+- answer: [47]
+  en:
+    title: Divisible by 3 or 5
+    q: |
+      How many whole numbers from 1 to 100 are divisible by 3 or by 5 (or both)?
+    hint: Don't count multiples of 15 twice.
+    a: |
+      47. 33 multiples of 3 + 20 multiples of 5 − 6 multiples of 15.
+  pt:
+    title: Divisíveis por 3 ou 5
+    q: |
+      Quantos números inteiros de 1 a 100 são divisíveis por 3 ou por 5 (ou ambos)?
+    hint: Não contes os múltiplos de 15 duas vezes.
+    a: |
+      47. 33 múltiplos de 3 + 20 múltiplos de 5 − 6 múltiplos de 15.
+
+- en:
+    title: The detective
+    q: |
+      One of four suspects stole the cake. Exactly one of their statements is true.
+
+      A: "B did it."
+      B: "D did it."
+      C: "I didn't do it."
+      D: "B is lying."
+
+      Who stole the cake?
+    hint: B and D can't both be lying or both be telling the truth.
+    a: |
+      C. B and D contradict each other, so exactly one of them is telling the truth. That uses up the one true statement, so A and C are lying, and C's lie means C did it.
+  pt:
+    title: O detetive
+    q: |
+      Um de quatro suspeitos roubou o bolo. Exatamente uma das afirmações é verdadeira.
+
+      A: "Foi o B."
+      B: "Foi o D."
+      C: "Não fui eu."
+      D: "O B está a mentir."
+
+      Quem roubou o bolo?
+    hint: B e D não podem ambos mentir nem ambos dizer a verdade.
+    a: |
+      O C. B e D contradizem-se, por isso exatamente um deles diz a verdade. Essa é a única verdadeira, logo A e C mentem, e a mentira de C quer dizer que foi ele.
+
+- en:
+    title: Odd handshakes
+    q: |
+      7 people are at a meeting. Could every one of them have shaken hands with exactly 3 others?
+    hint: Add up everyone's handshake count.
+    a: |
+      No. The total would be 7 × 3 = 21, but every handshake is counted twice, so the total must be even.
+  pt:
+    title: Apertos de mão ímpares
+    q: |
+      7 pessoas estão numa reunião. É possível cada uma ter apertado a mão a exatamente 3 outras?
+    hint: Soma o número de apertos de cada pessoa.
+    a: |
+      Não. O total seria 7 × 3 = 21, mas cada aperto conta duas vezes, por isso o total tem de ser par.
+
+- en:
+    title: Make 24 (II)
+    q: |
+      Using 3, 3, 8 and 8 exactly once each, with +, −, ×, ÷ and brackets, make 24.
+    hint: Like the 1, 3, 4, 6 puzzle, you need a fraction.
+    a: |
+      8 ÷ (3 − 8/3) = 8 ÷ 1/3 = 24.
+  pt:
+    title: Fazer 24 (II)
+    q: |
+      Usando 3, 3, 8 e 8 exatamente uma vez cada, com +, −, ×, ÷ e parênteses, faz 24.
+    hint: Como no de 1, 3, 4, 6, precisas de uma fração.
+    a: |
+      8 ÷ (3 − 8/3) = 8 ÷ 1/3 = 24.
+
+- en:
+    title: Ant on a rubber band
+    q: |
+      An ant starts at one end of a 1 km rubber band and crawls towards the other end at 1 cm per second. Every second, the band is stretched evenly by another 1 km.
+
+      Does the ant ever reach the end?
+    hint: Track the fraction of the band the ant has covered, not the distance.
+    a: |
+      Yes. In second n the ant covers 1/(100,000 × n) of the band's length. The total fraction is (1 + 1/2 + 1/3 + …)/100,000, and the harmonic series grows without limit, so it eventually reaches 1, after an astronomically long time.
+  pt:
+    title: Formiga no elástico
+    q: |
+      Uma formiga começa numa ponta de um elástico de 1 km e anda para a outra a 1 cm por segundo. A cada segundo, o elástico é esticado uniformemente mais 1 km.
+
+      A formiga chega alguma vez ao fim?
+    hint: Acompanha a fração do elástico que a formiga já percorreu, não a distância.
+    a: |
+      Sim. No segundo n a formiga percorre 1/(100 000 × n) do comprimento. A fração total é (1 + 1/2 + 1/3 + …)/100 000, e a série harmónica cresce sem limite, por isso acaba por chegar a 1, ao fim de um tempo astronomicamente longo.
+
+- answer: [0.31, 0.3118, 0.312]
+  tol: 0.01
+  en:
+    title: 100 prisoners and 100 boxes
+    q: |
+      100 prisoners are numbered 1–100. A room has 100 numbered boxes, each holding one prisoner's number, shuffled randomly. One at a time, each prisoner may open 50 boxes looking for their own number, then leaves everything as found. They can't communicate once it starts. If all find their number, all go free.
+
+      With the best strategy, what is the probability (roughly) that they all go free? (Give a decimal.)
+    hint: Start with the box with your own number, then open the box whose number you just found.
+    a: |
+      About 0.31. Following the chain from your own box, you find your number unless your cycle is longer than 50. Everyone succeeds exactly when the random permutation has no cycle longer than 50: probability 1 − (1/51 + 1/52 + … + 1/100) ≈ 0.312.
+  pt:
+    title: 100 prisioneiros e 100 caixas
+    q: |
+      100 prisioneiros estão numerados de 1 a 100. Numa sala há 100 caixas numeradas, cada uma com o número de um prisioneiro, baralhadas. Um de cada vez, cada prisioneiro pode abrir 50 caixas à procura do seu número, e deixa tudo como estava. Não podem comunicar depois de começar. Se todos encontrarem o seu número, são todos libertados.
+
+      Com a melhor estratégia, qual a probabilidade (aproximada) de serem todos libertados? (Dá um decimal.)
+    hint: Começa pela caixa com o teu número e depois abre a caixa com o número que acabaste de encontrar.
+    a: |
+      Cerca de 0,31. Seguindo a cadeia a partir da tua caixa, encontras o teu número a não ser que o teu ciclo tenha mais de 50. Todos conseguem exatamente quando a permutação não tem ciclos maiores que 50: probabilidade 1 − (1/51 + 1/52 + … + 1/100) ≈ 0,312.
+
+- en:
+    title: A hundred statements
+    q: |
+      A page contains 100 statements. Statement n says: "Exactly n of the statements on this page are false."
+
+      Which statements are true?
+    hint: At most one can be true.
+    a: |
+      Only statement 99. They contradict each other, so at most one is true. They can't all be false (then statement 100 would be true). So exactly one is true and 99 are false, which is statement 99.
+  pt:
+    title: Cem afirmações
+    q: |
+      Uma página tem 100 afirmações. A afirmação n diz: "Exatamente n das afirmações desta página são falsas."
+
+      Quais são verdadeiras?
+    hint: No máximo uma pode ser verdadeira.
+    a: |
+      Só a 99. Contradizem-se, por isso no máximo uma é verdadeira. Não podem ser todas falsas (então a 100 seria verdadeira). Logo exatamente uma é verdadeira e 99 são falsas, que é a afirmação 99.
