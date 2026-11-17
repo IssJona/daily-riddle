@@ -1,29 +1,24 @@
-// Bump VERSION whenever you change any file (e.g. after adding riddles),
-// so phones pick up the new version.
-const VERSION = "v1";
-const FILES = ["./", "index.html", "app.js", "riddles.js", "manifest.webmanifest",
-               "icon-180.png", "icon-192.png", "icon-512.png"];
+// Bump VERSION whenever app files change so installed apps refresh their cache.
+const VERSION = "v2";
+const SHELL = ["./", "index.html", "app.js", "firebase.js", "manifest.webmanifest",
+               "icon-180.png", "icon-192.png", "icon-512.png", "data/index.json"];
 
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
 });
-
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys()
     .then(keys => Promise.all(keys.filter(k => k !== VERSION).map(k => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
-
-// Network first (so new riddles show up), fall back to cache when offline.
+// Same-origin GET only (never touch Firebase traffic). Network first, cache as offline fallback.
 self.addEventListener("fetch", e => {
-  if (e.request.method !== "GET") return;
+  const url = new URL(e.request.url);
+  if (e.request.method !== "GET" || url.origin !== location.origin) return;
   e.respondWith(
-    fetch(e.request)
-      .then(res => {
-        const copy = res.clone();
-        caches.open(VERSION).then(c => c.put(e.request, copy));
-        return res;
-      })
-      .catch(() => caches.match(e.request, { ignoreSearch: true }))
+    fetch(e.request).then(res => {
+      if (res.ok) { const copy = res.clone(); caches.open(VERSION).then(c => c.put(e.request, copy)); }
+      return res;
+    }).catch(() => caches.match(e.request, { ignoreSearch: true }))
   );
 });

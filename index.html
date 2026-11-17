@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Daily Riddle</title>
 <meta name="theme-color" content="#14161c">
-<meta name="description" content="A new math and logic riddle every day.">
+<meta name="description" content="Four new math and logic riddles every day.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -14,13 +14,9 @@
 <meta name="apple-mobile-web-app-title" content="Riddle">
 <style>
   :root {
-    --bg: #14161c;
-    --card: #1d2029;
-    --line: #2c303c;
-    --text: #ecebe6;
-    --muted: #9a9cab;
-    --accent: #f2b84b;
-    --good: #6fcf97;
+    --bg: #14161c; --card: #1d2029; --card2: #252935; --line: #2c303c;
+    --text: #ecebe6; --muted: #9a9cab; --accent: #f2b84b; --good: #6fcf97; --bad: #eb7a6f;
+    --e: #6fcf97; --m: #56b6f2; --h: #f2994a; --i: #c084fc;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: var(--bg); color: var(--text); }
@@ -29,40 +25,76 @@
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     -webkit-tap-highlight-color: transparent;
   }
-  .wrap { max-width: 640px; margin: 0 auto; padding: 16px 18px 48px; }
-  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0 18px; }
-  .brand { font-family: Georgia, "Times New Roman", serif; font-size: 22px; letter-spacing: .2px; }
+  button, input { font-family: inherit; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 14px 16px 48px; }
+  header { display: flex; align-items: center; gap: 10px; padding: 6px 0 16px; }
+  .brand { font-family: Georgia, "Times New Roman", serif; font-size: 22px; flex: 1; }
   .brand span { color: var(--accent); }
   .lang { display: flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
-  .lang button { background: none; border: 0; color: var(--muted); font: 600 13px/1 inherit; font-family: inherit; padding: 8px 12px; cursor: pointer; }
+  .lang button { background: none; border: 0; color: var(--muted); font-weight: 600; font-size: 13px; padding: 8px 11px; cursor: pointer; }
   .lang button.on { background: var(--accent); color: #1a1405; }
-  nav { display: flex; gap: 6px; margin-bottom: 18px; }
-  nav a { flex: 1; text-align: center; text-decoration: none; color: var(--muted); padding: 10px; border-radius: 10px; border: 1px solid var(--line); font-weight: 600; font-size: 15px; }
+  .acct { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--card2); color: var(--muted);
+          display: grid; place-items: center; text-decoration: none; font-weight: 700; overflow: hidden; font-size: 15px; }
+  .acct img { width: 100%; height: 100%; object-fit: cover; }
+  nav { display: flex; gap: 6px; margin-bottom: 16px; }
+  nav a { flex: 1; text-align: center; text-decoration: none; color: var(--muted); padding: 10px 4px; border-radius: 10px;
+          border: 1px solid var(--line); font-weight: 600; font-size: 15px; }
   nav a.on { color: var(--text); background: var(--card); border-color: #3a3f4e; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px 20px; }
-  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; color: var(--muted); font-size: 14px; margin-bottom: 10px; }
-  .dots { letter-spacing: 2px; color: var(--accent); }
-  .solvedtag { color: var(--good); font-weight: 600; }
-  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-size: 28px; line-height: 1.2; margin: 0 0 14px; }
+  .dayline { color: var(--muted); font-size: 14px; margin: 0 2px 10px; display: flex; justify-content: space-between; gap: 8px; }
+  .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 12px; }
+  .tier { border: 1px solid var(--line); background: var(--card); color: var(--muted); border-radius: 10px; padding: 9px 4px 8px;
+          font-weight: 600; font-size: 13px; cursor: pointer; text-align: center; line-height: 1.2; }
+  .tier .st { display: block; font-size: 15px; height: 18px; margin-top: 2px; }
+  .tier.on { color: var(--text); border-color: var(--c); box-shadow: inset 0 -3px 0 var(--c); }
+  .tier[data-t=e] { --c: var(--e); } .tier[data-t=m] { --c: var(--m); } .tier[data-t=h] { --c: var(--h); } .tier[data-t=i] { --c: var(--i); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 18px; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--c);
+           border: 1px solid var(--c); border-radius: 999px; padding: 3px 9px; margin-bottom: 10px; }
+  .badge[data-t=e] { --c: var(--e); } .badge[data-t=m] { --c: var(--m); } .badge[data-t=h] { --c: var(--h); } .badge[data-t=i] { --c: var(--i); }
+  .pts { color: var(--muted); font-size: 13px; margin-left: 8px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; font-size: 27px; line-height: 1.2; margin: 0 0 12px; }
   .q { white-space: pre-line; }
-  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
-  .btn { appearance: none; border: 1px solid var(--line); background: #252935; color: var(--text); font: 600 15px/1 inherit; font-family: inherit; padding: 12px 16px; border-radius: 10px; cursor: pointer; }
+  .ansrow { display: flex; gap: 8px; margin-top: 20px; }
+  .ansrow input { flex: 1; min-width: 0; background: var(--bg); border: 1px solid var(--line); color: var(--text); border-radius: 10px;
+                  padding: 12px 14px; font-size: 17px; }
+  .ansrow input:focus { outline: none; border-color: var(--accent); }
+  .msg { margin-top: 10px; font-weight: 600; font-size: 15px; min-height: 1px; }
+  .msg.ok { color: var(--good); } .msg.no { color: var(--bad); }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .btn { appearance: none; border: 1px solid var(--line); background: var(--card2); color: var(--text); font-weight: 600; font-size: 15px;
+         padding: 12px 15px; border-radius: 10px; cursor: pointer; }
   .btn.primary { background: var(--accent); border-color: var(--accent); color: #1a1405; }
   .btn.good { background: transparent; border-color: var(--good); color: var(--good); }
-  .panel { margin-top: 18px; padding: 16px; border-radius: 12px; white-space: pre-line; }
-  .panel b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
+  .btn.warn { border-color: var(--bad); color: var(--bad); background: transparent; }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .panel { margin-top: 16px; padding: 14px 15px; border-radius: 12px; white-space: pre-line; }
+  .panel b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
   .hint { background: #23262f; border-left: 3px solid var(--muted); }
   .answer { background: #2a2618; border-left: 3px solid var(--accent); }
   .answer b { color: var(--accent); }
-  .stats { color: var(--muted); font-size: 14px; text-align: center; margin-top: 18px; }
+  .done { margin-top: 14px; color: var(--good); font-weight: 600; }
+  .stats { color: var(--muted); font-size: 14px; text-align: center; margin-top: 16px; }
   .list { list-style: none; margin: 0; padding: 0; }
-  .list li a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); padding: 14px 4px; border-bottom: 1px solid var(--line); }
-  .list .n { color: var(--muted); font-size: 13px; min-width: 76px; }
-  .list .t { flex: 1; }
-  .list .s { color: var(--good); }
-  .back { display: inline-block; color: var(--muted); text-decoration: none; margin-bottom: 12px; font-size: 15px; }
-  .empty { color: var(--muted); text-align: center; padding: 30px 0; }
-  .install { margin-top: 26px; color: var(--muted); font-size: 13px; text-align: center; }
+  .list li a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); padding: 13px 4px; border-bottom: 1px solid var(--line); }
+  .list .n { color: var(--muted); font-size: 14px; flex: 1; }
+  .dots { display: flex; gap: 6px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid var(--c); }
+  .dot.s { background: var(--c); } .dot.r { border-style: dashed; opacity: .55; }
+  .dot[data-t=e] { --c: var(--e); } .dot[data-t=m] { --c: var(--m); } .dot[data-t=h] { --c: var(--h); } .dot[data-t=i] { --c: var(--i); }
+  .back { display: inline-block; color: var(--muted); text-decoration: none; margin-bottom: 10px; font-size: 15px; }
+  .empty { color: var(--muted); text-align: center; padding: 26px 8px; }
+  table.rank { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .rank th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .6px; text-align: right; padding: 0 6px 8px; }
+  .rank th:nth-child(2) { text-align: left; }
+  .rank td { padding: 11px 6px; border-top: 1px solid var(--line); text-align: right; }
+  .rank td:nth-child(2) { text-align: left; }
+  .rank tr.me td { color: var(--accent); }
+  .rank .pos { color: var(--muted); width: 28px; }
+  .field { display: flex; gap: 8px; margin: 12px 0; }
+  .field input { flex: 1; min-width: 0; background: var(--bg); border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 11px 13px; font-size: 16px; }
+  .small { color: var(--muted); font-size: 13px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: center; color: var(--muted); font-size: 13px; margin-top: 14px; }
+  .install { margin-top: 24px; color: var(--muted); font-size: 13px; text-align: center; }
 </style>
 </head>
 <body>
@@ -70,18 +102,18 @@
   <header>
     <div class="brand">Daily <span>Riddle</span></div>
     <div class="lang" role="group" aria-label="Language">
-      <button data-lang="en">EN</button>
-      <button data-lang="pt">PT</button>
+      <button data-lang="en">EN</button><button data-lang="pt">PT</button>
     </div>
+    <a class="acct" href="#account" id="acct" aria-label="Account">?</a>
   </header>
   <nav>
     <a href="#today" id="nav-today"></a>
     <a href="#archive" id="nav-archive"></a>
+    <a href="#ranking" id="nav-ranking"></a>
   </nav>
-  <main id="view"></main>
+  <main id="view"><p class="empty">…</p></main>
   <p class="install" id="install"></p>
 </div>
-<script src="riddles.js"></script>
-<script src="app.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
